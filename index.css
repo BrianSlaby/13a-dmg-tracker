@@ -1,0 +1,346 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+    background-color: #e0d2c1;
+    background-image: url(images/corkboard-bg.jpg);
+    background-size: cover;
+    min-height: 80vh;
+    padding: 1em;
+    background-blend-mode: overlay;
+ }
+
+
+/* ===================*/
+/*     TYPOGRAPHY     */
+/* ===================*/
+header,
+main,
+.modal {
+    text-align: center;
+}
+
+header {
+    font-family: 'Philosopher', sans-serif;
+    background-image: linear-gradient(
+        160deg,
+        hsl(349deg 49% 23%) 0%,
+        hsl(349deg 50% 25%) 22%,
+        hsl(349deg 51% 27%) 33%,
+        hsl(349deg 52% 29%) 42%,
+        hsl(349deg 52% 31%) 50%,
+        hsl(349deg 53% 33%) 58%,
+        hsl(350deg 54% 35%) 67%,
+        hsl(350deg 55% 37%) 78%,
+        hsl(350deg 55% 39%) 100%
+        );
+    color: gold;
+    padding: 0.75em;
+    margin: none;
+}
+
+.footer-credit {
+    font-size: 0.7rem;
+}
+
+/* ====================*/
+/*       LAYOUT        */
+/* ====================*/
+
+#statblock-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+    margin: 2em auto;
+}
+
+.monster-card {
+    border-radius: 7px;
+    max-width: 300px;
+    box-shadow: 1px 1px 3px grey;
+    background-image: linear-gradient(
+        90deg,
+        hsl(53deg 17% 90%) 0%,
+        hsl(53deg 17% 90%) 13%,
+        hsl(52deg 17% 90%) 25%,
+        hsl(52deg 16% 90%) 37%,
+        hsl(52deg 16% 91%) 50%,
+        hsl(51deg 16% 91%) 63%,
+        hsl(51deg 15% 91%) 75%,
+        hsl(50deg 15% 91%) 87%,
+        hsl(50deg 14% 92%) 100%
+        );
+}
+
+.card-sctn {
+    padding: 0.2em 1em;
+}
+
+.card-header {
+    background-color: #415c2d;
+    color: #FFF;
+    border-radius: 7px 7px 0 0;
+}
+
+.card-sctn-dark {
+    background-image: linear-gradient(
+        90deg,
+        hsl(53deg 23% 73%) 0%,
+        hsl(51deg 24% 75%) 13%,
+        hsl(50deg 25% 77%) 25%,
+        hsl(49deg 27% 79%) 37%,
+        hsl(49deg 28% 81%) 50%,
+        hsl(48deg 30% 83%) 63%,
+        hsl(47deg 32% 86%) 75%,
+        hsl(46deg 35% 88%) 87%,
+        hsl(45deg 38% 90%) 100%
+        );
+}
+
+.card-sctn-light {
+    background-image: linear-gradient(
+        90deg,
+        hsl(53deg 17% 90%) 0%,
+        hsl(53deg 17% 90%) 13%,
+        hsl(52deg 17% 90%) 25%,
+        hsl(52deg 16% 90%) 37%,
+        hsl(52deg 16% 91%) 50%,
+        hsl(51deg 16% 91%) 63%,
+        hsl(51deg 15% 91%) 75%,
+        hsl(50deg 15% 91%) 87%,
+        hsl(50deg 14% 92%) 100%
+        );
+}
+
+.monster-card p {
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+    text-align: left;
+}
+
+.monster-card h3 {
+    margin-top: 0.35em;
+    margin-bottom: 0.35em;
+}
+
+.defense-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.defense-list {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.health-container {
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+}
+
+.health-container p {
+    text-align: right;
+}
+
+.damage-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dmg-input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5em 0;
+}
+
+.attack-list,
+.ability-list,
+.nastier-list {
+    margin-left: 0;
+    margin-top: 0;
+    padding-left: 1em;
+    text-align: left;
+}
+
+.attack-block,
+.ability-block {
+    font-size: 0.8rem;
+}
+
+.ability-block {
+    border-radius: 0 0 7px 7px;
+}
+
+.staggered {
+    color: crimson;
+}
+
+/* ===================*/
+/*      BUTTONS       */
+/* ===================*/
+
+.btn {
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 0.7em 1.4em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.main-btn {
+    margin: 0 1em;
+    color: #f5f5f5;
+}
+
+#select-monsters-btn {
+    background-color: #415c2d;
+}
+
+#select-monsters-btn:hover,
+#select-monsters-btn:focus {
+    background-color: #7dbf4d;
+    color: #1f1e1e;
+}
+
+#clear-monsters-btn {
+    background-color: #9c2d40;
+}
+
+#clear-monsters-btn:hover,
+#clear-monsters-btn:focus {
+    background-color: #cc6e7e;
+    color: #1f1e1e;
+}
+
+.dmg-btn-container {
+    display: flex;
+    align-items: center;
+}
+
+.dmg-btn {
+    margin-top: 0.5em;
+    background-image: linear-gradient(
+        160deg,
+        hsl(349deg 49% 23%) 0%,
+        hsl(349deg 50% 25%) 22%,
+        hsl(349deg 51% 27%) 33%,
+        hsl(349deg 52% 29%) 42%,
+        hsl(349deg 52% 31%) 50%,
+        hsl(349deg 53% 33%) 58%,
+        hsl(350deg 54% 35%) 67%,
+        hsl(350deg 55% 37%) 78%,
+        hsl(350deg 55% 39%) 100%
+        );
+    color: #f5f5f5;
+} 
+
+.dmg-btn:hover,
+.dmg-btn:focus {
+    background-image: none;
+    background-color: #cc6e7e;
+    color: #1f1e1e;
+}
+
+/* ===================*/
+/*       INPUTS       */
+/* ===================*/
+
+.dmg-input {
+    font-size: 1.125rem;
+    padding: 0.2em;
+    max-width: 75px;
+    border-radius: 5px;
+    border: 1px solid darkgrey;
+    margin-top: 0.2em;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+  }
+
+/* ===================*/
+/*       MODALS       */
+/* ===================*/
+
+.modal {
+    display: none;
+    position: fixed;
+    margin: auto;
+    top: 20%;
+    right: 0;
+    left: 0;
+    max-width: 600px;
+    padding: 1em;
+    background-color: lightgoldenrodyellow;
+    box-shadow: 0 0 5px lightgrey;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: right;
+}
+
+#close-modal-btn {
+    font-weight: 900;
+    font-size: 1.25rem;
+    padding: 0.2em 0.5em;
+    color: firebrick;
+    border: solid 2px firebrick;
+    background-color: lightgrey;
+    border-radius: 4px;
+}
+
+#close-modal-btn:hover {
+    background-color: lightpink;
+}
+
+#level-check-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 500px;
+    margin: 1.5em auto;
+}
+
+#level-check-container input {
+    margin-right: 2em;
+}
+
+#dropdown-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    margin: 0 auto 1.5em;
+}
+
+#selected-monsters-list {
+    list-style-type: none;
+    margin: 0 auto 1.5em;
+}
+
+/* ===================*/
+/*    MEDIA QUERIES   */
+/* ===================*/

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"> 
+
+        <link rel="stylesheet" href="index.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>13th Age Monster Damage Tracker</h1>
+        </header>
+
+        <main>
+            <div id="main-button-container">
+                <button id="select-monsters-btn" class="main-btn btn">Choose Monsters</button>
+                <button id="clear-monsters-btn" class="main-btn btn">Clear Monsters</button>
+            </div>
+            
+            <div id="statblock-container">
+
+            </div>
+        </main>
+
+<!-- =========================== -->
+<!--        MODAL HTML           -->
+<!-- =========================== -->
+
+        <div class="modal" id="selection-modal">
+            <div class="modal-header">
+                <button id="close-modal-btn">X</button>
+            </div>
+
+            <h2>Monster Levels</h2>
+            
+            <div id="level-check-container">
+                <div class="checkbox-container">
+                    <label for="level-one" class="level-check-label">Level 1</label>
+                    <input type="checkbox" id="level-one" name="level-one">
+                </div>
+                <div class="checkbox-container">
+                    <label for="level-two" class="level-check-label">Level 2</label>
+                    <input type="checkbox" id="level-two" name="level-two">
+                </div>
+                <div class="checkbox-container">
+                    <label for="level-three" class="level-check-label">Level 3</label>
+                    <input type="checkbox" id="level-three" name="level-three">
+                </div>
+                <div class="checkbox-container">
+                    <label for="level-four" class="level-check-label">Level 4</label>
+                    <input type="checkbox" id="level-four" name="level-four">
+                </div>
+                <div class="checkbox-container">
+                    <label for="level-five" class="level-check-label">Level 5</label>
+                    <input type="checkbox" id="level-five" name="level-five">
+                </div>
+                <div class="checkbox-container">
+                    <label for="level-six" class="level-check-label">Level 6</label>
+                    <input type="checkbox" id="level-six" name="level-six">
+                </div>
+                <div class="checkbox-container">
+                    <label for="level-seven" class="level-check-label">Level 7</label>
+                    <input type="checkbox" id="level-seven" name="level-seven">
+                </div>
+                <div class="checkbox-container">
+                    <label for="level-eight" class="level-check-label">Level 8</label>
+                    <input type="checkbox" id="level-eight" name="level-eight">
+                </div>
+                <div class="checkbox-container">
+                    <label for="level-nine" class="level-check-label">Level 9</label>
+                    <input type="checkbox" id="level-nine" name="level-nine">
+                </div>
+                <div class="checkbox-container">
+                    <label for="level-ten" class="level-check-label">Level 10</label>
+                    <input type="checkbox" id="level-ten" name="level-ten">
+                </div>
+
+            </div>
+
+            <div id="dropdown-container">
+                <label for="monsters-dropdown">Select Monsters</label>
+                <select id="monsters-dropdown" name="monsters-dropdown">
+
+                </select>
+            </div>
+
+        </div>
+
+        <footer>
+            <p class="footer-credit">Background image by <a href="https://unsplash.com/@sibilant?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Josephine Bredehoft</a> on <a href="https://unsplash.com/photos/KsAo8ouBn8A?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            </p>
+        </footer>
+
+        <script type="module" src="/index.js"></script>
+    </body>
+</html>
