@@ -449,6 +449,38 @@ const monsterData = [
             abilities: ["Desperate Escalator: While staggered, the balor adds the escalation die to its attack rolls.", "Fiery Aura: At the start of the balor's turn, each enemy engaged with it takes 4D10 fire damage; any die result of 10 is kept and the die rerolled.", "Flight: giant bat wings are good for something besides looking tough.", "Shadow and Flame: the balor gains a +5 bonus to all defenses against attacks by far away enemies.", "[Nastier Special] Vorpal Blade: Critical hits with the abyssal blade deal triple damage instead of double damage.", "Random Demon Ability: roll on table."],
             isStaggered: false,
             id: 27
+        },
+
+        {
+            name: "Derro Maniac",
+            level: 4,
+            type: "troop",
+            initiative: "+8",
+            ac: 19,
+            pd: 16,
+            md: 18,
+            hp: 52,
+            health: 52,
+            attacks: ["Shortsword +9 vs AC - 12 damage. Natural 16+: The derro can cast one of the following close-quarters spells as a quick action this turn: Cloaking Dark: all nearby derro gain a +1 bonus to attacks and defenses until the end of the derro maniac's next turn (cumulative). Sonic Squeal: two random nearby non-derro creatures take 2D4 thunder damage.", "R: Light Repeating Crossbow +9 vs AC - 10 damage. Natural 16+: The target also takes 5 ongoing poison damage. Natural 19+: As above, and the derro maniac can make another light repeating crossbow attack as a free action."],
+            abilities: ["Derro Are Confused to Begin With: Confusion only affects derro if they secretely want to murder one of their own companions, a not uncommon condition."],
+            isStaggered: false,
+            id: 28
+        },
+
+        {
+            name: "Derro Sage",
+            level: 4,
+            type: "caster",
+            initiative: "+7",
+            ac: 18,
+            pd: 15,
+            md: 18,
+            hp: 40,
+            health: 40,
+            attacks: ["Staff +7 vs AC - 7 damage. Natural 16+: the derro can cast one of the following close-quarters spells as a quick action this turn: Cloaking Dark: all nearby derro gain a +1 bonus to attacks and defenses until the end of the derro sage's next turn (cumulative). Sonic Squeal: two random nearby non-derro creatures take 2D8 thunder damage.", "R: Mind Scream +9 vs MD - 12 psychic damage, and the target is confused until the end of the derro sage's next turn. Natural 16+: the derro sage can make another mind scream attack against a different nearby target as a free action."],
+            abilities: ["Derro Are Confused to Begin With: Confusion only affects derro if they secretely want to murder one of their own companions, a not uncommon condition.", "[Nastier Special] Group Gibbering: The derro sage starts a group of derro gibbering as a quick action. It can maintain the gibber as a free action at the start of each turn by taking 1 damage. Each nearby non-derro creature that hears the gibber must roll a D6 at the start of its turn and takes psychic damage equal to the die roll or to the number of gibbering derro, whichever is lower."],
+            isStaggered: false,
+            id: 29
         }
 
 ]
