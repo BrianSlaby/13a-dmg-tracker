@@ -185,6 +185,13 @@ header {
     border-radius: 0 0 7px 7px;
 }
 
+.mook-container {
+    text-align: left;
+    border-top: solid 1px #1f1e1e;
+    margin-top: 0.5em;
+    padding-top: 0.4em;
+}
+
 .staggered {
     color: crimson;
 }
@@ -262,7 +269,8 @@ header {
 /*       INPUTS       */
 /* ===================*/
 
-.dmg-input {
+.dmg-input,
+.mooks-input {
     font-size: 1.125rem;
     padding: 0.2em;
     max-width: 75px;
