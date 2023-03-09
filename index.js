@@ -38,9 +38,15 @@ document.addEventListener("click", function(e) {
     }
 })
 
+document.addEventListener("change", function(e) {
+    if (e.target.dataset.level) {
+        render()
+    }
+})
+
 // ========================
 //    GENERAL FUNCTIONS
-// ========================
+// ======================== 
 
 function handleDamageClick(monsterCardId) {
     const index = monsterCardId
@@ -65,8 +71,28 @@ function checkStaggeredClass(index) {
     }
 }
 
-// build filterMonsterData function here for checkboxes
+function filterMonsterData() {
+    let filteredMonsterData = []
+    let selectedLevels = checkMonsterLevels()
+    monsterData.forEach(function(monster) {
+        if (selectedLevels.includes(monster.level.toString())) {
+            filteredMonsterData.push(monster)
+        }
+    })
 
+    return filteredMonsterData.sort((a, b) => (a.name > b.name) ? 1 : -1)
+}
+
+function checkMonsterLevels() {
+    let levelCheckboxes = document.querySelectorAll(".level-check")
+    let selectedLevels = []
+    levelCheckboxes.forEach(function(box) {
+        if (box.checked) {
+            selectedLevels.push(box.dataset.level)
+        }
+    })
+    return selectedLevels
+}
 
 // ========================
 //     HTML FUNCTIONS
@@ -77,9 +103,10 @@ function getMonsterDropdownHtml () {
     let monsterDropdownHtml = `
     <option value="">Please Select a Monster</option>
     `
-    // build a function that defines a filteredMonsterData variable limited to checkboxes checked, and sorts alphabetically.  Call it here.  Include level 0 monsters in the level 1 checkbox, and 10 will cover anything 10 or higher.  const filteredMonsterData = filterMonsterData()
+    
+    const filteredMonsterData = filterMonsterData()
 
-    monsterData.forEach(function(monster) {
+    filteredMonsterData.forEach(function(monster) {
         monsterDropdownHtml += `
         <option value="${monster.name}">${monster.name}, Level ${monster.level} ${monster.type}</option>
         `
