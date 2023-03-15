@@ -737,6 +737,87 @@ const monsterData = [
             abilities: ["None"],
             isStaggered: false,
             id: 45
+        },
+
+        {
+            name: "Ettin",
+            level: 5,
+            type: "troop (large)",
+            initiative: "+9",
+            ac: 21,
+            pd: 18,
+            md: 14,
+            hp: 160,
+            health: 160,
+            attacks: ["First Big Swing +10 vs AC - 25 damage, and the target pops free from the ettin; then, as a free action, the ettin can move (or choose not to move) and make a second swing attack.", "[special trigger] Second Swing +10 vs AC (different target from first big swing) - 15 damage"],
+            abilities: ["Two-headed Save: If an ettin's first save against an effect fails, it can roll a second save.", "[Nastier Special] Big Bully: The ettin deals double damage with its attacks against staggered enemies.", "Escalating Agreement: If the escalation die is 3+, the ettin can target two engaged enemies with its first big swing attack."],
+            isStaggered: false,
+            id: 46
+        },
+
+        {
+            name: "Gargoyle",
+            level: 5,
+            type: "troop",
+            initiative: "+4",
+            ac: 24,
+            pd: 21,
+            md: 14,
+            hp: 60,
+            health: 60,
+            attacks: ["Furious Claws and Fangs +9 vs AC - 9 damage. Natural 11+: The gargoyle can make two more melee attacks as a free action (but never more than 3 total attacks per standard action, even if you roll another 11+)."],
+            abilities: ["Flight: Gargoyles can fly, but not very well. They would rather crawl or climb.", "[Nastier Special] Rocky Hide: The gargoyle has resist damage 12+ against attacks targeting AC.", "[Nastier Special] Statues, Statues, Everywhere: Because they often look like statues, gargoyles are capable of springing a surprise on inattentive PCs. When there's a chance of such an ambush, give the PCs a champion-tier skill check (usually DC 20) to notice the gargoyles and avoid being surprised (see pagee 164 of core rules)."],
+            isStaggered: false,
+            id: 47
+        },
+
+        {
+            name: "Ghoul",
+            level: 3,
+            type: "spoiler",
+            initiative: "+8",
+            ac: 18,
+            pd: 16,
+            md: 12,
+            hp: 36,
+            health: 36,
+            attacks: ["Claws and Bite +8 vs AC - 8 damage. Natural Even Hit: The target is vulnerable to attacks by undead until the end of the ghoul's next turn."],
+            abilities: ["Vulnerability: Holy", "Pound of Flesh: The ghoul's claws and bite attack deals +4 damage against vulnerable targets.", "Infected Bite: Any creature that is slain by a ghoul and not consumed will rise as a ghoul the next night.", "[Nastier Special] Paralyzing Bite: When the ghoul hits a vulnerable target with a natural even attack roll, the target is also stunned (save ends)."],
+            isStaggered: false,
+            id: 48
+        },
+
+        {
+            name: "Newly-risen Ghoul",
+            level: 2,
+            type: "mook",
+            mookNumber: 1,
+            initiative: "+5",
+            ac: 17,
+            pd: 15,
+            md: 11,
+            hp: 9,
+            health: 9,
+            attacks: ["Scrabbling Claws +7 vs AC - 3 damage. Natural 16+: The target is vulnerable to attacks by undead until the end of the ghoul's next turn."],
+            abilities: ["Vulnerability: Holy", "Pound of Flesh: The newly-risen ghoul's scrabbling claws attack deals +2 damage against vulnerable targets."],
+            isStaggered: false,
+            id: 49
+        },
+
+        {
+            name: "Hill Giant",
+            level: 6,
+            type: "troop (large)",
+            initiative: "+8",
+            ac: 20,
+            pd: 20,
+            md: 14,
+            hp: 200,
+            health: 200,
+            attacks: ["Massive Gnarly Club +10 vs AC - 45 damage. Miss that's a natural 6+: Half damage (sometimes close is good enough).", "R: Two-handed Boulder Throw +8 vs PD - 35 damage."],
+            abilities: ["[Nastier Special] Big Bully: The giant deals double damage with its attacks against staggered targets."],
+            isStaggered: false,
+            id: 50
         }
 
 ]
