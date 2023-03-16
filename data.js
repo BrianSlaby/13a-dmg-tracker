@@ -818,6 +818,198 @@ const monsterData = [
             abilities: ["[Nastier Special] Big Bully: The giant deals double damage with its attacks against staggered targets."],
             isStaggered: false,
             id: 50
+        },
+
+        {
+            name: "Frost Giant",
+            level: 7,
+            type: "spoiler (large)",
+            initiative: "+10",
+            ac: 23,
+            pd: 22,
+            md: 17,
+            hp: 210,
+            health: 210,
+            attacks: ["Ice-covered War Axe +12 vs AC - 45 damage. Natural Even Hit or Miss: The giant can make a frost touch attack against the target as a free action.", "[special trigger] Frost Touch +11 vs PD - 10 cold damage, and the target is hampered until the end of its next turn.", "R: Large Rock or Iceball +11 vs PD (one nearby target or far away target at -2 attack) - 35 damage", "[Nastier Special] Slam +10 vs PD (one enemy smaller than it) - 20 damage, the target pops free from the giant, and the target loses its next move action."],
+            abilities: ["Vulnerability: Fire", "Resist Cold 16+", "Ancient Cold: While battling one or more frost giants, there is only a 50% chance that the escalation die increases at the start of the round.", "[Nastier Special] Strength of Giants: Twice per battle, the giant can make a slam attack as a quick action (once per round)."],
+            isStaggered: false,
+            id: 51
+        },
+
+        {
+            name: "Stone Giant",
+            level: 8,
+            type: "troop (large)",
+            initiative: "+11",
+            ac: 24,
+            pd: 22,
+            md: 18,
+            hp: 270,
+            health: 270,
+            attacks: ["Stone Club +13 vs AC - 50 damage. Natural Even Hit or Miss: The stone giant can also make a stomp attack against a single target as a free action.", "Stomp +13 vs PD (each smaller enemy engaged with the giant) - 30 damage, and the target is dazed (save ends).", "R: Thrown Boulder +11 vs PD (one nearby or far away enemy) - 40 damage. Natural Even Miss: 20 damage."],
+            abilities: ["Built of Stone: The stone giant has resist weapons 16+."],
+            isStaggered: false,
+            id: 52
+        },
+
+        {
+            name: "Fire Giant",
+            level: 8,
+            type: "wrecker (large)",
+            initiative: "+12",
+            ac: 25,
+            pd: 21,
+            md: 17,
+            hp: 285,
+            health: 285,
+            attacks: ["Flaming Greatsword +13 vs AC (2 attacks) - 35 damage. Natural Even Hit or Miss: The target also takes 10 ongoing fire damage.", "R: Flaming Black-iron Javelin +11 vs AC - 40 damage. Natural Even Hit or Miss: The target also takes 10 ongoing fire damage.", "[Nastier Special] Slam +12 vs PD (one enemy smaller than it) - 10 damage, the target pops free from the giant, and the target loses its next move action."],
+            abilities: ["Vulnerability: Cold", "Resist Fire 16+", "Fiery Escalator: The fire giant adds the escalation die to its attacks against targets taking ongoing fire damage.", "[Nastier Special] Burning Blood: When a fire giant becomes staggered, it deals 10 ongoing fire damage to each enemy engaged with it.", "[Nastier Special] Strength of Giants: Twice per battle, the giant can make a slam attack as a quick action (once per round)."],
+            isStaggered: false,
+            id: 53
+        },
+
+        {
+            name: "Fire Giant Warlord",
+            level: 9,
+            type: "leader (large)",
+            initiative: "+14",
+            ac: 26,
+            pd: 22,
+            md: 18,
+            hp: 355,
+            health: 355,
+            attacks: ["Flaming Greatsword +15 vs AC (2 attacks) - 40 damage. Natural Even Hit or Miss: The target also takes 10 ongoing fire damage.", "Massive Strike +15 vs AC - 90 damage, and 10 ongoing fire damage."],
+            abilities: ["Vulnerability: Cold", "Resist Fire 16+", "Fiery Escalator: The fire giant warlord adds the escalation die to its attacks against targets taking ongoing fire damage.", "Warlord of Fire: As a standard action, the warlord can command one nearby ally that has resistance to fire to make a melee attack as a free action.", "[Nastier Special] Unquenchable Fires: Enemies engaged with the fire giant warlord take a -5 penalty to saves against ongoing fire damage."],
+            isStaggered: false,
+            id: 54
+        },
+
+        {
+            name: "Storm Giant",
+            level: 10,
+            type: "archer (huge)",
+            initiative: "+16",
+            ac: 26,
+            pd: 24,
+            md: 22,
+            hp: 650,
+            health: 650,
+            attacks: ["Truly Enormous Greatsword +15 vs AC - 120 damage. Natural Even Hit or Miss: The giant can make a lightning bolt attack against a random nearby enemy as a free action. Miss: 40 damage, OR the giant can make a release the thunder attack as a free action.", "R: Giant Longbow +14 vs AC (2 attacks vs nearby or far away enemies) - 60 damage. Natural Even Hit: The giant can make a lightning bolt attack against a random enemy that is nearby the target of the longbow attack.", "[special trigger] C: Lightning Bolt +15 vs PD (one random nearby enemy) - 2D6 x 10 lightning damage. Miss: Half Damage.", "[special trigger] C: Release the Thunder +15 vs PD (all nearby creatures) - 1D10 thunder damage per building thunder point (see below). Miss: Half Damage."],
+            abilities: ["Storm Born: The storm giant has resist thunder 16+ and resist lightning 16+", "Building Thunder: Keep count of the number of times the storm giant uses its lightning bolt attack during the battle. Add that number to the escalation die to get the current building thunder value.", "Skystep: A storm giant can use its standard action to walk or run through air, using move actions to continue. If the storm giant makes a standard action attack, it settles back to the ground below it without falling."],
+            isStaggered: false,
+            id: 55
+        },
+
+        {
+            name: "Gnoll Savage",
+            level: 3,
+            type: "troop",
+            initiative: "+7",
+            ac: 19,
+            pd: 16,
+            md: 13,
+            hp: 42,
+            health: 42,
+            attacks: ["Spear +7 vs AC - 10 damage. Pack Ferocity: If more than one gnoll is engaged with the target, each gnoll melee attack that misses that target deals half damage.", "R: Thrown Spear +6 vs AC - 8 damage"],
+            abilities: ["[Nastier Special] Blood Fury: +1D10 melee damage if the gnoll or its target is staggered."],
+            isStaggered: false,
+            id: 56
+        },
+
+        {
+            name: "Gnoll Ranger",
+            level: 3,
+            type: "archer",
+            initiative: "+9",
+            ac: 18,
+            pd: 17,
+            md: 14,
+            hp: 46,
+            health: 46,
+            attacks: ["Hand Axes +6 vs AC (2 attacks) - 6 damage. Pack Ferocity: If more than one gnoll is engaged with the target, each gnoll melee attack that misses that target deals half damage.", "R: Longbow +8 vs AC - 8 damage. Natural Even Hit or Miss: The gnoll can make a second longbow attack (no more) as a free action."],
+            abilities: ["Quick Shot: When the gnoll ranger is unengaged and an enemy moves to engage it, roll a D20. On an 11+, the gnoll ranger can make a longbow attack against that enemy as a free action just before being engaged.", "[Nastier Special] Hates Everyone: The crit range of attacks by gnoll rangers expands by 2 against humanoids.", "[Nastier Special] Blood Fury: +1D10 melee damage if the gnoll or its target is staggered."],
+            isStaggered: false,
+            id: 57
+        },
+
+        {
+            name: "Gnoll War Leader",
+            level: 4,
+            type: "leader",
+            initiative: "+8",
+            ac: 20,
+            pd: 17,
+            md: 14,
+            hp: 56,
+            health: 56,
+            attacks: ["Heavy Flail +9 vs AC - 14 damage. Natural Even Hit or Miss: The target is marked for death; until the end of the battle, all gnoll attacks against the target gain an attack bonus equal to the escalation die.  Pack Ferocity: If more than one gnoll is engaged with the target, each gnoll melee attack that misses that target deals half damage."],
+            abilities: ["[Nastier Special] Blood Fury: +1D10 melee damage if the gnoll or its target is staggered."],
+            isStaggered: false,
+            id: 58
+        },
+
+        {
+            name: "Bugbear",
+            level: 3,
+            type: "troop",
+            initiative: "+6",
+            ac: 19,
+            pd: 17,
+            md: 12,
+            hp: 55,
+            health: 55,
+            attacks: ["Oversized Weapon +8 vs AC - 10 damage. Natural Even Hit: The attack deals +5 damage. Miss: If the target is engaged with two or more foes, it takes 1D8 damage."],
+            abilities: ["None"],
+            isStaggered: false,
+            id: 59
+        },
+
+        {
+            name: "Hobgoblin Warrior",
+            level: 2,
+            type: "troop",
+            initiative: "+3",
+            ac: 19,
+            pd: 14,
+            md: 14,
+            hp: 32,
+            health: 32,
+            attacks: ["Longsword +7 vs AC - 8 damage. Natural Even Miss: 2 damage."],
+            abilities: ["Group Ability: For every 2 hobgoblins in the battle (round up, ignore mooks), one of them can use well-armored as a free action once during the battle.", "Well-armored (group): Ignore all damage from a hit (but not a crit) against AC."],
+            isStaggered: false,
+            id: 60
+        },
+
+        {
+            name: "Hobgoblin Captain",
+            level: 4,
+            type: "leader",
+            initiative: "+5",
+            ac: 20,
+            pd: 17,
+            md: 14,
+            hp: 50,
+            health: 50,
+            attacks: ["Longsword +10 vs AC - 14 damage, and willing underling triggers. Willing Underling: Until the start of its next turn, the first time an attack would hit the hobgoblin captain, it can partially avoid that attack if it has a nearby goblin ally. It only takes half damage from the attack, and that ally takes the rest.", "R: Throwing Axe +8 vs AC - 10 damage"],
+            abilities: ["Group Ability: For every 2 hobgoblins in the battle (round up, ignore mooks), one of them can use well-armored as a free action once during the battle.", "Well-armored (group): Ignore all damage from a hit (but not a crit) against AC."],
+            isStaggered: false,
+            id: 61
+        },
+
+        {
+            name: "Hobgoblin Warmage",
+            level: 5,
+            type: "caster",
+            initiative: "+6",
+            ac: 20,
+            pd: 14,
+            md: 19,
+            hp: 70,
+            health: 70,
+            attacks: ["Warstaff +8 vs AC - 15 damage", "R: Fireblast +10 vs PD (up to 2 nearby enemies in a group) - 10 fire damage (or 20 if used against a single target), and the target loses its next move action.", "C: Concussive Blast +10 vs PD (all enemies engaged with the warmage) - 10 force damage, and the warmage pops the target off of it. Natural 20: The target is also dazed (save ends)."],
+            abilities: ["None"],
+            isStaggered: false,
+            id: 62
         }
 
 ]
