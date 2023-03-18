@@ -1010,7 +1010,280 @@ const monsterData = [
             abilities: ["None"],
             isStaggered: false,
             id: 62
-        }
+        },
+
+        {
+            name: "Flesh Golem",
+            level: 4,
+            type: "blocker (large)",
+            initiative: "+5",
+            ac: 18,
+            pd: 16,
+            md: 14,
+            hp: 100,
+            health: 100,
+            attacks: ["Sweeping Fists +9 vs AC (2 attacks) - 15 damage", "Maddened Battlefield Repairs +11 vs AC (one staggered living enemy)- 20 damage, and the flesh golem heals 2D10 hit points. Miss: 10 damage, and the flesh golem heals 1D10 hit points. Limited Use: The flesh golem can only use this attack while it's staggered."],
+            abilities: ["Energy Magnet: Whenever a spell that causes cold, fire, force, lightning, or negative energy damage targets one of the flesh golem's nearby allies, the flesh golem has a 50% chance of becoming the main target instead. Therefore, spells that affect groups would spread out from the flesh golem.", "Weakness of the Flesh: Unlike other golems, flesh golems are not immune to effects. Being constructed from the flesh of many, sometimes bloodily stitched together in the heat of battle, allows the golems to be affected by the fears and madness of mortals."],
+            isStaggered: false,
+            id: 63
+        },
+
+        {
+            name: "Clay Golem",
+            level: 6,
+            type: "spoiler (large)",
+            initiative: "+6",
+            ac: 20,
+            pd: 18,
+            md: 14,
+            hp: 120,
+            health: 120,
+            attacks: ["Bare Brutal Hands +10 vs AC - 36 damage. Cursed Wound: a non-dwarf creature damaged by a clay golem can't be healed to above half its maximum HP until after the battle."],
+            abilities: ["Golem Immunity: Non-organic golems are immune to effects. They can't be dazed, weakened, confused, made vulnerable, or touched by ongoing damage. You can damage a golem, but that's about it.", "Ignore Attacks 11+: When an attack hits this creature, the attacker must roll a natural 11+ on the attack roll or it misses instead. That's ALL attacks."],
+            isStaggered: false,
+            id: 64
+        },
+
+        {
+            name: "Stone Golem",
+            level: 8,
+            type: "blocker (large)",
+            initiative: "+11",
+            ac: 25,
+            pd: 23,
+            md: 18,
+            hp: 280,
+            health: 280,
+            attacks: ["Massive Stone Fists +12 vs AC (2 attacks) - 35 damage. Miss: 15 damage.", "Finishing Smash +14 vs AC (one staggered enemy) - 80 damage, and the golem pops the target off it and moves it a short distance away from the golem. Natural Even Hit or Miss: 20 damage, and the target is hampered (save ends). Natural Odd Hit or Miss: 20 damage, and the target is dazed (save ends)."],
+            abilities: ["Golem Immunity: Non-organic golems are immune to effects. They can't be dazed, weakened, confused, made vulnerable, or touched by ongoing damage. You can damage a golem, but that's about it.", "[Nastier Special] Former Idol: Evoke the powers of an ancient culture's strange rites by giving the stone golem any weird power you wish. If you're stuck for inspiration, consider starting with random abilities from demons that aren't related to energy or the cone of cold from the ogre mage."],
+            isStaggered: false,
+            id: 65
+        },
+
+        {
+            name: "Iron Golem",
+            level: 10,
+            type: "wrecker (large)",
+            initiative: "+13",
+            ac: 28,
+            pd: 24,
+            md: 20,
+            hp: 360,
+            health: 360,
+            attacks: ["Fists of Iron +17 vs AC (2 attacks) - 50 damage. Miss: 5D10 damage.", "[Nastier Special - special trigger] C: Poison Gas Cloud +15 vs PD (all nearby creatures) - 25 ongoing poison damage. "],
+            abilities: ["Golem Immunity: Non-organic golems are immune to effects. They can't be dazed, weakened, confused, made vulnerable, or touched by ongoing damage. You can damage a golem, but that's about it.", "Rampage: At the start of each of the iron golem's turns, roll a D6. If the roll is equal to or less than the escalation die, the iron golem goes on a rampage that turn. Instead of its two normal fists of iron attacks, it can make three attacks with fists of iron, each against a different random nearby creature, enemy or ally. It can move after each such attack as a free action, if necessary, taking only half damage from opportunity attacks during the rampage.", "[Nastier Specials] Poison Gas: The first time the iron golem is staggered, poison gas leakes from it into the area. It can make ea poison gas cloud attack as a freee action."],
+            isStaggered: false,
+            id: 66
+        },
+
+        {
+            name: "Half-orc Legionnaire",
+            level: 4,
+            type: "troop",
+            initiative: "+8",
+            ac: 20,
+            pd: 18,
+            md: 14,
+            hp: 56,
+            health: 56,
+            attacks: ["Longsword +10 vs AC - 12 damage. Natural Even Hit: The half-orc legionnaire gains a +2 bonus to all defenses until the start of its next turn. Natural Odd Hit: The target takes +1D6 damage. Natural Even Miss: 4 damage. Natural Odd Miss: If the legionnaire's next melee attack is a natural even hit, it becomes a critical hit instead!", "R: Javelin +10 vs AC - 10 damage."],
+            abilities: ["[Nastier Special] Lethal Swing: Once per battle, a half-orc can reroll a melee attack and use the result it prefers."],
+            isStaggered: false,
+            id: 67
+        },
+
+        {
+            name: "Half-orc Tribal Champion",
+            level: 5,
+            type: "wrecker",
+            initiative: "+9",
+            ac: 19,
+            pd: 18,
+            md: 17,
+            hp: 80,
+            health: 80,
+            attacks: ["Great Axe +9 vs AC - 18 damage. Natural Odd Miss: The tribal champion heals 5 HP. Natural Even Miss: 10 damage.", "R: Longbow +8 vs AC - 12 damage"],
+            abilities: ["Tribal Rage: When the escalation die is even, a tribal champion can roll 2D20 for each melee attack roll it makes and use the result it prefers. If both dice are 11+, the melee attack is a critical hit.", "[Nastier Special] Lethal Swing: Once per battle, a half-orc can reroll a melee attack and use the result it prefers."],
+            isStaggered: false,
+            id: 68
+        },
+
+        {
+            name: "Half-orc Commander",
+            level: 8,
+            type: "leader",
+            initiative: "+13",
+            ac: 23,
+            pd: 22,
+            md: 18,
+            hp: 150,
+            health: 150,
+            attacks: ["Jagged Longsword + 15 vs AC (2 attacks) - 15 damage. Natural Even Hit: One nearby lower-level mook makes an attack as a free action.", "R: Thrown Javelin +13 vs AC - 20 damage. Natural Even Hit: The half-orc commander gains 20 temporary HP."],
+            abilities: ["Orcish Command: When a nearby ally of the half-orc commander scores a critical hit, that ally can roll a save against a save ends effect as a free action.", "[Nastier Special] Lethal Swing: Once per battle, a half-orc can reroll a melee attack and use the result it prefers."],
+            isStaggered: false,
+            id: 69
+        },
+
+        {
+            name: "Hellhound",
+            level: 3,
+            type: "wrecker",
+            initiative: "+5",
+            ac: 18,
+            pd: 16,
+            md: 11,
+            hp: 58,
+            health: 58,
+            attacks: ["Savage Bite +9 vs AC - 7 damage. Natural Even Hit or Miss: The hellhound can make a fiery breath attack as a free action.", "[special trigger] C: Fiery Breath +9 vs PD (1D3 nearby enemies in a group) - 10 fire damage."],
+            abilities: ["Resist Fire 16+", "[Nastier Special] Fiery Aura: Each creature engaged with a hellhound at the start of its turn takes 2D6 fire damage."],
+            isStaggered: false,
+            id: 70
+        },
+
+        {
+            name: "Harpy",
+            level: 4,
+            type: "spoiler",
+            initiative: "+7",
+            ac: 18,
+            pd: 14,
+            md: 17,
+            hp: 44,
+            health: 44,
+            attacks: ["Talons +6 vs AC - 10 damage. Cull: The harpy gains a +5 bonus to attack and damage with this attack against any enemy suffering from any fiendish song effect.", "C: Fiendish Song +10 vs MD (1D3 nearby enemies) - 5 psychic damage. Natural 16-17: The target is hampered (easy save ends). Natural 18-19: The target is weakened instead of hampered (easy save ends). Natural 20: The target is confused instead of weakened (easy save ends)."],
+            abilities: ["Flight: Harpies are neither quick nor graceful, but their wings get the job done."],
+            isStaggered: false,
+            id: 71
+        },
+
+        {
+            name: "Human Thug",
+            level: 1,
+            type: "troop",
+            initiative: "+3",
+            ac: 17,
+            pd: 14,
+            md: 12,
+            hp: 27,
+            health: 27,
+            attacks: ["Heavy Mace +5 vs AC - 4 damage. Natural Even Hit or Miss: The thug deals +6 damage with its next attack this battle (be sure to let the PCs know this is coming)."],
+            abilities: ["None"],
+            isStaggered: false,
+            id: 72
+        },
+
+        {
+            name: "Demon-touched Human Ranger",
+            level: 5,
+            type: "archer",
+            initiative: "+10",
+            ac: 21,
+            pd: 14,
+            md: 19,
+            hp: 80,
+            health: 80,
+            attacks: ["M or R: Demon Bow +10 vs AC - 15 damage, and the target is dazed until it pulls the arrow out using a quick action, which deals 10 ongoing damage. Natural Odd Hit or Miss: The demon bow eats at the ranger's arm and the ranger takes 1D6 damage."],
+            abilities: ["Bow Teeth: Whenever an attacker hits the ranger with a melee attack, that creature takes 1D6 damage as the bow chews on it."],
+            isStaggered: false,
+            id: 73
+        },
+
+        {
+            name: "Hungry Star",
+            level: 3,
+            type: "wrecker",
+            initiative: "+8",
+            ac: 16,
+            pd: 12,
+            md: 15,
+            hp: 54,
+            health: 54,
+            attacks: ["Ripping Tentacles +8 vs AC - 10 damage. Natural Even Hit: If the target is taking ongoing psychic damage, the attack deals +2D6 damage.", "[group ability] R: Warp-pulse +8 vs PD (1D3 enemies in a group) - 5 ongoing psychic damage. Natural 16-18: While the target is taking ongoing psychic damage, it is dazed. Natural 19-20: While the target is taking ongoing psychic damage, it is confused instead of dazed."],
+            abilities: ["Group Ability: For every 2 hungry stars in the battle (round up), one of them can use warp-pulse once during the battle.", "Limited Flight: Hungry stars flap and glide and hover, always within seven or eight feet of the ground. No one knows how that works."],
+            isStaggered: false,
+            id: 74
+        },
+
+        {
+            name: "Five-Headed Hydra",
+            level: 5,
+            type: "wrecker (huge)",
+            initiative: "+9",
+            ac: 20,
+            pd: 19,
+            md: 15,
+            hp: 150,
+            health: 150,
+            attacks: ["Gnashing Teeth +10 vs AC (5 attacks) - 10 damage. Natural Even Hit or Miss: The hydra's next gnashing teeth attack, if it has an attack left this turn, can be against any nearby enemy instead of against a creature engaged with it. Miss: 5 damage."],
+            abilities: ["Too Tough to Trick: Whenever the hydra would suffer any of the follow conditions, it ignores the condition and takes 5 damage instead: confused, dazed, hampered, stunned, or weakened.", "Roiling Swirl: If the hydra has at least two gnashing teeth attacks left during a turn, it can expend one of those attacks to move to engage a nearby enemy as a free action (but it will still take opportunity attacks for doing so).", "Sprout Sixth Head: The first time the hydra is staggered, as a free action it gains 40 HP and a sixth gnashing teeth attack, and is considered undamaged at its new HP total. Using the hydra's current HP as a new baseline, the hydra will be staggered again when it drops below 50% of that total.", "Sprout Seventh Head: The second time the hydra is staggered, as a free action it gains 40 HP and a seventh gnashing teeth attack, etc. Use a new HP baseline as before, but there is no eighth head waiting to sprout.", "[Nastier Special] Sprout Eighth Head: You know the drill."],
+            isStaggered: false,
+            id: 75
+        },
+
+        {
+            name: "Seven-Headed Hydra",
+            level: 7,
+            type: "wrecker (huge)",
+            initiative: "+11",
+            ac: 24,
+            pd: 21,
+            md: 17,
+            hp: 200,
+            health: 200,
+            attacks: ["Gnashing Teeth +12 vs AC (7 attacks) - 12 damage. Natural Even Hit or Miss: The hydra's next gnashing teeth attack, if it has an attack left this turn, can be against any nearby enemy instead of against a creature engaged with it. Miss: 7 damage.", "[Nastier Special - special trigger] C: Flame Breath +12 vs PD (1D2 nearby enemies) - 2D12 fire damage. Miss: Half damage."],
+            abilities: ["Sprout Eighth Head: The first time the hydra is staggered, as a free action it gains 50 HP and an eighth gnashing teeth attack, and is considered undamaged at its new HP total. Using the hydra's current HP as a new baseline, the hydra will be staggered again when it drops below 50% of that total.", "Sprout Ninth Head: The second time the hydra is staggered, as a free action it gains 50 HP and a ninth gnashing teeth attack, and is considered undamaged at its new HP total. Using the hydra's current HP as a new baseline, the hydra will be staggered again when it drops below 50% of that total.", "Resist Opportunity Attacks 16+.", "[Nastier Special] Pyrohydra: When the hydra gets a natural even attack roll with a gnashing teeth attack, its next attack that turn (if it has one) is a flame breath attack instead. Note that flame breath attacks don't lead to other flaming breaths; they hydra has to return to making gnashing teeth attacks first."],
+            isStaggered: false,
+            id: 76
+        },
+
+        {
+            name: "Kobold Archer",
+            level: 1,
+            type: "mook",
+            mookNumber: 1,
+            initiative: "+4",
+            ac: 16,
+            pd: 14,
+            md: 10,
+            hp: 6,
+            health: 6,
+            attacks: ["Simple Knife +6 vs AC - 3 damage", "R: Tiny Crossbow or Javelin +7 vs AC - 3 damage"],
+            abilities: ["Evasive: Kobolds take no damage from missed attacks.", "Split Off: When one of the kobold's allies engages a creature engaged with the kobold, the kobold can pop free as a free action."],
+            isStaggered: false,
+            id: 77
+        },
+
+        {
+            name: "Kobold Warrior",
+            level: 1,
+            type: "troop",
+            initiative: "+4",
+            ac: 18,
+            pd: 15,
+            md: 12,
+            hp: 22,
+            health: 22,
+            attacks: ["Spear +8 vs AC - 4 damage. Natural Even Hit or Miss: The kobold warrior can pop free from the target."],
+            abilities: ["Evasive: Kobolds take no damage from missed attacks.", "Not Brave: Kobold warriors with single digit HP will run away at the first chance they get."],
+            isStaggered: false,
+            id: 78
+        },
+        
+        {
+            name: "Kobold Hero",
+            level: 2,
+            type: "leader",
+            initiative: "+3",
+            ac: 18,
+            pd: 16,
+            md: 12,
+            hp: 34,
+            health: 34,
+            attacks: ["Shortsword +7 vs AC - 6 damage, and each nearby non-leader kobold deals +3 damage with its next attack this battle that hits. Natural Even Miss: 3 damage."],
+            abilities: ["Evasive: Kobolds take no damage from missed attacks."],
+            isStaggered: false,
+            id: 79
+        }     
 
 ]
 
