@@ -1283,7 +1283,249 @@ const monsterData = [
             abilities: ["Evasive: Kobolds take no damage from missed attacks."],
             isStaggered: false,
             id: 79
-        }     
+        },
+
+        {
+            name: "Lizardman Savage",
+            level: 2,
+            type: "wrecker",
+            initiative: "+6",
+            ac: 17,
+            pd: 16,
+            md: 12,
+            hp: 32,
+            health: 32,
+            attacks: ["Stone-tip Spear (or Club) +7 vs AC - 7 damage. Natural 16+: The lizardman savage can make a bite attack against the target or another creature engaged with it as a free action.", "[special trigger] Bite +7 vs AC - 5 damage, and the lizardman savage can make a ripping frenzy attack against the target as a standard action during its next turn if it's engaged with that target.", "[special trigger] Ripping Frenzy +9 vs AC (3 attacks) - 5 damage.", "R: Thrown Spear +6 vs AC - 5 damage"],
+            abilities: ["None"],
+            isStaggered: false,
+            id: 80
+        },
+
+        {
+            name: "Manticore",
+            level: 6,
+            type: "archer (large)",
+            initiative: "+13",
+            ac: 22,
+            pd: 20,
+            md: 16,
+            hp: 182,
+            health: 182,
+            attacks: ["Battering Paws +11 vs AC (2 attacks) - 20 damage. Natural 16+: The manticore can make a single volley of tail spikes attack (one attack roll) against a different target as a free action.", "Crushing Leonine Jaws +11 vs AC - 30 damage; OR 50 damage against a creature taking ongoing poison damage.", "C: Volley of Tail Spikes +13 vs AC (1D3 nearby or far away enemies in a group) - 5 ongoing poison damage (hard save ends)."],
+            abilities: ["Flight: Manticores are poor fliers in tight spaces, but out in the open they are more capable.", "Poison Reservoirs: Each time the manticore uses its volley of tail spikes attack, it takes 1D6 damage, or 2D6 damage if it is staggered."],
+            isStaggered: false,
+            id: 81
+        },
+
+        {
+            name: "Medusa Outlaw",
+            level: 6,
+            type: "wrecker (double-strength)",
+            initiative: "+11",
+            ac: 22,
+            pd: 16,
+            md: 20,
+            hp: 150,
+            health: 150,
+            attacks: ["Snakes and Daggers +11 vs AC (2 attacks) - 10 damage, and 10 ongoing poison damage. Natural 18+: The medusa can make a petrifying gaze attack against the target as a free action.", "R: Poison Arrow +11 vs AC (one nearby or far away enemy) - 15 damage, and 10 ongoing poison damage. Natural 20: The medusa can make a petrifying gaze attack against the target as a free action.", "[special trigger] C: Petrifying Gaze +11 vs MD (one enemy) - 20 psychic damage, and the target must start making last gasp saves as it turns to stone."],
+            abilities: ["Caught by an Eye: Whenever a nearby enemy attacks the medusa outlaw and rolls a natural 1 or 2, the medusa can make a petrifying gaze attack against that attacker as a free action.", "Escalating Threat: At the start of each of the medusa's turns, roll a D4. If you roll less than or equal to the escalation die, the medusa can also use petrifying gaze as a quick action once during that turn."],
+            isStaggered: false,
+            id: 82
+        },
+
+        {
+            name: "Medusa Noble",
+            level: 11,
+            type: "caster (double-strength)",
+            initiative: "+17",
+            ac: 27,
+            pd: 21,
+            md: 25,
+            hp: 500,
+            health: 500,
+            attacks: ["Snakes and Swords +17 vs AC (3 attacks) - 30 damage, and 15 ongoing poison damage. Natural 18+: The medusa can make a petrifying gaze attack against the target as a free action.", "R: Lightning Fork +17 vs PD (one nearby or far away enemy) - 80 lightning damage. Natural Odd Hit or Miss: The medusa deals 1D6 x 10 lightning damage to all nearby enemies. Natural Even Hit or Miss: The medusa can make a lightning fork attack against a different target as a free action; keep making lightning fork attacks until you run out of targets that have taken damage from lightning fork or roll a natural odd attack.", "[special trigger] C: Petrifying Gaze +17 vs MD (one enemy) - 70 psychic damage, and the target must start making last gasp saves as it turns to stone."],
+            abilities: ["Caught by an Eye: Whenever a nearby enemy attacks the medusa noble and rolls a natural 1-5, the medusa can make a petrifying gaze attack against that attacker as a free action.", "Serpent Wardings: Thrice per battle, as a free action, the medusa noble can force an enemy to reroll a spell attack that targeted it. The attacker can't use the escalation die for the reroll.", "Skilled Sorcerer: If lightning isn't working against her target, the medusa noble can take a -2 attack penalty to change the energy type of her ranged attack to fire or thunder."],
+            isStaggered: false,
+            id: 83
+        },
+
+        {
+            name: "Minotaur",
+            level: 4,
+            type: "troop (large)",
+            initiative: "+8",
+            ac: 19,
+            pd: 17,
+            md: 13,
+            hp: 94,
+            health: 94,
+            attacks: ["Axe or Horns +9 vs AC - 27 damage, and one of the minotaur's allies can pop free from the target as a free action. Furious Charge: The attack instead deals 40 damage on a hit if the minotaur first moves before attacking an enemy it was not engaged with at the start of its turn."],
+            abilities: ["Blood Frenzy: Minotaurs gain a +4 melee attack bonus against staggered enemies.", "[Nastier Special] Durable: The first time each round the minotaur takes damage, prevent 2D6 of it.", "[Nastier Special] Fear: While engaged with this creature, enemies that have 24 HP or fewer are dazed and do not add the escalation die to their attacks."],
+            isStaggered: false,
+            id: 84
+        },
+
+        {
+            name: "Ogre",
+            level: 3,
+            type: "troop (large)",
+            initiative: "+5",
+            ac: 19,
+            pd: 16,
+            md: 12,
+            hp: 90,
+            health: 90,
+            attacks: ["Big Honkin' Club +7 vs AC - 18 damage. Miss: Half damage.", "Big Shove +9 vs PD (each enemy engaged with ogre) - 1D6 damage, and the target pops free from the ogre. Quick use: This power only requires a quick action (once per round) instead of a standard action when the escalation die is even."],
+            abilities: ["[Nastier Special] Tough Skin: Whenever the ogre takes weapon damage, reduce that damage by 1D8 points."],
+            isStaggered: false,
+            id: 85
+        },
+
+        {
+            name: "Ogre Mage",
+            level: 7,
+            type: "caster (large)",
+            initiative: "+14",
+            ac: 23,
+            pd: 19,
+            md: 21,
+            hp: 170,
+            health: 170,
+            attacks: ["Naginata +13 vs AC - 35 damage. Natural 18+: Make a second naginata attack against a nearby enemy as a free action (engaging it is not required).", "C: Cone of Cold +13 vs PD (up to 3 nearby enemies in a group) - 50 cold damage. Limited Use: 1/day,and the attack also targets the ogre's allies engaged with or between enemy targets.", "[special trigger] Aura of Treachery +13 vs MD - the target is confused until the end of the ogre mage's next turn."],
+            abilities: ["Aura of Treachery: Once per round when a nearby enemy misses the ogre mage with an attack, the ogre mage can make an aura of treachery attack against it as a free action.", "Flight: The ogre mage flies using the sheer power of its superior mind.", "Invisibility: If the ogre mage is not engaged, it can turn invisible as an at-will standard action. It becomes visible when it attacks. The ogre mage takes 1D10 damage each time it uses invisibility while it's staggered.", "Resist Exceptional Attacks 16+: When a limited attack (not an at-will attack) targets this creature, the attacker must roll a natural 16+ on the attack roll or it only deals half damage.", "Trollish Regeneration 20: While an ogre mage is damaged, its uncanny flesh heals 20 HP at the start of the ogre mage's turn. It can regenerate 5 times per battle. If it heals to its maximum HP, then that use of regeneration doesn't count against the five-use limit. When the ogre mage is hit by an attack that deals fire or acid damage, it loses one use of its regeneration, and it can't regenerate during its next turn. Dropping an ogre mage to 0 HP doesn't kill it if it has any uses of regeneration left."],
+            isStaggered: false,
+            id: 86
+        },
+
+        {
+            name: "Black Pudding",
+            level: 9,
+            type: "wrecker (huge)",
+            initiative: "+8",
+            ac: 23,
+            pd: 20,
+            md: 19,
+            hp: 470,
+            health: 470,
+            attacks: ["C: Acid-drenched Pseudopod +14 vs PD (up to 4 attacks, each against a different nearby enemy) - 30 acid damage, and 10 ongoing acid damage. Miss: 10 acid damage."],
+            abilities: ["Flows Where it Likes: The ooze is immune to opportunity attacks.", "Ooze: The ooze is immune to effects. When an attack applies a condition to an ooze, that condition doesn't affect it.", "Climber: A black pudding sticks to ceilings and walls when it wishes, sliding along as easily as on the floor.", "Slippery: The pudding has resist weapons 12+."],
+            isStaggered: false,
+            id: 87
+        },
+
+        {
+            name: "Gelatinous Cube",
+            level: 5,
+            type: "blocker (huge)",
+            initiative: "+4",
+            ac: 20,
+            pd: 18,
+            md: 15,
+            hp: 200,
+            health: 200,
+            attacks: ["Shlup'n'schlorp +10 vs PD - 30 acid damage, and the cube engulfs the target (functions like a grab; see below) if it's smaller than the cube. Miss: The cube can make a spasms attack as a free action.", "[special trigger] C: Spasms +10 vs AC (up to 2 attacks, each against a different nearby enemy) - 15 damage."],
+            abilities: ["Flows Where it Likes: The ooze is immune to opportunity attacks.", "Ooze: The ooze is immune to effects. When an attack applies a condition to an ooze, that condition doesn't affect it.", "Engulf and Dissolve: Targets engulfed/grabbed by the cube take 30 acid damage at the start of the cube's turn but are not viable targets for additional attacks by the cube. Multiple targets can be held within the cube simultaneously. Any engulfed creature that is also staggered must begin making last gasp saves or become paralyzed as the cube's toxins overwhelm it."],
+            isStaggered: false,
+            id: 88
+        },
+
+        {
+            name: "Ochre Jelly",
+            level: 3,
+            type: "wrecker (large)",
+            initiative: "+2",
+            ac: 18,
+            pd: 17,
+            md: 16,
+            hp: 90,
+            health: 90,
+            attacks: ["C: Acid-drenched Pseudopod +8 vs PD (1D4 attacks, each against a different nearby enemy) - 6 acid damage. Natural Even Hit or Miss: 3 ongoing acid damage."],
+            abilities: ["Flows Where it Likes: The ooze is immune to opportunity attacks.", "Ooze: The ooze is immune to effects. When an attack applies a condition to an ooze, that condition doesn't affect it.", "Splitter: The first time an ochre jelly takes 20 or more damage from a single attack, it splits into two normal-sized ochre jellies, each with half the original creature's HP plus 2D6 HP for good luck. Treat the new jellies as undamaged jellies at their new HP totals, but they don't have the splitter ability (maybe they get back together if they survive the fight. Maybe they don't."],
+            isStaggered: false,
+            id: 89
+        },
+
+        {
+            name: "Orc Warrior",
+            level: 1,
+            type: "troop",
+            initiative: "+3",
+            ac: 16,
+            pd: 14,
+            md: 10,
+            hp: 30,
+            health: 30,
+            attacks: ["Jagged Sword +6 vs AC - 6 damage. Dangerous: The crit range of attacks by orcs expands by 3 unless they are staggered."],
+            abilities: ["None"],
+            isStaggered: false,
+            id: 90
+        },
+
+        {
+            name: "Orc Berserker",
+            level: 2,
+            type: "troop",
+            initiative: "+5",
+            ac: 16,
+            pd: 15,
+            md: 13,
+            hp: 40,
+            health: 40,
+            attacks: ["Greataxe +7 vs AC - 8 damage. Dangerous: The crit range of attacks by orcs expands by 3 unless they are staggered."],
+            abilities: ["Unstoppable: When an orc berserker drops to 0 HP, it does not immediately die. Ignore any damage in excess of 0 HP, roll 2D6, and give the berserker that many temporary hit points. No other healing can affect the berserker or give it more temporary hit points: when the temporary HP are gone, the berserker dies."],
+            isStaggered: false,
+            id: 91
+        },
+
+        {
+            name: "Orc Shaman",
+            level: 2,
+            type: "leader",
+            initiative: "+5",
+            ac: 18,
+            pd: 12,
+            md: 16,
+            hp: 36,
+            health: 36,
+            attacks: ["Spear +6 vs AC - 6 damage. Dangerous: The crit range of attacks by orcs expands by 3 unless they are staggered.", "R: Battle Curse +7 vs MD (1D3 nearby enemies) - 4 psychic damage, andd for the rest of the battle, melee attackss by orcs deal +1D4 damage against the target (non-cumulative)."],
+            abilities: [""],
+            isStaggered: false,
+            id: 92
+        },
+
+        {
+            name: "Orc Rager",
+            level: 7,
+            type: "mook",
+            mookNumber: 1,
+            initiative: "+12",
+            ac: 22,
+            pd: 20,
+            md: 16,
+            hp: 27,
+            health: 27,
+            attacks: ["Greataxe +12 vs AC - 16 damage. Dangerous mooks: The crit range of melee attacks by orc ragers expands by 3 until half the orc rager mob has been dropped."],
+            abilities: ["Dying Strike: When an orc rager drops to 0 HP, it can make a final attack as a free action. (GM, since it isn't always important which mook dies, feel free to make these extra attacks come from the ragers engaged with a PC.)"],
+            isStaggered: false,
+            id: 93
+        },
+
+        {
+            name: "Great Fang Cadre",
+            level: 10,
+            type: "mook",
+            mookNumber: 1,
+            initiative: "+13",
+            ac: 27,
+            pd: 25,
+            md: 21,
+            hp: 50,
+            health: 50,
+            attacks: ["Double Axe +15 vs AC - 25 damage. Natural 11+: The cadre can make a second double axe attack (no more) as a free action. Dangerous Mooks: The crit range of melee attacks by great fang cadre orcs expands by 3 until half the great fang cadre mob has been dropped.", "R: Big, Black, Creaking Bow +15 vs AC - 37 damage. Natural Even Hit or Miss: The attack targets PD instead of AC."],
+            abilities: ["[Nastier Special] On the Spot Mutation: Whenever an attack eliminates one or more members of the mob, there is a 50% chance that each survivor gains a mutation like a sudden new body part or temporary magical aura. The GM chooses which of the following improvements, perhaps at random, and invents a new part or magic effect to explain it: extra melee attack, damage aura: 1D20 damage vs any enemy that starts its turn engaged with the orc, or +4 bonus to AC."],
+            isStaggered: false,
+            id: 94
+        }
 
 ]
 
