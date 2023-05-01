@@ -1634,7 +1634,7 @@ const monsterData = [
         md: 13,
         hp: 24,
         health: 24,
-        attacks: ["Bite +6 vs AC - 5 damage. Natural Even Hit: The hound leaves teeth in the wound; the target takes 5 ongoing dmage, and the hound takes 1D6 damage."],
+        attacks: ["Bite +6 vs AC - 5 damage. Natural Even Hit: The hound leaves teeth in the wound; the target takes 5 ongoing damage, and the hound takes 1D6 damage."],
         abilities: ["Resist Weapons 16+", "Vulnerability: Holy", "Chomp Chomp Chomp: Enemies with a lower initiative than the hound take a -5 penalty to disengage checks against it.", "Skilled Intercept 11+: Once per round, an engaged skeletal hound can attempt to pop free and intercept an enemy moving past it. Roll a normal save: on an 11+, it succeeds."],
         isStaggered: false,
         id: 101
