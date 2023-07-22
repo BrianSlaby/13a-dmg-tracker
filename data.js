@@ -1914,6 +1914,135 @@ const monsterData = [
         abilities: ["Vulnerability: Holy", "Headshot: A critical hit against a giant zombie mook deals triple damage instead of the normal double damage for a crit.", "Double-strength mook: The giant zombie mook counts as two 9th level mooks when you are building battles."],
         isStaggered: false,
         id: 118
+    },
+
+    {
+        name: "Basilisk",
+        level: 4,
+        type: "wrecker (large)",
+        initiative: "+3",
+        ac: 24,
+        pd: 19,
+        md: 18,
+        hp: 85,
+        health: 85,
+        attacks: ["Multi-legged Attack +8 vs AC (3 attacks, each against a different enemy) - 12 damage. Natural 16+: The target takes 5 ongoing poison damage.", "[special trigger] C: Basilisk's Stare +8 vs MD - 5 ongoing poison damage, and the target must start making last gasp saves depending on the basilisk's type (see below) as it accidentally takes a full look at the basilisk. Constructs and undead are immune to this effect."],
+        abilities: ["Basilisk's Stare: When a basilisk hits an enemy that is already taking ongoing poison damage, the basilisk can make a Basilisk's Stare attack against the target as a free action.", "Last Gasp Failed Save Effects: [Green Basilisk] Failed Save: the target takes 25 poison damage as its blood turns to poison. Fourth Failed Save: the target's body liquefies and they die. [Red Basilisk] Failed Save: the target takes 15 fire damage, and each of the target's nearby allies takes 5 fire damage as the target's blood boils under their skin and sprays outward in gouts of liquid fire. Fourth Failed Save: the targets body ignites as their flaming skull shoots upward on a jet of burning blood, killing them. [Black Basilisk] Failed Save: the target's blood begins to coagulate and harden, and dust puffs out of their lungs through their mouth. Fourth Failed Save: the target's body turns to stone and they die. [White Basilisk] Failed Save: the target begins to evaporate. The target must make an immediate normal save or it loses a chunk of flesh or a limb, whatever is dramatic but will allow the creature to survive (perhaps with minuses until healed). Fourth Failed Save: The target's body explodes into a fine red mist and they die.", "Resist Melee Damage 18+: When a melee attack targets this creature, the attacker must roll a natural 18+ on the attack roll or only deal half damage. An attacker can ignore this resistance by declaring that they are looking directly at the basilisk during the attack. IF they do, the basilisk can make a Basilisk's Stare attack against them as a free action before the attack. Constructs and undead are not affected by this resistance.", "Stare Down: When an enemy makes a ranged attack against the basilisk, the basilisk can make a Basilisk's Stare attack against them as a free action before the attack.", "[Nastier Special] Death Breath: Each creature engaged with the basilisk at the end of the basilisk's turn takes 10 poison damage."],
+        isStaggered: false,
+        id: 119
+    },
+
+    {
+        name: "Swarm of Bats",
+        level: 1,
+        type: "spoiler",
+        initiative: "+5",
+        ac: 16,
+        pd: 16,
+        md: 11,
+        hp: 30,
+        health: 30,
+        attacks: ["C: Swarming Bites +7 vs PD (1d3 nearby enemies) - 2 damage, and after the attack, the swarm of bats engages one of the targets. Natural Even Hit: The target is hampered until the end of its next turn. It can end the effect by attacking the swarm, or if the swarm drops to 0 HP."],
+        abilities: ["Vulnerability: Thunder", "No Opportunities: The swarm of bats can't make opportunity attacks, and enemies can't make opportunity attacks against it.", "Swarming Resistance: Each turn, the swarm of bats gains resist damage 18+ to all damage from attacks by enemies that the swarm did NOT attack that turn."],
+        isStaggered: false,
+        id: 120
+    },
+
+    {
+        name: "Dire Bat",
+        level: 2,
+        type: "troop",
+        initiative: "+8",
+        ac: 18,
+        pd: 17,
+        md: 14,
+        hp: 32,
+        health: 32,
+        attacks: ["Fangs and Wings +6 vs AC - 5 damage, and 5 ongoing damage. Natural 2-5: the dire bat pops free from the target and can move as a free action."],
+        abilities: ["Vulnerability: Thunder", "Resist Ranged Damage 16+: Shifty, spinning bats are hard to hit unless they're grounded or stuck.", "Skittish: A dire bat engaged with a conscious enemy after attacking it will attempt to disengage and fly into the air if it has a move action remaining that turn.", "[Nastier Special] Blood Drinker: When the dire bat drops an enemy to 0 HP or below, it continues to attack that enemy (until it dies) instead of attacking other enemies.", "[Nastier Special] Dire Feature: Most dire bats don't have a dire feature, but this one does."],
+        isStaggered: false,
+        id: 121
+    },
+
+    {
+        name: "Bat Cavalry",
+        level: 2,
+        type: "wrecker (large)",
+        initiative: "+6",
+        ac: 19,
+        pd: 17,
+        md: 14,
+        hp: 70,
+        health: 70,
+        attacks: ["Fangs, Wings, and Sword +8 vs AC - damage and effect depends on the natural roll. Natural Even Hit: the target takes 10 damage from a sword strike, and the bat cavalry pops free from the target and can move as a free action. Natural Even Miss Against a Target Taking Ongoing Damage: the target takes 6 damage from clawing wings. Natural Odd Hit: the target takes 8 damage, and 5 ongoing damage from bat fangs. Natural 2-5: In addition to any other effect, the bat cavalry pops free from the target, and as a free action, it can move to another nearby enemy and make a Fangs, Wings, and Sword attack against it.", "R: Thrown Javelin +5 vs AC - 8 damage."],
+        abilities: ["Vulnerability: Thunder", "Resist Ranged Damage 16+: Shifty, spinning bats are hard to hit unless they're grounded or stuck.", "Skittish: A bat cavalry engaged with a conscious enemy after attacking it will attempt to disengage and fly into the air if it has a move action remaining that turn.", "[Nastier Special] Blood Drinker: When the bat cavalry drops an enemy to 0 HP or below, it continues to attack that enemy (until it dies) instead of attacking other enemies."],
+        isStaggered: false,
+        id: 122
+    },
+
+    {
+        name: "Goblin Bat Mage",
+        level: 3,
+        type: "spoiler",
+        initiative: "+7",
+        ac: 19,
+        pd: 16,
+        md: 16,
+        hp: 44,
+        health: 44,
+        attacks: ["Bloody Fangs +7 vs AC - 6 damage, and 6 ongoing damage. Natural 2-5: the goblin bat mage pops free from the target and can move as a free action.", "R: Blood Bolt Spell +7 vs PD - 8 negative energy damage. Natural Even Hit: if the target is staggered after taking the damage, it's also hampered until the end of its next turn. Natural Odd Hit: one random nearby ally of the target takes 2D6 negative energy damage."],
+        abilities: ["Vulnerability: Thunder", "Resist Ranged Damage 16+: Shifty, spinning bats are hard to hit unless they're grounded or stuck.", "Skittish: A goblin bat mage engaged with a conscious enemy after attacking it will attempt to disengage and fly into the air if it has a move action remaining that turn.", "Unwieldy Flyer: When the goblin bat mage is staggered, it must roll an immediate save. On a failure, it loses its ability to fly until the end of its next turn. If flying near the ground, it lands immediately. If flying farther away from the ground, it lands badly and takes 15 damage."],
+        isStaggered: false,
+        id: 123
+    },
+
+    {
+        name: "Thunder Bat",
+        level: 5,
+        type: "archer",
+        initiative: "+13",
+        ac: 22,
+        pd: 18,
+        md: 15,
+        hp: 70,
+        health: 70,
+        attacks: ["Fangs +10 vs AC - 15 damage. Natural Even Hit Against a Dazed Enemy: the target takes 20 ongoing thunder damage.", "Thunder Screech +10 vs PD (1d3 nearby creatures in a group) - 12 thunder damage. Natural Even Hit: the target is dazed (save ends)."],
+        abilities: ["Resist Ranged Damage 16+: Shifty, spinning bats are hard to hit unless they're grounded or stuck", "Resist Thunder 18+: Unlike most bats, this one dispenses thunder rather than fearing it.", "Unwieldy Flyer: When a thunder bat is staggered, it must roll an immediate save. On a failure, it loses its ability to fly until the end of its next turn. If flying near the ground, it lands immediately. If flying far away from the ground, it lands badly and takes 25 damage."],
+        isStaggered: false,
+        id: 124
+    },
+
+    {
+        name: "Wraith Bat",
+        level: 9,
+        type: "mook",
+        mookNumber: 1,
+        initiative: "+14",
+        ac: 24,
+        pd: 23,
+        md: 20,
+        hp: 36,
+        health: 36,
+        attacks: ["Ghostly Fangs +14 vs PD - 25 negative energy damage, and the target takes +1d8 negative energy damage for each relationship point it has with the Lich King.", "C: Spiraling Assault +14 vs PD (1d3 nearby enemies) - 22 negative energy damage, and after the attack the wraith bat teleports to and engages with one target it hit. Limited Use: regardless of the number of wraith bats in the battle, only one wraith bat can use this attack each round."],
+        abilities: ["Ghostly: This creature has resist damage 16+ to all damage except force damage. A wraith bat can move through solid objects but it can't end its movement inside them."],
+        isStaggered: false,
+        id: 125
+    },
+
+    {
+        name: "Blue Sorcerer",
+        level: 3,
+        type: "caster",
+        initiative: "+9",
+        ac: 18,
+        pd: 14,
+        md: 17,
+        hp: 48,
+        health: 48,
+        attacks: ["Nasty Dagger or Short Spear +8 vs AC - 6 damage", "[Minor Spell] R: Lightning Fork +8 vs PD - 6 lightning damage. Natural Even Hit or Miss: the sorcerer can target a different nearby enemy with the attack.", "[Major Spell] C: Breath of the Blue +8 vs PD (1 nearby enemy) - 10 lightning damage, and at the start of the target's next turn, 1d6 nearby allies of the target take 4 lightning damage.", "[Major Spell] C: Chaos Orb +8 vs MD (1d3 nearby enemies) - 8 lightning damage. Natural Even Hit: the sorcerer gains one use of the target's racial power, if any. It must use that power by the end of the battle or lose it, and it can't use the power this turn."],
+        abilities: ["Power Monger: When the blue sorcerer starts its turn and it didn't gather power the previous turn, choose whether it will gather power or cast a spell this turn. When it chooses to cast a spell, roll a d20 to see if it uses a minor spell (1-10) or major spell (11-20).", "Gather Power: The blue sorcerer can use its standard action to gather power in order to cast a double-strength and double-damage spell with its next standard action. When it gathers power, the sorcerer rolls a d6 and gains one of the following chaotic benefits: 1-2: +1 AC until the start of its next turn, 3-4: one nearby enemy of the sorcerer's choice takes damage equal to its level (3), 5-6: each nearby enemy engaged with the sorcerer's allies takes damage equal to the sorcerer's level (3); OR grant one nearby dragon with intermittent breath an additional use of its breath weapon this battle.", "[Nastier Special] Escalating Caster: Add the escalation die to the sorcerer's Power Monger rolls and attack rolls.", "[Nastier Special] Sorcerous Evasion (kobolds only): Once per battle when an attack misses the sorcerer, the attacker takes miss damage from that attack, if any, and the sorcerer takes no damage."],
+        isStaggered: false,
+        id: 126
     }
 
 ]
