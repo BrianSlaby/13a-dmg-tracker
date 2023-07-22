@@ -2043,6 +2043,247 @@ const monsterData = [
         abilities: ["Power Monger: When the blue sorcerer starts its turn and it didn't gather power the previous turn, choose whether it will gather power or cast a spell this turn. When it chooses to cast a spell, roll a d20 to see if it uses a minor spell (1-10) or major spell (11-20).", "Gather Power: The blue sorcerer can use its standard action to gather power in order to cast a double-strength and double-damage spell with its next standard action. When it gathers power, the sorcerer rolls a d6 and gains one of the following chaotic benefits: 1-2: +1 AC until the start of its next turn, 3-4: one nearby enemy of the sorcerer's choice takes damage equal to its level (3), 5-6: each nearby enemy engaged with the sorcerer's allies takes damage equal to the sorcerer's level (3); OR grant one nearby dragon with intermittent breath an additional use of its breath weapon this battle.", "[Nastier Special] Escalating Caster: Add the escalation die to the sorcerer's Power Monger rolls and attack rolls.", "[Nastier Special] Sorcerous Evasion (kobolds only): Once per battle when an attack misses the sorcerer, the attacker takes miss damage from that attack, if any, and the sorcerer takes no damage."],
         isStaggered: false,
         id: 126
+    },
+
+    {
+        name: "Bugbear Scout",
+        level: 2,
+        type: "troop (double strength)",
+        initiative: "+8",
+        ac: 18,
+        pd: 16,
+        md: 15,
+        hp: 88,
+        health: 88,
+        attacks: ["Flanged Mace +7 vs AC - 10 damage", "R: Throwing Axe +7 vs AC - 8 damage. Limited Use: 1/battle.", "C: Stealthy Maneuver +7 vs MD (the nearby enemy with the highest MD) - the next attack the bugbear scout makes against the target this turn deals +1d12 extra damage. Limited Use: 1/round, as a quick action when the bugbear scout starts its turn unengaged."],
+        abilities: ["[Nastier Special] Unpredictable: The bugbear scout gains a +5 bonus to disengage checks, and when it successfully disengages, one of the enemies engaged with it takes 1d6 damage."],
+        isStaggered: false,
+        id: 127
+    },
+
+    {
+        name: "Bugbear Schemer",
+        level: 3,
+        type: "leader",
+        initiative: "+7",
+        ac: 19,
+        pd: 14,
+        md: 17,
+        hp: 42,
+        health: 42,
+        attacks: ["Big-ass Warclub +9 vs AC - 8 damage. Natural Even Hit or Miss: each of the bugbear schemer's nearby humanoid allies gains a +2 bonus to melee attacks until the start of the schemer's next turn. Natural Odd Miss: 4 damage.", "R: Ridiculously Heavy Crossbow +7 vs AC (one nearby or far away enemy) - 14 damage. Natural Even Hit: the target takes 1d6 extra damage. Limited Use: 1/battle.", "[Special Trigger] C: Rebuke to Fools +9 vs MD (one nearby enemy) - 2d6 psychic damage. Limited Use: 1/round as an interrupt action, when a nearby enemy rolls a natural 1-5 with an attack against it."],
+        abilities: ["Combat Reload: During the bugbear schemer's turn, if it doesn't engage an enemy or move, it regains a use of ridiculously heavy crossbow if it's expended as it reloads the crossbow.", "Fighting Withdrawal: When the bugbear schemer successfully disengages, one of the enemies engaged with it takes 1d6 damage.", "[Nastier Special] Flee is a Four Letter Word: When the bugbear schemer thinks the battle is out of reach and isn't engaged, it can try to flee once per battle. As a move action, roll a hard save. On a success, the bugbear schemer had a bolt-hole or escape plan ready and it gets away (though it's probably just getting more troops)."],
+        isStaggered: false,
+        id: 128
+    },
+
+    {
+        name: "Barbarous Bugbear",
+        level: 4,
+        type: "wrecker",
+        initiative: "+12 (see Ferocious Start)",
+        ac: 18,
+        pd: 17,
+        md: 16,
+        hp: 51,
+        health: 51,
+        attacks: ["Warclub +9 vs AC - 11 damage. Natural Even Hit or Miss: each enemy engaged with the barbarous bugbear takes 1d8 damage.", "R: Throwing Axe +8 vs AC - 10 damage. Limited Use: 2/battle"],
+        abilities: ["Ferocious Start: Until the barbarous bugbear is staggered or the escalation die is 2+, it acts twice per round.  Roll initiative once at +12. It takes its second turn when the initiative count is seven less (minimum 1)."],
+        isStaggered: false,
+        id: 129
+    },
+
+    {
+        name: "Green Bulette",
+        level: 5,
+        type: "wrecker (large)",
+        initiative: "+12",
+        ac: 19,
+        pd: 17,
+        md: 13,
+        hp: 92,
+        health: 92,
+        attacks: ["Charging Maw +12 vs AC - 30 damage. Natural Even Miss: the target pops free from all enemies engaged with it and is vulnerable to all attacks (save ends). Leaping Bite: The Green Bulette gains a +3 bonus to attack and damage with its first attack each battle."],
+        abilities: ["Into the Earth: The first time each round an attack hits the bulette, it can choose to hunker down as a free action. If it does, it gains a +3 bonus to AC and PD until the start of its next turn. Force attacks and opportunity attacks don't trigger this ability. If the green bulette hunkers down while it's moving (for example, from a readied action), its movement ends that turn.", "Blood-frenzy Escalator: While at least one creature in the battle is staggered or unconscious, the bulette gains a bonus to its attacks and damage equal to the escalation die but can't use Into the Earth. Creatures that have no blood (constructs, oozes, plant creatures, etc.) don't trigger this ability.", "Occasional Burrower: Like all bulettes, the green bulette can burrow. While above ground, it prefers to move slowly on the surface and rely on its plant and soil covered shell to stay hidden until it attacks."],
+        isStaggered: false,
+        id: 130
+    },
+
+    {
+        name: "Lumberland Dirt-Fisher",
+        level: 5,
+        type: "wrecker (huge)",
+        initiative: "+11",
+        ac: 17,
+        pd: 15,
+        md: 11,
+        hp: 135,
+        health: 135,
+        attacks: ["Tongue Lash and Bite +14 vs AC (1d3 nearby enemies) - 30 damage.", "R: Sticky Tongue +15 vs PD - 20 damage. Natural Even Hit: the target pops free from all enemies engaged with it, is pulled into the pit with the dirt-fisher (who engages it), and loses its next move action. Climbing out of the pit requires a move action and a DC 20 check. If the bulette is not in the pit, the bulette pulls the target to itself and engages it."],
+        abilities: ["Hole Digger: A dirt-fisher can burrow incredibly quickly for short distances, but it prefers to attack from within its pre-dug trapdoor pit. It usually has a few pits dug nearby if forced to leave its current pit.", "Into the Earth: The first time each round an attack hits the dirt-fisher, it can hunker down and pull the lid on its pit shut. If it does, it gains a +3 bonus to all defenses until the start of its next turn, and any creature in the pit takes a -5 penalty to checks to climb out of the pit. Force attacks and opportunity attacks don't trigger this ability.", "Nowhere to Run: The dirt-fisher deals double damage against creatures engaged with it in its pit."],
+        isStaggered: false,
+        id: 131
+    },
+
+    {
+        name: "Ravenous Bumoorah",
+        level: 5,
+        type: "wrecker",
+        initiative: "+13",
+        ac: 17,
+        pd: 15,
+        md: 11,
+        hp: 46,
+        health: 46,
+        attacks: ["Land Shark Maw +15 vs AC - 14 damage. Natural Even Hit: the target takes 10 thunder damage."],
+        abilities: ["Blood-frenzy Escalator: While at least one creature in the battle is staggered or unconscious, the bulette gains a bonus to its attacks and damage equal to the escalation die. Creatures that have no blood (constructs, oozes, plant creatures, etc.) don't trigger this ability.", "Earth Surge: Whenever the bumoorah takes damage from an attack, it rolls a save; on a 16+ it can immediately dive beneath the ground, preventing further attacks against it until it surfaces at the start of its next turn. Force attacks and opportunity attacks don't trigger this ability.", "Serious Burrower: The bumoorah can burrow incredibly quickly for short distances. Bumoorahs are renowned for the dust-spurts and vibrating sound they generate as they shoot through the ground like hungry spears."],
+        isStaggered: false,
+        id: 132
+    },
+
+    {
+        name: "Deep Bulette",
+        level: 9,
+        type: "wrecker (huge)",
+        initiative: "+10",
+        ac: 25,
+        pd: 23,
+        md: 19,
+        hp: 378,
+        health: 378,
+        attacks: ["Pulverizing Maw +15 vs AC (1d3 enemies) - 90 damage. Miss: 45 damage."],
+        abilities: ["Blood Frenzy: The deep bulette's crit range expands by 4 while the escalation die is 4+.", "Tunnel Fighter: While fighting in a tunnel with nowhere for its enemies to move but ahead of it, the deep bulette gains the following abilities based on the escalation die: Escalation Die is Odd - When the bulette hits an enemy engaged with it with an attack, that target pops free from it and is hampered (save ends). Escalation Die is Even - The deep bulette engages each nearby enemy in front of it as it pushes its bulk inexorably forward down the tunnel. Enemies pushed ahead of it this way don't get to make opportunity attacks."],
+        isStaggered: false,
+        id: 133
+    },
+
+    {
+        name: "Cambion Dirk",
+        level: 4,
+        type: "mook",
+        mookNumber: 1,
+        initiative: "+8",
+        ac: 20,
+        pd: 18,
+        md: 14,
+        hp: 13,
+        health: 13,
+        attacks: ["Damned Dirk +10 vs AC - 7 damage. Natural Even Hit or Miss: the cambion becomes cloaked until it's hit by an attack against MD or until it misses with a natural odd attack roll."],
+        abilities: ["Dark Step: While cloaked, the cambion dirk automatically succeeds on all disengage checks."],
+        isStaggered: false,
+        id: 134
+    },
+
+    {
+        name: "Cambion Sickle",
+        level: 5,
+        type: "troop",
+        initiative: "+11",
+        ac: 21,
+        pd: 19,
+        md: 15,
+        hp: 70,
+        health: 70,
+        attacks: ["Damned Sickle +11 vs AC - 17 damage. Natural Even Hit or Miss: the cambion becomes cloaked until it's hit by an attack against MD or until it misses with a natural odd attack roll.", "R: Ray of Darkness +11 vs MD - 10 negative energy damage. Natural Even Hit: the target is confused until the end of its next turn, or if the cambion was cloaked when it attacked, the confusion is save ends."],
+        abilities: ["Improved Dark Step: While cloaked, the cambion sickle automatically succeeds on all disengage checks and gains a +2 bonus to all defenses against ranged attacks."],
+        isStaggered: false,
+        id: 135
+    },
+
+    {
+        name: "Cambion Katar",
+        level: 6,
+        type: "wrecker",
+        initiative: "+13",
+        ac: 21,
+        pd: 19,
+        md: 15,
+        hp: 80,
+        health: 80,
+        attacks: ["Damned Katar +12 vs AC - 20 damage. Natural Even Hit or Miss: the cambion becomes cloaked until it's hit by an attack against MD or until it misses with a natural odd roll.", "Spiky Headbutt +12  vs AC - 8 damage, and 10 ongoing poison damage.", "R: Ray of Darkness +12 vs MD - 10 negative energy damage. Natural Even Hit: the target is confused until the end of its next turn, or if the cambion was cloaked when it attacked, the confusion is save ends."],
+        abilities: ["Corruption Aura: When an enemy misses the cambion katar with a melee attack, it suffers one of the following effects: Natural Even Miss: the attacker takes 5 poison damage. Natural Odd Miss: the cambion katar can make a Spiky Headbutt attack against the attacker as a free action.", "Superior Dark Step: When cloaked, the cambion katar automatically succeeds on all disengage checks and gains a +2 bonus to all defenses against close and ranged attacks."],
+        isStaggered: false,
+        id: 136
+    },
+
+    {
+        name: "Cambion Hellblade",
+        level: 8,
+        type: "wrecker",
+        initiative: "+17",
+        ac: 24,
+        pd: 21,
+        md: 21,
+        hp: 140,
+        health: 140,
+        attacks: ["Damned Hellblade +14 vs AC - 40 damage. Natural Even Hit or Miss: the cambion becomes cloaked until it's hit by an attack against MD or until it misses with a natural odd attack roll. Miss: 20 damage.", "Spiky Headbutt +14 vs AC - 10 damage, and 15 ongoing poison damage.", "R: Ray of Darkness +14 vs MD - 20 negative energy damage. Natural Even Hit: the target is confused until the end of its next turn, or if the cambion was cloaked when it attacked, the confusion is save ends."],
+        abilities: ["Cloaked in Evil: The cambion hellblade starts every battle cloaked. As a quick action, the hellblade can drop its cloaking to make a spiky headbutt attack as a free action.", "Corruption Aura: When an enemy misses the cambion hellblade with a melee attack, it suffers one of the following effects: Natural Even Miss: the attacker takes 15 poison damage. Natural Odd Miss: the cambion hellblade can make a spiky headbutt attack against the attacker as a free action.", "Ultimate Dark Step: While cloaked, the cambion hellblade automatically succeeds on all disengage checks, and gains a +2 bonus to all defenses against close and ranged attacks, and can drop its cloaking as a quick action to teleport to a nearby location it can see (instead of making an extra attack)."],
+        isStaggered: false,
+        id: 137
+    },
+
+    {
+        name: "Centaur Lancer",
+        level: 4,
+        type: "troop",
+        initiative: "+9",
+        ac: 20,
+        pd: 17,
+        md: 14,
+        hp: 60,
+        health: 60,
+        attacks: ["Charging Lance +10 vs AC - 15 damage, and the target pops free from the centaur. Hit 'Em Hard: the crit range of the attack expands by 2 and instead deals 20 damage on a hit if the centaur first moves before attacking an enemy it wasn't engaged with at the start of its turn. Natural 18+: the target is also dazed until the end of its next turn.", "Spear +9 vs AC - 13 damage. Natural Even Hit: the centaur lancer can make a kick attack as a free action.", "[Special Trigger] Kick +8 vs PD (1d2 enemies engaged with the centaur) - the target takes 5 damage and pops free from the centaur."],
+        abilities: ["Harnessed Speed: The centaur lancer gains a +4 AC bonus against opportunity attacks."],
+        isStaggered: false,
+        id: 138
+    },
+
+    {
+        name: "Centaur Raider",
+        level: 5,
+        type: "wrecker",
+        initiative: "+10",
+        ac: 20,
+        pd: 19,
+        md: 14,
+        hp: 70,
+        health: 70,
+        attacks: ["Hoof and Weapon +10 vs AC - 15 damage. Natural Even Hit: as a free action, the centaur raider can move and make another hoof and weapon attack against a different nearby enemy (it will take opportunity attacks for moving).", "R: Short Bow +9 vs AC - 18 damage. Natural 16+: the centaur raider can take an additional move action this turn.", "[Special Trigger / Nastier Special] Sweeping Blow +10 vs AC (1d3 nearby enemies) - 15 damage, and the target loses its next move action."],
+        abilities: ["Harnessed Speed: The centaur raider gains a +4 AC bonus against opportunity attacks and only takes half damage from opportunity attacks that hit it.", "[Nastier Special] Barreling Charge: When the escalation die is even, the centaur raider can use a standard action and a move action to make a sweeping blow attack against multiple enemies as it moves past them (it will take opportunity attacks). It ends this move and attack unengaged."],
+        isStaggered: false,
+        id: 139
+    },
+
+    {
+        name: "Centaur Ranger",
+        level: 6,
+        type: "Archer",
+        initiative: "+13",
+        ac: 22,
+        pd: 20,
+        md: 16,
+        hp: 85,
+        health: 85,
+        attacks: ["Twin Scimitars +10 vs AC (2 attacks) - 10 damage", "R: Longbow +11 vs AC - 20 damage. Natural Even Hit: the centaur ranger can take an additional move action this turn. Natural 16+: The centaur ranger can make a second (but not a third) longbow attack this turn as a free action.", "[Nastier Special] R: Pinning Volley +11 vs AC (2 attacks) - 8 damage, and the target is hampered until the end of its next turn. Natural 18+: the target is stuck (save ends) instead of hampered. Limited Use: 2/battle."],
+        abilities: ["Moving Combatant: The centaur ranger gains a +4 AC bonus against opportunity attacks and only takes half damage from opportunity attacks that hit it. When an enemy makes an opportunity attack against it and misses, that enemy takes 10 damage from a counter-attack.", "Terrain Familiarity: Once each round when the escalation die is odd, the centaur ranger can make use of the area's terrain to its advantage as a free action. It can choose to either gain a +2 attack bonus for its attacks that turn, or to gain a +2 bonus to all defenses against the next attack that targets it by using a flashy or tricky maneuver (leaping off a rock over an enemy, stirring up a hornet's nest near an attacker, etc.). The target of its attack or a creature attacking it when it attempts this stunt rolls a normal save; on a success, the bonus is negated."],
+        isStaggered: false,
+        id: 140
+    },
+
+    {
+        name: "Centaur Champion",
+        level: 6,
+        type: "leader (double strength)",
+        initiative: "+12",
+        ac: 22,
+        pd: 20,
+        md: 16,
+        hp: 170,
+        health: 170,
+        attacks: ["Two-handed Sword +11 vs AC (2 attacks) - 20 damage. Champion's Challenge: If the centaur champion scores a crit against the target, it can challenge that enemy. If it does, until the end of the battle the champion and the target each take a -4 attack penalty against any target except for the other. If the centaur champion dies or challenges a new foe, the old challenge is canceled.", "Crushing Hooves +10 vs PD (2 attacks) - 13 damage, and the target is vulnerable until the start of its next turn."],
+        abilities: ["Hooves and Slash: As a standard action, the centaur champion can make a Crushing Hooves attack and a single Two-Handed Sword attack (one attack roll) against the same enemy.", "Leader of the Clan: When the centaur champion engages an enemy, each other centaur ally engaged with that creature can pop free from it.", "Moving Combatant: The centaur champion gains a +4 AC bonus against opportunity attacks and only takes half damage from opportunity attacks that hit it. When an enemy makes an opportunity attack against it and misses, that enemy takes 20 damage from a counter-attack.", "[Nastier Special] Chief's Challenge: When the champion issues a Champion's Challenge, it only takes a -2 attack penalty against other enemies than its chosen foe, but that enemy still takes the -4 attack penalty. In addition, the champion can use Champion's Challenge as a free action when it becomes staggered.", "[Nastier Special] Champion's Scorn: Each of the champion's centaur allies in the battle gains a +5 damage bonus with ranged attacks."],
+        isStaggered: false,
+        id: 141
     }
 
 ]
