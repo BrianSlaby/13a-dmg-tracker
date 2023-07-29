@@ -2284,6 +2284,104 @@ const monsterData = [
         abilities: ["Hooves and Slash: As a standard action, the centaur champion can make a Crushing Hooves attack and a single Two-Handed Sword attack (one attack roll) against the same enemy.", "Leader of the Clan: When the centaur champion engages an enemy, each other centaur ally engaged with that creature can pop free from it.", "Moving Combatant: The centaur champion gains a +4 AC bonus against opportunity attacks and only takes half damage from opportunity attacks that hit it. When an enemy makes an opportunity attack against it and misses, that enemy takes 20 damage from a counter-attack.", "[Nastier Special] Chief's Challenge: When the champion issues a Champion's Challenge, it only takes a -2 attack penalty against other enemies than its chosen foe, but that enemy still takes the -4 attack penalty. In addition, the champion can use Champion's Challenge as a free action when it becomes staggered.", "[Nastier Special] Champion's Scorn: Each of the champion's centaur allies in the battle gains a +5 damage bonus with ranged attacks."],
         isStaggered: false,
         id: 141
+    },
+
+    {
+        name: "Pit-Spawn Orc (double-strength mook)",
+        level: 2,
+        type: "mook",
+        mookNumber: 1,
+        initiative: "+2",
+        ac: 17,
+        pd: 15,
+        md: 12,
+        hp: 18,
+        health: 18,
+        attacks: ["Punch or Bludgeon +7 vs AC - 5 damage"],
+        abilities: ["Mob Attack: The crit range for pit-spawn orcs is 17+. Whenever a pit-spawn orc scores a critical hit, each pit-spawn orc mook in the battle gains a +1 cumulative bonus to damage until the end of the battle.", "[Nastier Special] Boiling Rage: When an enemy engaged with the orc hits it with an attack, the enemy takes 4 damage as the orc bites and claws it back."],
+        isStaggered: false,
+        id: 142
+    },
+
+    {
+        name: "Orcish Archer",
+        level: 2,
+        type: "archer",
+        initiative: "+5",
+        ac: 18,
+        pd: 17,
+        md: 11,
+        hp: 32,
+        health: 32,
+        attacks: ["Scimitar +6 vs AC - 6 damage", "R: Short Bow +6 vs AC - 7 damage. Natural 1-5: reroll the attack against a random nearby creature. If the rerolled attack is also a natural 1-5, the orcish archer takes 3 damage from sheer agonized frustration, but it doesn't get to make another attack."],
+        abilities: ["Final Frenzy: When the escalation die is 3+, the orcish archer gains a +3 bonus to melee attacks and melee damage."],
+        isStaggered: false,
+        id: 143
+    },
+
+    {
+        name: "Cave Orc",
+        level: 3,
+        type: "mook",
+        mookNumber: 1,
+        initiative: "+6, or +12 at night or in dark caves",
+        ac: 19,
+        pd: 18,
+        md: 12,
+        hp: 10,
+        health: 10,
+        attacks: ["Obsidian Knife +8 vs AC - 4 damage, and +1d4 damage for each other orc engaged with the target (max +4d4).", "R: Rock +7 vs AC - 5 damage"],
+        abilities: ["Hears Everything: Increase the DC to sneak past cave orcs silently by +5.", "Nocturnal Predator: If the battle is at night (or in darkness), the orc gains a +2 attack bonus. If the battle is during the day (or in daylight) it takes a -2 penalty to all defenses."],
+        isStaggered: false,
+        id: 144
+    },
+
+    {
+        name: "Death-Plague Orc",
+        level: 3,
+        type: "spoiler (large)",
+        initiative: "+2",
+        ac: 20,
+        pd: 18,
+        md: 12,
+        hp: 90,
+        health: 90,
+        attacks: ["Huge Spiked Flail +8 vs AC - 21 damage. Natural Roll Above Target's Constitution: the target catches a disease."],
+        abilities: ["[Disease Type 1 (d4)] Filthy Fever (d6 roll for symptoms that day). 1: slight temperature, 2-3: the runs. You gain 1 fewer recovery than normal after a full heal up due to fluid loss, 4+: you have a hacking cough that sounds like insane laughter and are losing fluids. You gain 2 fewer recoveries than normal after a full heal up and can't remain silent.", "[Disease Type 2 (d4)] Chatter Pox (d6 roll for symptoms that day). 1: unsightly and painful sores, occasional shivers, 2-3: running sores, shivering, and chattering teeth. You take a -3 penalty to social skill checks and to attack rolls with spells, 4+: infected sores, fever dreams. Your constitution is weakened. After each full heal up, roll 1d4+3 to determine your starting maximum recoveries for that day. Each time you cast a spell that isn't at-will, there's a 25% chance it fails (but you don't expend the spell).", "[Disease Type 3 (d4)] Slug Scourge (d6 roll for symptoms that day). 1: extreme appetite, nausea, 2-3: vomiting up slugs. Whenever you make a non-combat Charisma check, roll 2d20 and take the lower result, 4+: the slugs are inside your lungs! After each quick rest, you lose 25% of your maximum HP. If you drop down to 0 HP this way, you enter into a coma until the next day.", "[Disease Type 4 (d4)] Red Fever (d6 roll for symptoms that day). 1: scarlet stripes on the eyeballs, itching, buzzing in ears, 2-3: blurred vision. You take a -3 penalty to ranged attacks, 4+: fever, rage, and confusion. Whenever you roll a natural odd attack roll, you are confused until the end of your next turn. Ranged attacks have a 25% chance of accidentally targeting a random ally (check before making the attack roll)."],
+        isStaggered: false,
+        id: 145
+    },
+
+    {
+        name: "Orc Battle Screamer",
+        level: 3,
+        type: "leader",
+        initiative: "+8",
+        ac: 22,
+        pd: 15,
+        md: 15,
+        hp: 33,
+        health: 33,
+        attacks: ["Sharpened Flute or Club-like Drumstick +9 vs AC - 10 damage", "R: Skull Drum +7 vs MD - 8 damage, and as a free action, one nearby orc ally can move or make a basic attack (doesn't trigger special abilities).", "R: Bone Flute +7 vs MD - 8 damage, and one nearby orc ally deals +1d6 damage on a hit during its next turn.", "R: War Bagpipes - 1d3 nearby or far away enemies that can hear the bagpipes must immediately roll a normal save; on a failure, the target is hampered until the end of its next turn."],
+        abilities: ["Orcish Instruments: Choose ONE of the above instrument attacks."],
+        isStaggered: false,
+        id: 146
+    },
+
+    {
+        name: "Orc Tusker",
+        level: 3,
+        type: "troop",
+        initiative: "+7",
+        ac: 22,
+        pd: 17,
+        md: 13,
+        hp: 45,
+        health: 45,
+        attacks: ["Club'n'Tusk +5 vs AC - 7 damage. Furious Charge: the attack instead deals 12 damage on a hit if the orc tusker first moves before attacking an enemy it was not engaged with at the start of its turn. Miss: 4 damage, and the orc tusker pops free from all enemies."],
+        abilities: ["No Abilities"],
+        isStaggered: false,
+        id: 147
     }
 
 ]
