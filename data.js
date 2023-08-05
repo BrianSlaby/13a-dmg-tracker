@@ -2382,6 +2382,153 @@ const monsterData = [
         abilities: ["No Abilities"],
         isStaggered: false,
         id: 147
+    },
+
+    {
+        name: "Drow Spider-Mage",
+        level: 3,
+        type: "caster",
+        initiative: "+8",
+        ac: 19,
+        pd: 13,
+        md: 17,
+        hp: 40,
+        health: 40,
+        attacks: ["Sharpened Wand +8 vs AC - 10 damage", "R: Shadowfire +8 vs PD (one nearby or far away enemy) - 8 damage, and the target is Weakened (save ends). Limited Use: Once the spider-mage hits with Shadowfire, she can't use it again until the target saves against it.", "C: Malediction of Webs +8 vs PD (up to 2 nearby enemies in a group) - the target is Stuck (save ends), and takes 5 damage each time it fails the save."],
+        abilities: ["Dark Orison: Each time the spider-mage misses with an attack, the crit range of attacks by drow and spiders in the battle expands by 1.", "Spider Speaker: The first time each battle an enemy hits the spider-mage with a melee attack, that attacker takes 8 ongoing poison damage from her familiar."],
+        isStaggered: false,
+        id: 148
+    },
+
+    {
+        name: "Drow Soldier",
+        level: 4,
+        type: "mook",
+        mookNumber: 1,
+        initiative: "+9",
+        ac: 20,
+        pd: 19,
+        md: 14,
+        hp: 18,
+        health: 18,
+        attacks: ["Paired Swords +9 vs AC - 6 damage", "R: Crossbow +9 vs AC (one nearby enemy, or far away enemy at -2 attack) - 7 damage"],
+        abilities: ["With My Dying Breath I Curse Thee: When the drow soldier drops to 0 HP, one enemy engaged with it takes 2 poison damage before the drow soldier dies."],
+        isStaggered: false,
+        id: 149
+    },
+
+    {
+        name: "Drow Sword Maiden",
+        level: 5,
+        type: "troop",
+        initiative: "13",
+        ac: 21,
+        pd: 19,
+        md: 15,
+        hp: 75,
+        health: 75,
+        attacks: ["Cruel Cutlass +10 vs AC - 18 damage", "C: Dagger Dance +10 vs AC (one nearby enemy, or a far away enemy at -2 attack) - 14 damage. Natural Even Hit: each other enemy engaged with the sword maiden takes 10 damage."],
+        abilities: ["[Nastier Special] Effortless Grace: Once per round when an attack misses the sword maiden, she can move or make a cruel cutlass attack as a free action.", "[Nastier Special] Arcane Warrior: The sword maiden has a true magic item (probably a weapon) and uses it to her benefit (adjust stats accordingly)."],
+        isStaggered: false,
+        id: 150
+    },
+
+    {
+        name: "Drow Spider-Sorceress",
+        level: 6,
+        type: "caster",
+        initiative: "+11",
+        ac: 22,
+        pd: 16,
+        md: 20,
+        hp: 84,
+        health: 84,
+        attacks: ["Sharpened Wand +11 vs AC - 20 damage", "R: Darkfire +11 vs PD (one nearby or far away enemy) - 20 damage, and the target is Weakened (save ends). Limited Use: Once the sorceress hits with darkfire, she can't use it again until the target saves.", "C: Greater Malediction of Webs +11 vs PD (up to 2 nearby enemies in a group) - 10 damage, and the target is Stuck (save ends) and takes 10 damage each time it fails the save."],
+        abilities: ["Dark Orison: Each time the spider-sorceress misses with an attack, the crit range of attacks by drow and spiders in the battle expands by 1.", "Spider Speaker: The first time each battle an enemy hits the spider-sorceress with a melee attack, that attacker takes 16 ongoing poison damage from her familiar.", "[Nastier Special] Arcane Arachnids: The spider sorceress has a true magic item (probably an implement) and uses it to her benefit (adjust stats accordingly)."],
+        isStaggered: false,
+        id: 151
+    },
+
+    {
+        name: "Drow Darkbolt",
+        level: 7,
+        type: "archer",
+        initiative: "12",
+        ac: 23,
+        pd: 21,
+        md: 17,
+        hp: 100,
+        health: 100,
+        attacks: ["Dagger and Spidersilk Line +12 vs AC (one nearby enemy) - 22 damage. Miss: 8 damage.", "R: Exsanguinating Barbed Arrows +12 vs AC (one nearby or far away enemy) - 20 damage, and 6 ongoing damage. Natural Even Hit: As a free action, the darkbolt can make a second barbed arrows attack against a different enemy with a -2 attack penalty. If it gets another natural even hit, it can make a third (and final) barbed arrows attack against a different enemy with a -4 attack penalty as a free action."],
+        abilities: ["Darkbolt Vanish: If unengaged, when the darkbolt attacks and rolls a natural even miss, it can step into a shadow dimension that turn as a move action. While in the shadows, it can't be seen or targeted with attacks, and it reappears anywhere nearby at the start of its next turn.", "Wall Crawler: A darkbolt can climb on ceilings and walls as easily as it moves on the ground thanks to its rope-dagger and spiked bracers.", "[Nastier Special] Well Equipped: The drow has a potion or poison that it can use as a quick action twice this battle."],
+        isStaggered: false,
+        id: 152
+    },
+
+    {
+        name: "Drow Cavalry",
+        level: 9,
+        type: "wrecker (double strength)",
+        initiative: "+14",
+        ac: 25,
+        pd: 23,
+        md: 18,
+        hp: 270,
+        health: 270,
+        attacks: ["Glass-tipped Lance +14 vs AC - 75 (90/25) damage, and the target pops free from the cavalry and is Weakened (save ends). Limited Use: 1/battle, during a surprise round or the first round of battle.", "Spider Saber +14 vs AC - 75 (90/25) damage"],
+        abilities: ["Expert Spider Rider: While mounted, the drow cavalry deals +15 damage with its attacks, hit or miss, against unmounted enemies.", "Mounted Combatant: Reduce the drow cavalry's attack damage by 50 when it's not riding a spider.", "Spider Mount: Whenever the drow cavalry rolls a natural 1-10 on an attack roll, its spider mount acts independently, choosing one of the following options (see Spider Mount stat block): Bite - the spider makes a bite attack, Jump and Scuttle - the spider and its rider pop free from all enemies and can move somewhere nearby, Web - the spider makes a web attack."],
+        isStaggered: false,
+        id: 153
+    },
+
+    {
+        name: "Spider Mount",
+        level: 6,
+        type: "troop",
+        initiative: "+15 (or same as rider if it has one)",
+        ac: 22,
+        pd: 16,
+        md: 20,
+        hp: 90,
+        health: 90,
+        attacks: ["Bite +11 vs AC - 15 damage, and 10 ongoing poison damage", "C: Web +11 vs PD (up to 2 nearby enemies in a group) - The target is Stuck (save ends)."],
+        abilities: ["Wall Crawler: A spider mount can climb on ceilings and walls as easily as it moves on the ground, and so can its rider.", "Uncontrolled: A riderless spider mount will eventually run away. At the start of the spider's turn roll a d4; if you roll less than the escalation die, the mount flees."],
+        isStaggered: false,
+        id: 154
+    },
+
+    {
+        name: "Weaver Swarm",
+        level: 3,
+        type: "mook",
+        mookNumber: 1,
+        initiative: "+9",
+        ac: 19,
+        pd: 17,
+        md: 13,
+        hp: 10,
+        health: 10,
+        attacks: ["A Thousand Needle Wounds +8 vs AC - 5 damage. Natural 16+: the target is Hampered until the end of its next turn. Natural 18+: As above, and the target is also Stuck until the end of its next turn."],
+        abilities: ["Clinging: Enemies take a -5 penalty to disengage checks against the swarm.", "Wall Crawler: The swarm can climb on ceilings and walls as easily as it moves on the ground."],
+        isStaggered: false,
+        id: 155
+    },
+
+    {
+        name: "Lokkris",
+        level: 6,
+        type: "mook",
+        mookNumber: 1,
+        initiative: "+16",
+        ac: 22,
+        pd: 21,
+        md: 14,
+        hp: 23,
+        health: 23,
+        attacks: ["Stingers On Each Leg +11 vs AC - 8 damage, and 5 ongoing poison damage."],
+        abilities: ["Lays Eggs In Your Eyes!: Each time the lokkris hits with an attack, the crit range for all lokkris against that target expands by 1 until the end of the battle.", "Flight: Lokkris are quick darting fliers that move with an angry buzzing sound.", "Wall Crawler: A lokkris can climb on ceilings and walls as easily as it moves on the ground."],
+        isStaggered: false,
+        id: 156
     }
 
 ]
