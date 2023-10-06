@@ -305,6 +305,7 @@ input[type=number] {
     padding: 1em;
     background-color: lightgoldenrodyellow;
     box-shadow: 0 0 5px lightgrey;
+    border-radius: 8px;
 }
 
 .modal-header {
