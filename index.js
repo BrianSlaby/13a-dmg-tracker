@@ -10,19 +10,23 @@ let selectedMonsters = []
 //    EVENT LISTENERS
 // =======================
 
+// Select monsters button to pull up modal
 document.getElementById('select-monsters-btn').addEventListener("click", function() {
     document.getElementById('selection-modal').style.display = "block"
 })
 
+// Close modal button
 document.getElementById('close-modal-btn').addEventListener("click", function(){
     document.getElementById('selection-modal').style.display = "none"
 })
 
+// Clear monsters
 document.getElementById('clear-monsters-btn').addEventListener("click", function(){
     selectedMonsters = []
     render()
 })
 
+// Adds monster selected from dropdown
 document.getElementById('monsters-dropdown').addEventListener('change', function(e) {
     const targetMonsterObj = JSON.parse(JSON.stringify([monsterData.filter(function(monster){
         return monster.name === e.target.value
@@ -32,12 +36,14 @@ document.getElementById('monsters-dropdown').addEventListener('change', function
     render()
 })
 
+// Handle damage
 document.addEventListener("click", function(e) {
     if (e.target.dataset.dmgbtn) {
         handleDamageClick(e.target.dataset.dmgbtn)
     }
 })
 
+// 
 document.addEventListener("change", function(e) {
     if (e.target.dataset.level) {
         render()
@@ -93,7 +99,7 @@ function filterMonsterData() {
 }
 
 function checkMonsterLevels() {
-    let levelCheckboxes = document.querySelectorAll(".level-check")
+    const levelCheckboxes = document.querySelectorAll(".level-check")
     let selectedLevels = []
     levelCheckboxes.forEach(function(box) {
         if (box.checked) {
