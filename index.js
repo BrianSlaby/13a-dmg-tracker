@@ -101,9 +101,9 @@ function filterMonsterData() {
 function checkMonsterLevels() {
     const levelCheckboxes = document.querySelectorAll(".level-check")
     let selectedLevels = []
-    levelCheckboxes.forEach(function(box) {
-        if (box.checked) {
-            selectedLevels.push(box.dataset.level)
+    levelCheckboxes.forEach(checkBox => {
+        if (checkBox.checked) {
+            selectedLevels.push(checkBox.dataset.level)
         }
     })
     return selectedLevels
