@@ -203,7 +203,7 @@ header {
 /*      BUTTONS       */
 /* ===================*/
 
-.btn {
+.text-btn {
     font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
     font-weight: 700;
     text-transform: uppercase;
@@ -211,6 +211,14 @@ header {
     padding: 0.7em 1.4em;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
+}
+
+.icon-btn {
+    padding: 0.6em 0.4em;
+    border-radius: 50%;
+    border: none;
+    background-color: transparent;
     cursor: pointer;
 }
 
@@ -269,16 +277,12 @@ header {
 }
 
 .rmvbtn {
-    padding: 0;
-    border-radius: 50%;
-    justify-self: flex-end;
-    background-color: transparent;
     color: #f5f5f5;
-    cursor: pointer;
+    justify-self: flex-end;
 }
 
 .rmvbtn:hover {
-    color: #cc6e7e;
+    color: #adadad;
 }
 
 /* ===================*/
@@ -319,8 +323,8 @@ input[type=number] {
     left: 0;
     max-width: 600px;
     padding: 1em;
-    background-color: lightgoldenrodyellow;
-    box-shadow: 0 0 5px lightgrey;
+    background-color: #f0f0f0;
+    box-shadow: 2px 2px 8px #6e6e6e;
     border-radius: 8px;
 }
 
@@ -330,17 +334,11 @@ input[type=number] {
 }
 
 #close-modal-btn {
-    font-weight: 900;
-    font-size: 1.25rem;
-    padding: 0.2em 0.5em;
     color: firebrick;
-    border: solid 2px firebrick;
-    background-color: lightgrey;
-    border-radius: 4px;
 }
 
 #close-modal-btn:hover {
-    background-color: lightpink;
+    color: #6e6e6e;
 }
 
 #level-check-container {
