@@ -102,10 +102,7 @@ function checkMonsterLevels() {
     return selectedLevels
 }
 
-// Needs to be refactored
-    // Function that returns mookNumber based on input
-    // Function that updates health based on mookNumber
-    // That section that updates HTML should be in the main HTML function
+// Needs to be refactored?
 function handleMookNumber(cardIndex) {
     const input = document.getElementById(`mooks${cardIndex}`)
 
@@ -125,19 +122,11 @@ function handleMookNumber(cardIndex) {
 
 
 function getMonsterDropdownHtml () {
-    let monsterDropdownHtml = `
-    <option value="">Please Select a Monster</option>
-    `
+    const dropdownDefault = `<option value="">Please Select a Monster</option>`
+    const filteredMonsters = filterMonsterData()
+    const filteredMonstersHtml = filteredMonsters.map(monster => `<option value="${monster.name}">${monster.name}, Level ${monster.level} ${monster.type}</option>`)
 
-    const filteredMonsterData = filterMonsterData()
-
-    filteredMonsterData.forEach(function(monster) {
-        monsterDropdownHtml += `
-        <option value="${monster.name}">${monster.name}, Level ${monster.level} ${monster.type}</option>
-        `
-    })
-
-    document.getElementById('monsters-dropdown').innerHTML = monsterDropdownHtml
+    document.getElementById('monsters-dropdown').innerHTML = [dropdownDefault, ...filteredMonstersHtml].join("")
 }
 
 // Refactor to use .map, using optional index parameter it should be fine
