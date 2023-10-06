@@ -148,7 +148,7 @@ function getMonsterCardHtml () {
         <div class="monster-card" id="monster-card${index}">
             <div class="card-header card-sctn">
                 <h3>${monster.name}</h3>
-                <button class="btn" id="rmv${index}-btn" data-rmvbtn=${index}>X</button>
+                <button class="btn rmvbtn" id="rmv${index}-btn" data-rmvbtn=${index}><i class="fa-regular fa-circle-xmark fa-xl" data-rmvbtn=${index}></i></button>
             </div>
             <div class="card-subheader card-sctn card-sctn-light">
                 <p>Level ${monster.level} ${monster.type}</p>
