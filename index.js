@@ -10,19 +10,23 @@ let selectedMonsters = []
 //    EVENT LISTENERS
 // =======================
 
+// Select monsters button to pull up modal
 document.getElementById('select-monsters-btn').addEventListener("click", function() {
     document.getElementById('selection-modal').style.display = "block"
 })
 
+// Close modal button
 document.getElementById('close-modal-btn').addEventListener("click", function(){
     document.getElementById('selection-modal').style.display = "none"
 })
 
+// Clear monsters
 document.getElementById('clear-monsters-btn').addEventListener("click", function(){
     selectedMonsters = []
     render()
 })
 
+// Adds monster selected from dropdown
 document.getElementById('monsters-dropdown').addEventListener('change', function(e) {
     const targetMonsterObj = JSON.parse(JSON.stringify([monsterData.filter(function(monster){
         return monster.name === e.target.value
@@ -32,12 +36,21 @@ document.getElementById('monsters-dropdown').addEventListener('change', function
     render()
 })
 
+// Handle damage
 document.addEventListener("click", function(e) {
     if (e.target.dataset.dmgbtn) {
         handleDamageClick(e.target.dataset.dmgbtn)
     }
 })
 
+// Remove Monster Card
+document.addEventListener("click", e => {
+    if (e.target.dataset.rmvbtn) {
+        removeMonsterCard(e.target.dataset.rmvbtn)
+    }
+})
+
+// 
 document.addEventListener("change", function(e) {
     if (e.target.dataset.level) {
         render()
@@ -50,30 +63,28 @@ document.addEventListener("change", function(e) {
 //    GENERAL FUNCTIONS
 // ======================== 
 
-function handleDamageClick(monsterCardId) {
-    const index = monsterCardId
-    const damage = document.getElementById(`dmg${index}`).value
+function handleDamageClick(cardIndex) {
+    const damage = document.getElementById(`dmg${cardIndex}`).value
 
-    selectedMonsters[index].health = selectedMonsters[index].health - damage
+    selectedMonsters[cardIndex].health = selectedMonsters[cardIndex].health - damage
 
-    if (selectedMonsters[index].health <= selectedMonsters[index].hp / 2) {
-        selectedMonsters[index].isStaggered = true
+    if (selectedMonsters[cardIndex].health <= selectedMonsters[cardIndex].hp / 2) {
+        selectedMonsters[cardIndex].isStaggered = true
     } else {
-        selectedMonsters[index].isStaggered = false
+        selectedMonsters[cardIndex].isStaggered = false
     }
 
-    if (selectedMonsters[index].type === "mook") {
-        selectedMonsters[index].mookNumber = Math.ceil(selectedMonsters[index].health / selectedMonsters[index].hp)
+    if (selectedMonsters[cardIndex].type === "mook") {
+        selectedMonsters[cardIndex].mookNumber = Math.ceil(selectedMonsters[cardIndex].health / selectedMonsters[cardIndex].hp)
 
-        document.getElementById(`mookstatus${index}`).innerHTML = `
-        Number of Mooks: ${selectedMonsters[index].mookNumber}`
+        document.getElementById(`mookstatus${cardIndex}`).innerHTML = `
+        Number of Mooks: ${selectedMonsters[cardIndex].mookNumber}`
     }
-
     render()
 }
 
-function checkStaggeredClass(index) {
-    if (selectedMonsters[index].isStaggered) {
+function checkStaggeredClass(cardIndex) {
+    if (selectedMonsters[cardIndex].isStaggered) {
         return "staggered"
     } else {
         return ""
@@ -81,39 +92,39 @@ function checkStaggeredClass(index) {
 }
 
 function filterMonsterData() {
-    let filteredMonsterData = []
-    let selectedLevels = checkMonsterLevels()
-    monsterData.forEach(function(monster) {
-        if (selectedLevels.includes(monster.level.toString())) {
-            filteredMonsterData.push(monster)
-        }
-    })
-
-    return filteredMonsterData.sort((a, b) => (a.name > b.name) ? 1 : -1)
+    const selectedLevels = checkMonsterLevels()
+    return monsterData.filter(monster => {
+        return selectedLevels.includes(monster.level.toString())
+    }).sort((a, b) => (a.name > b.name) ? 1 : -1)
 }
 
 function checkMonsterLevels() {
-    let levelCheckboxes = document.querySelectorAll(".level-check")
+    const levelCheckboxes = document.querySelectorAll(".level-check")
     let selectedLevels = []
-    levelCheckboxes.forEach(function(box) {
-        if (box.checked) {
-            selectedLevels.push(box.dataset.level)
+    levelCheckboxes.forEach(checkBox => {
+        if (checkBox.checked) {
+            selectedLevels.push(checkBox.dataset.level)
         }
     })
     return selectedLevels
 }
 
-function handleMookNumber(monsterCardId) {
-    const index = monsterCardId
-    const input = document.getElementById(`mooks${index}`)
+// Needs to be refactored?
+function handleMookNumber(cardIndex) {
+    const input = document.getElementById(`mooks${cardIndex}`)
 
-    selectedMonsters[index].mookNumber = input.value
+    selectedMonsters[cardIndex].mookNumber = input.value
 
-    selectedMonsters[index].health = selectedMonsters[index].health * selectedMonsters[index].mookNumber
+    selectedMonsters[cardIndex].health = selectedMonsters[cardIndex].health * selectedMonsters[cardIndex].mookNumber
 
-    document.getElementById(`mookstatus${index}`).innerHTML = `
-    Number of Mooks: ${selectedMonsters[index].mookNumber}
+    document.getElementById(`mookstatus${cardIndex}`).innerHTML = `
+    Number of Mooks: ${selectedMonsters[cardIndex].mookNumber}
     `
+    render()
+}
+
+function removeMonsterCard(cardIndex) {
+    selectedMonsters.splice(cardIndex, 1)
     render()
 }
 
@@ -123,115 +134,66 @@ function handleMookNumber(monsterCardId) {
 
 
 function getMonsterDropdownHtml () {
-    let monsterDropdownHtml = `
-    <option value="">Please Select a Monster</option>
-    `
+    const dropdownDefault = `<option value="">Please Select a Monster</option>`
+    const filteredMonsters = filterMonsterData()
+    const filteredMonstersHtml = filteredMonsters.map(monster => `<option value="${monster.name}">${monster.name}, Level ${monster.level} ${monster.type}</option>`)
 
-    const filteredMonsterData = filterMonsterData()
-
-    filteredMonsterData.forEach(function(monster) {
-        monsterDropdownHtml += `
-        <option value="${monster.name}">${monster.name}, Level ${monster.level} ${monster.type}</option>
-        `
-    })
-
-    document.getElementById('monsters-dropdown').innerHTML = monsterDropdownHtml
+    document.getElementById('monsters-dropdown').innerHTML = [dropdownDefault, ...filteredMonstersHtml].join("")
 }
 
+
 function getMonsterCardHtml () {
-    let monsterCardHtml = ``
-
-    for (let i = 0; i < selectedMonsters.length; i++) {
-
-        if (selectedMonsters[i].type === "mook") {
-            monsterCardHtml += `
-            <div class="monster-card" id="monster-card${i}">
-                <div class="card-header card-sctn">
-                    <h3>${selectedMonsters[i].name}</h3>
-                </div>
-                <div class="card-subheader card-sctn card-sctn-light">
-                    <p>Level ${selectedMonsters[i].level} ${selectedMonsters[i].type}</p>
-                    <p>Initiative: ${selectedMonsters[i].initiative}</p>
-                    <div class="mook-container">
-                        <label for="mooks${i}">Enter number of mooks</label>
-                        <input type="number" step="1" class="mooks-input" id="mooks${i}" name="mooks${i}" data-mookinput="${i}">
-                        <p id="mookstatus${i}">Number of Mooks: ${selectedMonsters[i].mookNumber}</p>
-                    </div>
-                </div>
-                <div class="defense-block card-sctn card-sctn-dark">
-                    <ul class="defense-list">
-                        <li>AC: ${selectedMonsters[i].ac}</li>
-                        <li>PD: ${selectedMonsters[i].pd}</li>
-                        <li>MD: ${selectedMonsters[i].md}</li>
-                    </ul>
-                    <div class="health-container">
-                        <p>Total HP: ${selectedMonsters[i].hp}</p>
-                        <p><span id="accent${i}" class=${checkStaggeredClass(i)}>Current HP: ${selectedMonsters[i].health}</span></p>
-                    </div>
-                </div>
-                <div class="damage-block card-sctn card-sctn-light">
-                    <div class="dmg-input-container">
-                        <label for="dmg${i}">Damage</label>
-                        <input type="number" step="1" id="dmg${i}" 
-                        name="dmg${i}" class="dmg-input" data-dmginput="${i}">
-                    </div>
-                    <div class="dmg-btn-container">
-                        <button id="dmg${i}-btn" class="btn dmg-btn" data-dmgbtn="${i}">Deal Damage</button>
-                    </div>
-                </div>
-                <div class="attack-block card-sctn card-sctn-dark">
-                    <p>Attacks:</p>
-                    <ul class="attack-list"><li>${selectedMonsters[i].attacks.join("</li><li>")}</li></ul>
-                </div>
-                <div class="ability-block card-sctn card-sctn-light">
-                    <p>Abilities:</p>
-                    <ul class="ability-list"><li>${selectedMonsters[i].abilities.join("</li><li>")}</li></ul>
+    const monsterCardHtml = selectedMonsters.map((monster, index) => {
+        return `
+        <div class="monster-card" id="monster-card${index}">
+            <div class="card-header card-sctn">
+                <h3>${monster.name}</h3>
+                <button class="btn rmvbtn" id="rmv${index}-btn" data-rmvbtn=${index}><i class="fa-regular fa-circle-xmark fa-xl" data-rmvbtn=${index}></i></button>
+            </div>
+            <div class="card-subheader card-sctn card-sctn-light">
+                <p>Level ${monster.level} ${monster.type}</p>
+                <p>Initiative: ${monster.initiative}</p>
+            </div>
+            <div class="defense-block card-sctn card-sctn-dark">
+                <ul class="defense-list">
+                    <li>AC: ${monster.ac}</li>
+                    <li>PD: ${monster.pd}</li>
+                    <li>MD: ${monster.md}</li>
+                </ul>
+                <div class="health-container">
+                    <p>Total HP: ${monster.hp}</p>
+                    <p><span id="accent${index}" class=${checkStaggeredClass(index)}>Current HP: ${monster.health}</span></p>
                 </div>
             </div>
-            `
-        } else {
-            monsterCardHtml += `
-            <div class="monster-card" id="monster-card${i}">
-                <div class="card-header card-sctn">
-                    <h3>${selectedMonsters[i].name}</h3>
+            <div class="damage-block card-sctn card-sctn-light">
+                <div class="dmg-input-container">
+                    <label for="dmg${index}">Damage</label>
+                    <input type="number" step="1" id="dmg${index}" 
+                    name="dmg${index}" class="dmg-input" data-dmginput="${index}">
                 </div>
-                <div class="card-subheader card-sctn card-sctn-light">
-                    <p>Level ${selectedMonsters[i].level} ${selectedMonsters[i].type}</p>
-                    <p>Initiative: ${selectedMonsters[i].initiative}</p>
-                </div>
-                <div class="defense-block card-sctn card-sctn-dark">
-                    <ul class="defense-list">
-                        <li>AC: ${selectedMonsters[i].ac}</li>
-                        <li>PD: ${selectedMonsters[i].pd}</li>
-                        <li>MD: ${selectedMonsters[i].md}</li>
-                    </ul>
-                    <div class="health-container">
-                        <p>Total HP: ${selectedMonsters[i].hp}</p>
-                        <p><span id="accent${i}" class=${checkStaggeredClass(i)}>Current HP: ${selectedMonsters[i].health}</span></p>
-                    </div>
-                </div>
-                <div class="damage-block card-sctn card-sctn-light">
-                    <div class="dmg-input-container">
-                        <label for="dmg${i}">Damage</label>
-                        <input type="number" step="1" id="dmg${i}" 
-                        name="dmg${i}" class="dmg-input" data-dmginput="${i}">
-                    </div>
-                    <div class="dmg-btn-container">
-                        <button id="dmg${i}-btn" class="btn dmg-btn" data-dmgbtn="${i}">Deal Damage</button>
-                    </div>
-                </div>
-                <div class="attack-block card-sctn card-sctn-dark">
-                    <p>Attacks:</p>
-                    <ul class="attack-list"><li>${selectedMonsters[i].attacks.join("</li><li>")}</li></ul>
-                </div>
-                <div class="ability-block card-sctn card-sctn-light">
-                    <p>Abilities:</p>
-                    <ul class="ability-list"><li>${selectedMonsters[i].abilities.join("</li><li>")}</li></ul>
+                <div class="dmg-btn-container">
+                    <button id="dmg${index}-btn" class="btn dmg-btn" data-dmgbtn="${index}">Deal Damage</button>
                 </div>
             </div>
-            `
-        }
-    }
+            <div class="attack-block card-sctn card-sctn-dark">
+                <p>Attacks:</p>
+                <ul class="attack-list"><li>${monster.attacks.join("</li><li>")}</li></ul>
+            </div>
+            <div class="ability-block card-sctn card-sctn-light">
+                <p>Abilities:</p>
+                <ul class="ability-list"><li>${monster.abilities.join("</li><li>")}</li></ul>
+            </div>
+
+            ${monster.type === "mook" ? 
+            `<div class="mook-container card-sctn card-sctn-dark">
+                <label for="mooks${index}">Enter number of mooks</label>
+                <input type="number" step="1" class="mooks-input" id="mooks${index}" name="mooks${index}" data-mookinput="${index}">
+                <p id="mookstatus${index}">Number of Mooks: ${monster.mookNumber}</p>
+            </div>` 
+            : ""}
+        </div>
+        `
+    }).join("")
 
     document.getElementById('statblock-container').innerHTML = monsterCardHtml
 }

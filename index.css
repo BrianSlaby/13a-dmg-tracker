@@ -89,6 +89,9 @@ header {
     background-color: #415c2d;
     color: #FFF;
     border-radius: 7px 7px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .card-sctn-dark {
@@ -265,6 +268,19 @@ header {
     color: #1f1e1e;
 }
 
+.rmvbtn {
+    padding: 0;
+    border-radius: 50%;
+    justify-self: flex-end;
+    background-color: transparent;
+    color: #f5f5f5;
+    cursor: pointer;
+}
+
+.rmvbtn:hover {
+    color: #cc6e7e;
+}
+
 /* ===================*/
 /*       INPUTS       */
 /* ===================*/
@@ -305,6 +321,7 @@ input[type=number] {
     padding: 1em;
     background-color: lightgoldenrodyellow;
     box-shadow: 0 0 5px lightgrey;
+    border-radius: 8px;
 }
 
 .modal-header {
