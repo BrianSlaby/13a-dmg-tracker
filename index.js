@@ -87,15 +87,10 @@ function checkStaggeredClass(index) {
 }
 
 function filterMonsterData() {
-    let filteredMonsterData = []
-    let selectedLevels = checkMonsterLevels()
-    monsterData.forEach(function(monster) {
-        if (selectedLevels.includes(monster.level.toString())) {
-            filteredMonsterData.push(monster)
-        }
-    })
-
-    return filteredMonsterData.sort((a, b) => (a.name > b.name) ? 1 : -1)
+    const selectedLevels = checkMonsterLevels()
+    return monsterData.filter(monster => {
+        return selectedLevels.includes(monster.level.toString())
+    }).sort((a, b) => (a.name > b.name) ? 1 : -1)
 }
 
 function checkMonsterLevels() {
