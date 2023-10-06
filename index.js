@@ -70,10 +70,9 @@ function handleDamageClick(cardIndex) {
     if (selectedMonsters[cardIndex].type === "mook") {
         selectedMonsters[cardIndex].mookNumber = Math.ceil(selectedMonsters[cardIndex].health / selectedMonsters[cardIndex].hp)
 
-        document.getElementById(`mookstatus${index}`).innerHTML = `
-        Number of Mooks: ${selectedMonsters[index].mookNumber}`
+        document.getElementById(`mookstatus${cardIndex}`).innerHTML = `
+        Number of Mooks: ${selectedMonsters[cardIndex].mookNumber}`
     }
-
     render()
 }
 
