@@ -56,20 +56,19 @@ document.addEventListener("change", function(e) {
 //    GENERAL FUNCTIONS
 // ======================== 
 
-function handleDamageClick(monsterCardId) {
-    const index = monsterCardId
-    const damage = document.getElementById(`dmg${index}`).value
+function handleDamageClick(cardIndex) {
+    const damage = document.getElementById(`dmg${cardIndex}`).value
 
-    selectedMonsters[index].health = selectedMonsters[index].health - damage
+    selectedMonsters[cardIndex].health = selectedMonsters[cardIndex].health - damage
 
-    if (selectedMonsters[index].health <= selectedMonsters[index].hp / 2) {
-        selectedMonsters[index].isStaggered = true
+    if (selectedMonsters[cardIndex].health <= selectedMonsters[cardIndex].hp / 2) {
+        selectedMonsters[cardIndex].isStaggered = true
     } else {
-        selectedMonsters[index].isStaggered = false
+        selectedMonsters[cardIndex].isStaggered = false
     }
 
-    if (selectedMonsters[index].type === "mook") {
-        selectedMonsters[index].mookNumber = Math.ceil(selectedMonsters[index].health / selectedMonsters[index].hp)
+    if (selectedMonsters[cardIndex].type === "mook") {
+        selectedMonsters[cardIndex].mookNumber = Math.ceil(selectedMonsters[cardIndex].health / selectedMonsters[cardIndex].hp)
 
         document.getElementById(`mookstatus${index}`).innerHTML = `
         Number of Mooks: ${selectedMonsters[index].mookNumber}`
@@ -78,8 +77,8 @@ function handleDamageClick(monsterCardId) {
     render()
 }
 
-function checkStaggeredClass(index) {
-    if (selectedMonsters[index].isStaggered) {
+function checkStaggeredClass(cardIndex) {
+    if (selectedMonsters[cardIndex].isStaggered) {
         return "staggered"
     } else {
         return ""
@@ -104,16 +103,19 @@ function checkMonsterLevels() {
     return selectedLevels
 }
 
-function handleMookNumber(monsterCardId) {
-    const index = monsterCardId
-    const input = document.getElementById(`mooks${index}`)
+// Needs to be refactored
+    // Function that returns mookNumber based on input
+    // Function that updates health based on mookNumber
+    // That section that updates HTML should be in the main HTML function
+function handleMookNumber(cardIndex) {
+    const input = document.getElementById(`mooks${cardIndex}`)
 
-    selectedMonsters[index].mookNumber = input.value
+    selectedMonsters[cardIndex].mookNumber = input.value
 
-    selectedMonsters[index].health = selectedMonsters[index].health * selectedMonsters[index].mookNumber
+    selectedMonsters[cardIndex].health = selectedMonsters[cardIndex].health * selectedMonsters[cardIndex].mookNumber
 
-    document.getElementById(`mookstatus${index}`).innerHTML = `
-    Number of Mooks: ${selectedMonsters[index].mookNumber}
+    document.getElementById(`mookstatus${cardIndex}`).innerHTML = `
+    Number of Mooks: ${selectedMonsters[cardIndex].mookNumber}
     `
     render()
 }
@@ -139,6 +141,9 @@ function getMonsterDropdownHtml () {
     document.getElementById('monsters-dropdown').innerHTML = monsterDropdownHtml
 }
 
+// Refactor to use .map, using optional index parameter it should be fine
+// Conditionally render mook HTML instead of doubling up this code
+// Move mook contaner to the bottom of the card to reduce accidental inputs
 function getMonsterCardHtml () {
     let monsterCardHtml = ``
 
