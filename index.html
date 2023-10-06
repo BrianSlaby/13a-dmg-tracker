@@ -21,8 +21,8 @@
 
         <main>
             <div id="main-button-container">
-                <button id="select-monsters-btn" class="main-btn btn">Choose Monsters</button>
-                <button id="clear-monsters-btn" class="main-btn btn">Clear Monsters</button>
+                <button id="select-monsters-btn" class="main-btn text-btn">Choose Monsters</button>
+                <button id="clear-monsters-btn" class="main-btn text-btn">Clear Monsters</button>
             </div>
             
             <div id="statblock-container">
@@ -36,7 +36,7 @@
 
         <div class="modal" id="selection-modal">
             <div class="modal-header">
-                <button id="close-modal-btn">X</button>
+                <button class="icon-btn" id="close-modal-btn"><i class="fa-regular fa-circle-xmark fa-2xl"></i></button>
             </div>
 
             <h2>Monster Levels</h2>
@@ -111,16 +111,16 @@
         </div>
 
 <!-- ====== Move to getMonsterCardHtml() ====== -->
-        <div class="modal" id="mook-modal">
+        <!-- <div class="modal" id="mook-modal">
             <div class="modal-header">
-                <button id="close-modal-btn">X</button>
+                <button id="close-modal-btn"><i class="fa-regular fa-circle-xmark fa-xl"></i></button>
             </div>
 
             <div id="mook-container">
                 <label for="mooks">Enter number of mooks</label>
                 <input type="number" step="1" class="mooks-input" id="mooks" name="mooks" data-mookinput="">
             </div>
-        </div>
+        </div> -->
 
         <footer>
             <p class="footer-credit">Background image by <a href="https://unsplash.com/@sibilant?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Josephine Bredehoft</a> on <a href="https://unsplash.com/photos/KsAo8ouBn8A?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
