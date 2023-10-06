@@ -43,6 +43,13 @@ document.addEventListener("click", function(e) {
     }
 })
 
+// Remove Monster Card
+document.addEventListener("click", e => {
+    if (e.target.dataset.rmvbtn) {
+        removeMonsterCard(e.target.dataset.rmvbtn)
+    }
+})
+
 // 
 document.addEventListener("change", function(e) {
     if (e.target.dataset.level) {
@@ -116,6 +123,11 @@ function handleMookNumber(cardIndex) {
     render()
 }
 
+function removeMonsterCard(cardIndex) {
+    selectedMonsters.splice(cardIndex, 1)
+    render()
+}
+
 // ========================
 //     HTML FUNCTIONS
 // ========================
@@ -136,6 +148,7 @@ function getMonsterCardHtml () {
         <div class="monster-card" id="monster-card${index}">
             <div class="card-header card-sctn">
                 <h3>${monster.name}</h3>
+                <button class="btn" id="rmv${index}-btn" data-rmvbtn=${index}>X</button>
             </div>
             <div class="card-subheader card-sctn card-sctn-light">
                 <p>Level ${monster.level} ${monster.type}</p>
