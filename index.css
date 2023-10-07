@@ -47,8 +47,18 @@ header {
     margin: none;
 }
 
-.footer-credit {
-    font-size: 0.7rem;
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 3em;
+    padding: 2em;
+    font-size: 0.75rem;
+    background-color: #f0f0f0;
+}
+
+.footer-column {
+    flex-basis: 40%;
 }
 
 /* ====================*/
