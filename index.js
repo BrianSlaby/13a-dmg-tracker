@@ -28,9 +28,7 @@ document.getElementById('clear-monsters-btn').addEventListener("click", function
 
 // Adds monster selected from dropdown
 document.getElementById('monsters-dropdown').addEventListener('change', function(e) {
-    const targetMonsterObj = JSON.parse(JSON.stringify([monsterData.filter(function(monster){
-        return monster.name === e.target.value
-    })[0]]))
+    const targetMonsterObj = JSON.parse(JSON.stringify([monsterData.filter(monster => monster.name === e.target.value)[0]]))
 
     selectedMonsters = [...selectedMonsters, ...targetMonsterObj]
     render()
@@ -44,13 +42,13 @@ document.addEventListener("click", function(e) {
 })
 
 // Remove Monster Card
-document.addEventListener("click", e => {
+document.addEventListener("click", function(e) {
     if (e.target.dataset.rmvbtn) {
         removeMonsterCard(e.target.dataset.rmvbtn)
     }
 })
 
-// 
+// I'm not sure what the first part of this if statement is doing?
 document.addEventListener("change", function(e) {
     if (e.target.dataset.level) {
         render()
