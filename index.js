@@ -48,10 +48,11 @@ document.addEventListener("click", function(e) {
     }
 })
 
-// I'm not sure what the first part of this if statement is doing?
 document.addEventListener("change", function(e) {
+    // calls render when a level checkbox is checked/unchecked
     if (e.target.dataset.level) {
         render()
+    // handles mook numbers
     } else if (e.target.dataset.mookinput) {
         handleMookNumber(e.target.dataset.mookinput)
     }
@@ -107,7 +108,6 @@ function checkMonsterLevels() {
     return selectedLevels
 }
 
-// Needs to be refactored?
 function handleMookNumber(cardIndex) {
     const input = document.getElementById(`mooks${cardIndex}`)
 
