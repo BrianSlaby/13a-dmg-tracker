@@ -115,7 +115,7 @@ function handleMookNumber(cardIndex) {
 
     selectedMonsters[cardIndex].mookNumber = input.value
 
-    selectedMonsters[cardIndex].health = selectedMonsters[cardIndex].health * selectedMonsters[cardIndex].mookNumber
+    selectedMonsters[cardIndex].health = selectedMonsters[cardIndex].hp * selectedMonsters[cardIndex].mookNumber
 
     document.getElementById(`mookstatus${cardIndex}`).innerHTML = `
     Number of Mooks: ${selectedMonsters[cardIndex].mookNumber}
