@@ -2529,6 +2529,86 @@ const monsterData = [
         abilities: ["Lays Eggs In Your Eyes!: Each time the lokkris hits with an attack, the crit range for all lokkris against that target expands by 1 until the end of the battle.", "Flight: Lokkris are quick darting fliers that move with an angry buzzing sound.", "Wall Crawler: A lokkris can climb on ceilings and walls as easily as it moves on the ground."],
         isStaggered: false,
         id: 156
+    },
+
+    {
+        name: "Catacomb Dragon",
+        level: 3,
+        type: "wrecker (large)",
+        initiative: "+9",
+        ac: 19,
+        pd: 17,
+        md: 15,
+        hp: 104,
+        health: 104,
+        attacks: ["Acid Fangs +8 vs AC (2 attacks) - 8 damage, and 5 ongoing acid damage. Natural 5, 10, 15, or 20: the dragon regains the use of its Caustic Breath if it's expended and can use it during its next turn.", "C: Caustic Breath +7 vs PD (1D3 nearby enemies) - 10 acid damage, 5 ongoing acid damage, and the target is caught in an acidic haze (see below) with an effect that depends on the roll. Even Hit: while in the haze, the target is Dazed from choking or blinding. Odd Hit: While in the haze, the target takes a -5 penalty to all saves against acid damage.  Miss: 5 ongoing acid damage. Acidic Haze: the haze is magical, semi-aware, and remains around the target until the end of the battle or until removed magically. A spellcaster can cast a spell that targets AC or PD to attack the haze and destroy it - the haze has 1 HP and an AC/PD of 22. The GM is encouraged to play fast and loose with physics here: the mist can be burned, condensed/frozen, blown away, absorbed, transmuted, etc. At the GM's discretion, there may be physical ways to remove the haze, but it should require a hard DC. Limited Use: 1/battle, as a quick action."],
+        abilities: ["Vulnerability: Thunder", "Resist Acid 14+", "All-terrain Terror: A catacomb dragon flies reasonably well, powerful and fast in a straight line though it's not as manueverable as more agile flyers. It can also burrow quickly and effectively due to the acidic coating on its skin.", "Corrosive Contact: When an enemy is engaged with the catacomb dragon at the start of its turn, it takes 3 acid damage.", "Escalator: A dragon adds the escalation die to its attack rolls"],
+        isStaggered: false,
+        id: 157
+    },
+
+    {
+        name: "Gorge Dragon",
+        level: 5,
+        type: "spoiler (large)",
+        initiative: "+13",
+        ac: 21,
+        pd: 19,
+        md: 17,
+        hp: 164,
+        health: 164,
+        attacks: ["Coiling +10 vs PD - 18 damage, and the dragon grabs the target; while grabbed, the target takes 9 damage at the start of each of its turns. Natural 5, 10, 15, or 20: the dragon regains the use of its Dazzling Breath if it's expended and can use it during its next turn.", "Bite +13 (includes grab bonus) vs AC (one enemy it's grabbing) - 25 damage. Natural 16+: the target takes no damage and is instead Swallowed Whole (see below). Limited use: 1/round, as a free action.", "C: Dazzling Breath +9 vs MD (1D3 nearby enemies) - 14 damage, and if the target has 40 HP or fewer after being hit, it's weakened until the end of its next turn. Limited Use: 1/battle, as a quick action."],
+        abilities: ["Vulnerability: Fire", "Resist Cold 14+", "Swallowed Whole: A creature that is swallowed whole must start making last gasp saves during its next turn. An ally can assist with the last gasp save as normal, but the save remains hard (16+) in that case. A roll of 16-19 causes the creature to be regurgitated from the dragon's gut, while a 20 means that the creature cuts/rips a hole through the dragon's flesh to escape (dealing basic attack damage automatically). GM note: this is a REALLY good place to stick weird treasure. Just sayin'.", "Chain Constrictor: The gorge dragon can have up to two enemies grabbed at the same time.", "Water-breathing: Gorge dragons swim well and can breathe underwater", "Flight: A dragon flies reasonably well, powerful and fast in a straight line though not as maneuverable as more agile fliers.", "Escalator: A dragon adds the escalation die to its attack rolls"],
+        isStaggered: false,
+        id: 158
+    },
+
+    {
+        name: "Void Dragon",
+        level: 7,
+        type: "caster (huge)",
+        initiative: "+13",
+        ac: 23,
+        pd: 21,
+        md: 19,
+        hp: 290,
+        health: 290,
+        attacks: ["Jaws and Claws +12 vs AC (2 attacks) - 26 damage. Natural 5, 10, 15, or 20: the dragon regains the use of its ensorceling breath if it's expended and can use it during its next turn. Miss: 13 damage.", "C: Ensorceling Breath +12 vs PD (1D3 nearby enemies) - 24 damage, and the dragon's breath coalesces into two small void beasts of rapidly shifting form (see below). Miss: the dragon's breath coalesces into one small void beast (see below).  Void Beasts: each beast appears next to the dragon, acts as it wishes, and enters the initiative order after the next two creatures have taken their turns. See void beast stats at the end of the entry. Limited Use: 1/battle, as a quick action."],
+        abilities: ["Draconic Grace: At the start of each of the void dragon's turns, roll a D6 to see if it gets an extra standard action. If the roll is equal to or less than the escalation die, the void dragon can take an extra standard action that turn. After the first success, the grace die bumps up to a D8. After the second success, it's a D10, then a D12 after the third success, and finally a D20 after the fourth one.", "Level 6 Void Beast: Slam +11 vs AC - 18 damage. Natural 5, 10, 15, or 20: the void beast spawns a new void beast at full HP. It follows the same rules for beasts formed by Ensorceling Breath. AC: 22, PD: 20, MD: 18, HP: 27", "Flight: A dragon flies reasonably well, powerful and fast in a straight line though not as maneuverable as more agile fliers.", "Escalator: A dragon adds the escalation die to its attack rolls"],
+        isStaggered: false,
+        id: 159
+    },
+
+    {
+        name: "Void Beast",
+        level: 6,
+        type: "troop",
+        initiative: "see Void Dragon entry",
+        ac: 22,
+        pd: 20,
+        md: 18,
+        hp: 27,
+        health: 27,
+        attacks: ["Slam +11 vs AC - 18 damage. Natural 5, 10, 15, or 20: the void beast spawns a new void beast at full HP. It follows the same rules for beasts formed by the Void Dragon's Ensorceling Breath."],
+        abilities: ["N/A"],
+        isStaggered: false,
+        id: 160
+    },
+
+    {
+        name: "Empyrean Dragon",
+        level: 9,
+        type: "spoiler (huge)",
+        initiative: "+17",
+        ac: 25,
+        pd: 23,
+        md: 21,
+        hp: 510,
+        health: 510,
+        attacks: ["Gleaming Bite +14 vs AC - 50 damage, and one effect triggers based on the head that attacks (GM's choice). Head 1: the target can't use recoveries until the end of its next turn. Head 2: one enemy that hit the dragon since the dragon's last turn takes 12 damage. Head 3: The target moves to a nearby non-harmful location of the dragon's choice as a free action. This movement can provoke opportunity attacks.", "C: Venom Breath +13 vs PD (1D3 +1 nearby enemies) - 35 damage. Swarming Motes: each time the dragon uses this attack, a swarm of light motes that resolve into scorpions and stinging insects swirl around the targets. The swarm harasses each targeted enemy, hit or miss. During its next turn, any enemy being swarmed this way must choose one: take 25 damage, OR roll twice for each attack roll it makes that turn, taking the lower result.", "[Special Trigger] C: Crying Heavens +13 vs MD (each enemy in the battle) - 20 ongoing damage. Miss: 10 ongoing damage. Temporal Manastorm: the empyrean dragon's connection with the overworld falters, creating a storm of distorted time and magic in the area. The dragon's critical hit range for all attacks expands by 2 until the end of the battle. In addition, when a target saves against the ongoing damage from this attack, the crit range of its attacks against the dragon expands by 1 until the end of the battle. Limited Use: 1/battle, as a free action when first staggered."],
+        abilities: ["Three Heads Are Better Than One: The empyrean dragon can make two Gleaming Bite attacks as a single standard action, one each from two heads. The third head is assumed to be maneuvering the body around. It can choose not to make one of those attacks to end any condition affecting it except ongoing damage (this includes the Stunned condition, even though it technically doesn't get an action while Stunned). An enemy who scores a critical hit against an empyrean dragon can forego the extra damage to lop off one of the dragon's heads. If an enemy deals 150 damage with a single attack against the dragon, the attack will also remove a head. An empyrean dragon with two remaining heads can make only one Gleaming Bite attack as a standard action and can't sacrifice that attack to remove conditions. The dragon dies if all three heads are removed.", "Intermittent Breath: An empyrean dragon can use Venom Breath 1D2+1 times per battle, but never two turns in a row.", "Flight: A dragon flies reasonably well, powerful and fast in a straight line though not as maneuverable as more agile fliers.", "Escalator: A dragon adds the escalation die to its attack rolls"],
+        isStaggered: false,
+        id: 161
     }
 
 ]
