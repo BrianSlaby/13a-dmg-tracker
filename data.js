@@ -2609,6 +2609,183 @@ const monsterData = [
         abilities: ["Three Heads Are Better Than One: The empyrean dragon can make two Gleaming Bite attacks as a single standard action, one each from two heads. The third head is assumed to be maneuvering the body around. It can choose not to make one of those attacks to end any condition affecting it except ongoing damage (this includes the Stunned condition, even though it technically doesn't get an action while Stunned). An enemy who scores a critical hit against an empyrean dragon can forego the extra damage to lop off one of the dragon's heads. If an enemy deals 150 damage with a single attack against the dragon, the attack will also remove a head. An empyrean dragon with two remaining heads can make only one Gleaming Bite attack as a standard action and can't sacrifice that attack to remove conditions. The dragon dies if all three heads are removed.", "Intermittent Breath: An empyrean dragon can use Venom Breath 1D2+1 times per battle, but never two turns in a row.", "Flight: A dragon flies reasonably well, powerful and fast in a straight line though not as maneuverable as more agile fliers.", "Escalator: A dragon adds the escalation die to its attack rolls"],
         isStaggered: false,
         id: 161
+    },
+
+    {
+        name: "Chaos Glorp",
+        level: 4,
+        type: "mook",
+        mookNumber: 1,
+        initiative: "+5",
+        ac: 17,
+        pd: 16,
+        md: 13,
+        hp: 20,
+        health: 20,
+        attacks: ["Oozespasm +8 vs AC - 3 ongoing damage, or 10 damage if the target is already taking ongoing damage.  Miss (splooshglumpbrekkk): The chaos glorp pops free from all enemies and moves as a free action to engage a nearby enemy taking ongoing damage."],
+        abilities: ["Spontaneous Chaos: When the escalation die reaches 6, the chaos glorp rolls a normal save. If it succeeds, it transforms into a chaos beast with full HP."],
+        isStaggered: false,
+        id: 162
+    },
+
+    {
+        name: "Chaos Beast",
+        level: 4,
+        type: "troop",
+        initiative: "+6",
+        ac: 18,
+        pd: 14,
+        md: 17,
+        hp: 48,
+        health: 48,
+        attacks: ["Bestial Chaos +9 vs AC - damage and effect depends on the natural roll. Natural Even Hit (peckpeckclaw): 7 damage, and the chaos beast can make another bestial chaos attack as a free action. Natural Odd Hit (slapgushslap): 15 ongoing damage. Miss (splooshglumpbrekkk): The chaos beast pops free from all enemies and moves to engage a random nearby enemy as a free action, preferably one it wasn't just engaged with."],
+        abilities: ["Chaos Combined: Once a chaos beast is staggered, it can combine with another chaos beast next to it as a quick action to become a full strength chaos brute acting on this beast's initiative. Replace the other beast with a chaos glorp mook."],
+        isStaggered: false,
+        id: 163
+    },
+
+    {
+        name: "Chaos Brute",
+        level: 4,
+        type: "wrecker (large)",
+        initiative: "+8",
+        ac: 20,
+        pd: 17,
+        md: 13,
+        hp: 60,
+        health: 60,
+        attacks: ["Brute Chaos +9 vs AC - Damage and effect depends on the natural roll. Natural Even Hit (stomptearsmash): 25 damage. Natural Odd Hit (slapgushslap): 15 ongoing damage. Miss (shameterrordespair): 1D3 random nearby enemies each take 10 psychic damage."],
+        abilities: ["Chaos Combined: Once a chaos brute is staggered, it can combine with another chaos brute or chaos beast* next to it as a quick action to become a full strength chaos behemoth: the new creature rolls initiative as if it had just entered the battle. *If a chaos beast and a chaos brute combine to create a chaos behemoth, the behemoth starts with 70 HP instead of 90 HP and takes a -1 penalty to all attacks and defenses."],
+        isStaggered: false,
+        id: 164
+    },
+
+    {
+        name: "Chaos Behemoth",
+        level: 4,
+        type: "spoiler (huge)",
+        initiative: "+5",
+        ac: 21,
+        pd: 16,
+        md: 16,
+        hp: 90,
+        health: 90,
+        attacks: ["Behemoth Chaos +9 vs AC - Damage and effect depends on the natural roll. Natural Even Hit (chompsucktear): 30 damage, and the chaos behemoth can make a Mewhowlwail attack as a free action. Natural Odd Hit (slapgushslap): 25 ongoing damage. Miss (slopspewbarf): 10 damage, and the target is Hampered until the end of its next turn.", "Mewhowlwail +9 vs MD (each nearby enemy) - 10 psychic damage, and if the target is taking ongoing damage, saves against that ongoing damage become hard saves (16+)."],
+        abilities: ["The Betrayal of the Flesh: When a nearby enemy taking ongoing damage drops to 0 HP or below, add +15 to the amount of ongoing damage that enemy is taking as its body melts and warps. At the GM's option, a creature slain in a battle involving a chaos behemoth might transform into a chaos glorp or chaos beast instead of having the decency to just die."],
+        isStaggered: false,
+        id: 165
+    },
+
+    {
+        name: "Iconic Chimera",
+        level: 8,
+        type: "wrecker (large)",
+        initiative: "+15",
+        ac: 24,
+        pd: 20,
+        md: 17,
+        hp: 320,
+        health: 320,
+        attacks: ["Fangs, Claws, and Horns +14 vs AC (3 attacks) - 25 damage. Natural 14-15: the target is Dazed until the end of the chimera's next turn from a headbutt. Natural 16-17: the target takes 20 ongoing damage from raking claws. Natural 18-20: the chimera can make a Fiery Breath attack as a free action.", "[Special Trigger] Fiery Breath +14 vs PD (up to 3 nearby enemies in a group) - 3D10 fire damage"],
+        abilities: ["Chimerical Change: At the start of battle each PC rolls one icon relationship die of their choice and one die chosen from their relationships by the GM. A roll of 6 means the chimera has shifted in a manner that gives it a chimerical flaw (F) that the adventurers can exploit. A roll of 5 indicates that the chimera gains both a flaw and a benefit associated with that icon. A result of 1 or 2 means that the chimera gains the icon's chimerical benefit (B) without the flaw.  See Bestiary page 43 for details, it's the whole page."],
+        isStaggered: false,
+        id: 166
+    },
+
+    {
+        name: "Chuul",
+        level: 6,
+        type: "spoiler (large)",
+        initiative: "+11",
+        ac: 25,
+        pd: 18,
+        md: 18,
+        hp: 126,
+        health: 126,
+        attacks: ["Crushing Claws + 11 vs AC (2 attacks) - 21 damage. Both attacks hit the same target: the chuul grabs the target.", "Crippling Tentacles +11 vs PD - the target is Weakened (save ends). First failed save: the target is Hampered and Weakened (save ends both). Second failed save: the target is instead Helpless (hard save ends, 16+). Quick Use: This attack only requires a quick action when used against an enemy the chuul is grabbing."],
+        abilities: ["Resist Psychic 16+", "Water-breathing: Chuuls swim well and can breathe underwater, though they prefer not to.", "[Nastier Special] Bite it Off: When the chuul scores a critical hit against a Weakened or Helpless foe, it bites off one of that enemy's hands. An adventurer with no hands might have trouble casting spells or holding weapons. (A cleric might be able to restore the missing appendage with a ritual).", "[Nastier Special] Fueled by Hate: Once per round when the chuul misses with an attack, its next attack that battle deals 4D6 extra poison damage on a hit."],
+        isStaggered: false,
+        id: 167
+    },
+
+    {
+        name: "Chuulish Swarm",
+        level: 6,
+        type: "troop",
+        initiative: "+13",
+        ac: 20,
+        pd: 18,
+        md: 16,
+        hp: 80,
+        health: 80,
+        attacks: ["Fly-by Tentacle Sting +11 vs AC - 15 poison damage. Natural Even Miss: the swarm can pop free from all enemies, and as a quick action this turn, it can move normally even if it has already moved this turn. Natural Odd Hit or Miss: the swarm can make a Sharp Claws attack this turn as a quick action instead of a standard action.", "Sharp Claws +11 vs AC - 10 damage, and 5 ongoing poison damage."],
+        abilities: ["Flight: The swarm flies fast and is agile, but has a wide turning radius.", "Resist Damage 16+", "Swarm: This monster is a swarm of chuul body parts cooperating to attack humanoids. Even though there are thousands of them, treat them as a single creature.", "Water-breathing: Chuuls swim well and can breathe underwater, though they prefer not to.", "[Nastier Special] Burrow Under Your Skin: When an attacker misses the swarm with a melee attack, that enemy takes 10 ongoing damage."],
+        isStaggered: false,
+        id: 168
+    },
+
+    {
+        name: "Massive Mutant Chuul",
+        level: 10,
+        type: "wrecker (huge)",
+        initiative: "+15",
+        ac: 27,
+        pd: 25,
+        md: 22,
+        hp: 450,
+        health: 450,
+        attacks: ["Crushing Claws +15 vs AC (2 attacks) - 70 damage. Both attacks hit the same target: the chuul grabs the target. Miss: 35 damage.", "Crippling Tentacles +15 vs PD - the target is Weakened (hard save ends, 16+). First failed save: the target is Hampered and Weakened (hard save ends both). Second failed save: the target is instead Helpless (hard save ends). Quick Use: this attack only requires a quick action when used against an enemy the chuul is grabbing.", "[Chuul Mutation] R: Venom Spit +16 vs PD (1D3 nearby or far away enemies in a group) - 40 poison damage. First attack is a natural even roll: the chuul can make a second Venom Spit attack against the same group as a free action."],
+        abilities: ["I Hate You All: Once per round when the chuul is engaged with one or more enemies and is the target of an attack, it can try to interpose one of those enemies between itself and the attack as a free action after seeing the attack roll. That enemy rolls a normal save; on a failure, it becomes the target of the attack instead of the chuul. If the chuul tries to interpose an enemy it's grabbing, the save is hard (16+) instead.", "Resist Psychic 16+", "Water-breathing: Chuuls swim well and can breathe underwater, though they prefer not to.", "Chuul Mutations: choose ONE", "[Chuul Mutation] Exposed Brain Nightmare Aura: When an enemy is engaged with the chuul at the start of its turn, that creature must roll a normal save; on a failure, it's Hampered (easy save ends, 6+).", "[Chuul Mutation] Extra Claw: The mutant chuul can make three Crushing Claws attacks instead of two. If two of the attacks hit the same target, the chuul grabs it.", "[Chuul Mutation] Oversized Claw: When the chuul rolls a natural even hit with Crushing Claws, it deals 120 damage instead of 70.", "[Chuul Mutation] Venom Spit: the chuul gains a Venom Spit attack.", "[Chuul Mutation] Whipping Tentacles: The Crippling Tentacles attack is now a close attack against 1D3 enemies in a group."],
+        isStaggered: false,
+        id: 169
+    },
+
+    {
+        name: "Chuulish Slave",
+        level: 4,
+        type: "troop",
+        initiative: "+9",
+        ac: 20,
+        pd: 18,
+        md: 14,
+        hp: 54,
+        health: 54,
+        attacks: ["Misshapen Claws +9 vs AC (2 attacks) - 7 damage. Both attacks hit the same target: the chuulish slave can make a Writing Tentacles attack against that target as a quick action this turn.", "Writing Tentacles +9 vs PD - the target is Weakened (save ends)"],
+        abilities: ["Chuulish Slave Mutations: Choose ONE", "[Chuul Mutation] Chitonous Plates: The slave gains a +2 bonus to AC", "[Chuul Mutation] Acid Saliva: The Writing Tentacles attack also deals 10 acid damage on a hit.", "[Chuul Mutation] Poisonous Blood: When a melee attack hits the chuulish slave, the attacker takes 10 poison damage.", "[Chuul Mutation] Grossness: The slave is a large blob-like mess. It has 72 HP but takes a -2 penalty to all defenses."],
+        isStaggered: false,
+        id: 170
+    },
+
+    {
+        name: "Couatl",
+        level: 8,
+        type: "spoiler (large)",
+        initiative: "+14",
+        ac: 24,
+        pd: 21,
+        md: 21,
+        hp: 300,
+        health: 300,
+        attacks: ["Rippling Scales +13 vs PD (each enemy engaged with it) - 10 damage, and the couatl must pop free from the target. Quick Use: This attack only requires a quick action (once per round) to use.", "Serpent Strike +13 vs AC (one Dazed, Confused, Staggered, or Stunned enemy) - 60 damage, and 20 ongoing poison damage.", "R: Forked Devastation +13 vs PD (one nearby or far away enemy) - 50 damage of the following type (couatl's choice): fire, holy, or lightning. Natural Even Hit or Miss: the couatl can make a Forked Devastation attack against a different enemy as a free action."],
+        abilities: ["Resist Holy and Poison 16+", "Flight: Couatls fly and hover so smoothly on their multi-colored wings that other flyers get jealous.", "Cyclic Escalator: When the escalation die is even, the couatl adds the escalation die to its attack rolls.", "[Nastier Special] Ever-rippling: The couatl can use more than one Rippling Scales attack during this turn.", "[Nastier Special] Flee: Once per campaign, the couatl can take a 'campaign loss' similar to the PC-oriented flee special action to escape from certain death, along with its allies.", "[Nastier Special] One or Two Icon-centric Abilities: Choose each appropriate ability from the Icon-centered Abilities list after the elder couatl entry (Bestiary page 53)."],
+        isStaggered: false,
+        id: 171
+    },
+
+    {
+        name: "Elder Couatl",
+        level: 11,
+        type: "spoiler (large)",
+        initiative: "+16",
+        ac: 27,
+        pd: 24,
+        md: 24,
+        hp: 600,
+        health: 600,
+        attacks: ["Rippling Scales +17 vs PD (each enemy engaged with it) - 25 damage, and the couatl must pop free from the target. Quick Use: This attack only requires a quick action (once per round) to use.", "Serpent Strike +17 vs AC (one Dazed, Confused, Staggered, or Stunned Enemy) - 110 damage, and 40 ongoing poison damage.", "R: Forked Devastation +17 vs PD (one nearby or far away enemy) - 90 damage of the following type (couatl's choice): fire, holy, or lightning. Natural Even Hit or Miss: the couatl can make a Forked Devastation attack against a different enemy as a free action."],
+        abilities: ["Cyclic Salvation Escalator: When the escalation die is even, the couatl adds the escalation die to its attack rolls and saves.", "Flight: Couatls fly and hover so smoothly on their multi-colored wings that other flyers get jealous.", "One or Two Icon-centric Abilities: Choose each appropriate ability from the Icon-centered Abilities list after the elder couatl entry (Bestiary page 53).", "Resist Holy and Poison 16+", "[Nastier Special] Ever-rippling: The couatl can use more than one Rippling Scales attack during this turn.", "[Nastier Special] Flee: Once per campaign, the couatl can take a 'campaign loss' similar to the PC-oriented flee special action to escape from certain death, along with its allies."],
+        isStaggered: false,
+        id: 172
     }
 
 ]
