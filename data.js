@@ -2786,6 +2786,183 @@ const monsterData = [
         abilities: ["Cyclic Salvation Escalator: When the escalation die is even, the couatl adds the escalation die to its attack rolls and saves.", "Flight: Couatls fly and hover so smoothly on their multi-colored wings that other flyers get jealous.", "One or Two Icon-centric Abilities: Choose each appropriate ability from the Icon-centered Abilities list after the elder couatl entry (Bestiary page 53).", "Resist Holy and Poison 16+", "[Nastier Special] Ever-rippling: The couatl can use more than one Rippling Scales attack during this turn.", "[Nastier Special] Flee: Once per campaign, the couatl can take a 'campaign loss' similar to the PC-oriented flee special action to escape from certain death, along with its allies."],
         isStaggered: false,
         id: 172
+    },
+
+    {
+        name: "Corpse Dybbuk",
+        level: 6,
+        type: "troop (double-strength)",
+        initiative: "+12",
+        ac: 22,
+        pd: 16,
+        md: 20,
+        hp: 180,
+        health: 180,
+        attacks: ["Supernatural Strength +11 vs AC - 35 damage. Natural 16+: the target is Vulnerable to the dybbuk's attacks until the end of the battle. Natural 18+: the dybbuk gains a Fear aura against the target (save ends) as the dybbuk warps its corpse flesh into a horrifying form. While engaged with the dybbuk, if the scared target has 30 HP or fewer, it's Dazed and does not add the escalation die to its attacks. Miss: 3D6 damage."],
+        abilities: ["Unholy Aversion: When an enemy makes a spell or magic weapon attack against the corpse dybbuk that deals holy damage and rolls a natural 18+, the dybbuk leaves its host body. The body drops in place and the corpse dybbuk becomes an undamaged ethereal dybbuk (see that entry). If the escalation die is 3+, reset the escalation die to 2.", "Warp Another's Flesh: Once per battle as a free action, the corpse dybbuk can grant a nearby ally a +2 bonus to attack and damage until the end of the battle. The warped ally takes damage equal to its level each time it uses a standard action to attack. If this ability is expended, the dybbuk regains it when the escalation die reaches 4+."],
+        isStaggered: false,
+        id: 173
+    },
+
+    {
+        name: "Parasitic Dybbuk",
+        level: 6,
+        type: "spoiler (double-strength)",
+        initiative: "+13",
+        ac: 22,
+        pd: 16,
+        md: 20,
+        hp: 180,
+        health: 180,
+        attacks: ["Loathsome Vomity Smear +10 vs PD - 40 poison damage. Miss: 3D10 poison damage.", "C: Unearthly Glare +10 vs MD (one nearby enemy) - 30 psychic damage. Natural Even Hit or Miss: one special dybbuk ability triggers as a free action (see below).", "[Special Dybbuk Ability] C: Visage of Innocence +11 vs MD (one nearby enemy) - the target can't attack the dybbuk until the end of its next turn.", "[Special Dybbuk Ability] C: Horrific Visage +11 vs MD (1D3 nearby enemies) - the target is Weakened (save ends).", "[Special Dybbuk Ability] C: Puppet Strings +11 vs MD - the target is confused (save ends)."],
+        abilities: ["Shapechange: As a standard action, the dybbuk can change its host's form to that of another humanoid, or back to its own shape. Seeing through the shapechange requires a DC 25 skill check. When the dybbuk is driven out of the host body, the body reverts to its original form.", "Unholy Aversion: When an enemy makes a spell attack or magic weapon attack against the parasitic dybbuk that deals holy damage and rolls a natural 18+, the dybbuk leaves the host body. The body drops in place (unconscious) and the parasitic dybbuk becomes an undamaged ethereal dybbuk (see that entry). If the escalation die is 3+, reset the escalation die to 2.", "Wall-crawler: A dybbuk can climb on ceilings and walls as easily as it moves on the ground.", "Special Dybbuk Abilties: Choose ONE (see entries)", "[Special Dybbuk Ability] Scratching Nails: When the target is engaged with the dybbuk at the start of its turn, it takes 20 damage.", "[Special Dybbuk Ability] Warped Flesh: The dybbuk heals 30 HP.", "[Nastier Special] Experienced Possessor: When the dybbuk rolls a natural odd hit or miss with Unearthly Glare, one special dybbuk ability triggers.", "[Nastier Special] Flight: The dybbuk can hover 6 feet off the ground and make boneless flea-like leaps."],
+        isStaggered: false,
+        id: 174
+    },
+
+    {
+        name: "Ethereal Dybbuk",
+        level: 7,
+        type: "wrecker (double-strength)",
+        initiative: "+16",
+        ac: 26,
+        pd: 24,
+        md: 20,
+        hp: 206,
+        health: 206,
+        attacks: ["R: Soul-suck +12 vs MD (3 attacks, against nearby or far away enemies) - 38 negative energy damage. Limited Use: if the dybbuk hits the same target with its first two soul-suck attacks, it must make the third attack against a different target if it can (or it loses the attack)."],
+        abilities: ["Fading: When the escalation die is 2+, the dybbuk's soul-suck attack only deals 19 damage, and when it's 4+ soul-suck only deals 10 damage. When the escalation die reaches 6, the dybbuk fades away at the end of the round. A dybbuk that fades away undefeated is not gone forever and may return in a later adventure.", "Fear: The dybbuk knows things about the other side and enjoys telling such secrets to you! While engaged with this creature, enemies that have 36 HP or fewer are Dazed and do not add the escalation die to their attacks.", "Flight: The dybbuk hovers eerily, roughly 6 feet off the ground.", "Otherworldly: When a melee attack that doesn't deal holy damage targets this creature, the attacker must roll a natural 18+ on the attack roll or it only deals half damage."],
+        isStaggered: false,
+        id: 175
+    },
+
+    {
+        name: "Umluppuk",
+        level: 7,
+        type: "spoiler (huge)",
+        initiative: "+15",
+        ac: 23,
+        pd: 21,
+        md: 20,
+        hp: 310,
+        health: 310,
+        attacks: ["Pods of Mouths and Eyes +12 vs AC (4 attacks) - 20 damage. Natural Even Hit: the target is Stuck (easy save ends 6+). Miss: 10 damage.", "C: Chorus of Madness +12 vs MD (up to 3 random nearby creatures) - 10 ongoing psychic damage, and the target is confused (save ends both). Quick Use: This ability only requires a quick action (once per round) instead of a standard action when the umluppuk starts its turn unengaged (or without an enemy consumed if you are using the nastier special!).", "[Nastier Special] Consume +12 vs PD (one Stuck enemy) - 50 damage, and the target takes 10 ongoing acid damage and is absorbed into the umluppuk (hard save ends both, 16+); while inside the umluppuk, the target is Vulnerable to the umluppuk's Pods of Mouths and Eyes attacks, and it's Stuck."],
+        abilities: ["Resist Psychic 18+", "[Nastier Special] Consume: Once per round during its turn, the umluppuk can make a Consume attack against a Stuck enemy as a quick action. The umluppuk can only have one target consumed at a time."],
+        isStaggered: false,
+        id: 176
+    },
+
+    {
+        name: "Hagunemnon",
+        level: 13,
+        type: "wrecker (large)",
+        initiative: "+16",
+        ac: 29,
+        pd: 23,
+        md: 27,
+        hp: 864,
+        health: 864,
+        attacks: ["Spontaneous Metamorphosing Limbs +18 vs AC - 110 damage, and the hagunemnon can make a Spontaneous Metamorphosing Limbs attack against a different target as a free action. Natural 19+: The target starts making last gasp saves. On the fourth failure, it becomes a shapeless ooze. Diminishing Limbs: With each subsequent hit after the first, Spontaneous Metamorphosing Limbs deals 20 less damage. The hagunemnon also doesn't gain any extra attacks when it makes a basic attack."],
+        abilities: ["Dimension Hop: As a move action when the escalation die is odd, the hagunemnon can teleport nearby or far away to a location it can see.", "Resist Psychic 18+", "Shapechange: As a standard action, the hagunemnon can change its form to that of any large or medium creature, or back to its own shape. Seeing through the shapechange requires a DC 25 skill check.", "[Nastier Special] Madness Aura: When a creature is engaged with the hagunemnon at the start of its turn, it takes 4D10 psychic damage. If it takes 31 or more damage this way during a single turn, it's also Confused until the start of its next turn."],
+        isStaggered: false,
+        id: 177
+    },
+
+    {
+        name: "Warped Beast",
+        level: 5,
+        type: "wrecker",
+        initiative: "+9",
+        ac: 20,
+        pd: 17,
+        md: 15,
+        hp: 75,
+        health: 75,
+        attacks: ["Tentacle Maw +10 vs AC - 16 damage. Natural 18+: the target is Hampered until the end of its next turn. Miss: the warped beast can make a Psychic Blast attack as a free action.", "[Special Trigger] C: Psychic Blast +10 vs MD (1D3 nearby enemies) - 8 psychic damage. Natural 18+: the target is Confused until the end of its next turn."],
+        abilities: ["One Madness Feature: At the start of each of the warped beast's turns, roll a D6. The warped beast gains the corresponding ability until the start of its next turn. 1) Amorphous Oozing Form: The beast has Resist Damage 11+ to all damage. 2) Dimensional Slide: Once during its turn, the warped beast can teleport anywhere nearby it can see as a move action. Each enemy engaged with it when it teleports is Confused until the end of its next turn. 3) Fear Aura: While engaged with the warped beast, enemies that have 24 HP or fewer are Dazed and do not add the escalation die to their attacks. 4) Gibbering Mouths: When an enemy ends its turn engaged with the warped beast, it's Confused until the end of its next turn. 5) Many Spontaneous Limbs: When the warped beast makes a Tentacle Maw attack during its turn, roll a D4. That many additional limbs or tentacles spontaneously erupt from the creature and make an additional basic attack that turn (special abilities/effects don't trigger on those extra attacks). Each of those attacks only deals half damage. 6) Warping Touch: When the warped beast hits a creature with a Tentacle Maw attack, the target also takes 5 ongoing psychic damage and a -2 penalty to saves (save ends both).", "[Nastier Special] Warped Mutant: Roll two madness features instead of one each round (reroll similar results)."],
+        isStaggered: false,
+        id: 178
+    },
+
+    {
+        name: "Ettercap Hunter",
+        level: 2,
+        type: "blocker",
+        initiative: "+6",
+        ac: 18,
+        pd: 14,
+        md: 14,
+        hp: 32,
+        health: 32,
+        attacks: ["Poison Bite +7 vs AC - 6 damage, and 4 ongoing poison damage. Miss: if the target is Dazed, Hampered, or Stuck, it takes 4 extra damage.", "C: Web Spray +8 vs PD (1D4 nearby enemies in a group) - 3 damage. Natural Even Hit: the target is Hampered (save ends). Natural Odd Hit: the target is Stuck (save ends). Limited Use: 1/battle."],
+        abilities: ["Goopy Webs: When an enemy of level 4 or lower rolls a natural 1-5 with a melee attack against an ettercap hunter, that enemy is Dazed (save ends)."],
+        isStaggered: false,
+        id: 179
+    },
+
+    {
+        name: "Ettercap Acolyte",
+        level: 1,
+        type: "mook",
+        mookNumber: 1,
+        initiative: "+2",
+        ac: 16,
+        pd: 13,
+        md: 15,
+        hp: 7,
+        health: 7,
+        attacks: ["Sacrificial Dagger +6 vs AC - 3 damage."],
+        abilities: ["Fanatical Devotion: As a standard action, an ettercap acolyte can deal 2D6 poison damage to one Dazed, Hampered, or Stuck enemy engaged with it. The ettercap acolyte also takes 7 damage from this kamikaze action, killing it.", "Goopy Webs: When an enemy of level 3 or lower rolls a natural 1-5 with a melee attack against an ettercap acolyte, that enemy is Dazed (save ends)."],
+        isStaggered: false,
+        id: 180
+    },
+
+    {
+        name: "Ettercap Supplicant",
+        level: 3,
+        type: "caster",
+        initiative: "+6",
+        ac: 18,
+        pd: 14,
+        md: 17,
+        hp: 44,
+        health: 44,
+        attacks: ["Sacrificial Dagger +7 vs AC - 8 damage, and the ettercap supplicant can use The Web That Burns an additional time this battle.", "R: The Skein of Pain +8 vs MD - 10 psychic damage, and until the end of the battle, the target takes 1D6 psychic damage each time it fails a save.", "C: The Web That Burns +8 vs PD (1D3 nearby enemies in a group) - 6 ongoing acid damage. Natural Even Hit: The target is Hampered (save ends). Limited Use: 1/battle."],
+        abilities: ["Goopy Webs: When an enemy of level 5 or lower rolls a natural 1-5 with a melee attack against an ettercap supplicant, that enemy is Dazed (save ends)."],
+        isStaggered: false,
+        id: 181
+    },
+
+    {
+        name: "Ettercap Warrior",
+        level: 3,
+        type: "blocker",
+        initiative: "+9",
+        ac: 20,
+        pd: 15,
+        md: 15,
+        hp: 48,
+        health: 48,
+        attacks: ["Thrusting Spear +9 vs AC - 8 damage. Natural 16+: the ettercap warrior can make a Poison Bite attack as a free action. Natural Even Miss: 4 damage.", "Poison Bite +9 vs AC - 6 damage, and 4 ongoing poison damage. Miss: If the target is Dazed, Hampered, or Stuck it takes 4 damage.", "C: Web Spray +9 vs PD (1D4 nearby enemies in a group) - 4 damage. Natural Even Hit: the target is Hampered (save ends). Natural Odd Hit: the target is Stuck (save ends). Limited Use: 1/battle."],
+        abilities: ["Goopy Webs: When an enemy of level 5 or lower rolls a natural 1-5 with a melee attack against an ettercap warrior, that enemy is Dazed (save ends)."],
+        isStaggered: false,
+        id: 182
+    },
+
+    {
+        name: "Ettercap Keeper",
+        level: 4,
+        type: "leader",
+        initiative: "+7",
+        ac: 20,
+        pd: 15,
+        md: 18,
+        hp: 50,
+        health: 50,
+        attacks: ["Staff and Fangs +9 vs AC - 10 damage. Natural Even Hit or Miss: 5 ongoing poison damage.", "R: Staff of Tongues +9 vs MD (one nearby or far away enemy) - 15 psychic damage, and the target can't cast spells or speak (save ends).", "C: Her First Whisper +9 vs MD (each nearby enemy engaged with one or more ettercaps) - 10 ongoing psychic damage. Limited Use: 1/battle.", "R: Her Other Thought +9 vs MD (one nearby enemy per point on the escalation die) - 13 psychic damage. Miss: 7 psychic damage. Limited Use: 1/battle."],
+        abilities: ["The Web of Faith: While one or more lower-level non-mook ettercap allies are nearby it, the ettercap keeper gains resist damage 16+.", "Goopy Webs: When an enemy of level 6 or lower rolls a natural 1-5 with a melee attack against an ettercap keeper, that enemy is Dazed (save ends)."],
+        isStaggered: false,
+        id: 183
     }
 
 ]
