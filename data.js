@@ -2963,6 +2963,234 @@ const monsterData = [
         abilities: ["The Web of Faith: While one or more lower-level non-mook ettercap allies are nearby it, the ettercap keeper gains resist damage 16+.", "Goopy Webs: When an enemy of level 6 or lower rolls a natural 1-5 with a melee attack against an ettercap keeper, that enemy is Dazed (save ends)."],
         isStaggered: false,
         id: 183
+    },
+
+    {
+        name: "Bergship Raider",
+        level: 7,
+        type: "spoiler (large)",
+        initiative: "+10",
+        ac: 21,
+        pd: 20,
+        md: 18,
+        hp: 270,
+        health: 270,
+        attacks: ["Whirling Ice Hook +13  vs AC - 50 damage, and the target takes a -5 penalty to disengage checks until the end of its next turn. Miss: 15 damage to each enemy engaged with the giant.", "R: Frost Chain +13 vs AC (one nearby enemy or far away enemy at -2 attack) - 40 damage, and the target is pulled next to the giant, who engages it.", "[Nastier Special] Knockdown +10 vs PD (one enemy smaller than it) - 20 damage, and the target can't disengage until the end of its next turn."],
+        abilities: ["Vulnerability: Fire", "Resist Cold 16+", "Ancient Cold: While battling one or more frost giants, there is only a 50% chance that the escalation die increases at the start of the round.", "Winter's Bite: When the escalation die is odd, each enemy engaged with the raider takes 35 cold damage at the start of its turn.", "[Nastier Special] Overbearing: Twice per battle, the raider can make a Knockdown attack as a quick action (once per round)."],
+        isStaggered: false,
+        id: 184
+    },
+
+    {
+        name: "Ice Sorceress",
+        level: 7,
+        type: "caster (large)",
+        initiative: "+10",
+        ac: 23,
+        pd: 22,
+        md: 17,
+        hp: 190,
+        health: 190,
+        attacks: ["Icicle Staff +14 vs AC - 20 damage, 20 cold damage, and the sorceress can make an Icy Delusions attack against the target as a free action.", "R: Winter Wind +14 vs PD - 55 cold damage. Natural Even Hit or Miss: The sorceress can make an Icy Delusions attack against the target as a free action.", "[Special Trigger] C: Icy Delusions +14 vs MD (one enemy) - At the start of each round, the target loses 2D6 points from their initiative count as they slowly freeze from the inside out (save ends). Frozen Flesh: When a creature is reduced to 0 initiative or lower from Icy Delusions, it becomes delusional and frozen and must choose one condition that will affect it: Confused (hard save ends); OR Stunned (save ends). After saving, the creature rerolls its initiative.", "[Special Trigger] C: Ice Wall +14 vs PD (one moving enemy or ranged attacker) - The target stops its movement or loses its ranged attack that turn, and the wall of ice remains until the end of the battle (GM's choice on its size, but it shouldn't be too large or thick; normal DC to break through it)."],
+        abilities: ["Vulnerability: Fire", "Resist Cold 16+", "Ice Summoner: Once per round as a free action, the giant can make an ice wall attack to conjure forth a wall of ice that stops one enemy's movement or ranged attack. The giant can't use this ability to target creatures making fire attacks or wielding weapons that deal fire damage.", "Ancient Cold: While battling one or more frost giants, there is only a 50% chance that the escalation die increases at the start of the round.", "[Nastier Special] Ice Armor: The ice sorceress has Resist Damage 16+ unless the attack deals fire damage."],
+        isStaggered: false,
+        id: 185
+    },
+
+    {
+        name: "Frost Giant Adventurer",
+        level: 8,
+        type: "spoiler (large)",
+        initiative: "+13",
+        ac: 24,
+        pd: 23,
+        md: 18,
+        hp: 280,
+        health: 280,
+        attacks: ["Overlarge Club +13 vs AC (one nearby enemy or one enemy engaged with the giant) - 75 damage. Natural Even Hit: The target loses its next move action, and if it's engaged with the giant, it pops free."],
+        abilities: ["Vulnerability: Fire", "Resist Cold 16+", "Ancient Cold: While battling one or more frost giants, there is only a 50% chance that the escalation die increases at the start of the round.", "Blood of the Niefelheim: When an enemy the frost giant adventurer is engaged with scores a critical hit against the giant, that enemy is Hampered (hard save ends 16+)."],
+        isStaggered: false,
+        id: 186
+    },
+
+    {
+        name: "Jotun Auroch (huge mook)",
+        level: 6,
+        type: "mook",
+        mookNumber: 1,
+        initiative: "+7",
+        ac: 20,
+        pd: 18,
+        md: 13,
+        hp: 70,
+        health: 70,
+        attacks: ["Trampling Hooves +8 vs PD - 6 damage. Natural 1-5: the jotun auroch can make a Fiery or Frosty Breath attack as a free action.", "[Special Trigger] C: Fiery or Frosty Breath +10 vs PD (1D4 nearby enemies) - 5 fire or cold damage, depending on what the jotun auroch has been eating lately."],
+        abilities: ["Resist Cold and Fire 18+", "Big Sack of Hit Points: The jotun auroch is not a combat threat and can be more or less ignored when building battles. Battles involving jotun aurochs should pivot around frost and fire giants who are trying to rustle, herd, or protect their herd while the PCs are in their way."],
+        isStaggered: false,
+        id: 187
+    },
+
+    {
+        name: "Winter Beast",
+        level: 6,
+        type: "troop (large)",
+        initiative: "+7",
+        ac: 22,
+        pd: 20,
+        md: 14,
+        hp: 170,
+        health: 170,
+        attacks: ["Fang, Claw, or Tusk +11 vs AC - 21 damage, and the beast's special ability triggers."],
+        abilities: ["Winter Beast Special Ability: Choose ONE.", "[Special Ability] Armored Polar Bear: The target takes 10 extra damage, and if the target makes an opportunity attack against the polar bear before the start of the bear's next turn, the bear can make a Fang, Claw, or Tusk attack against the target as a free action.", "[Special Ability] Giant Walrus: The target takes 14 extra damage and is Stuck (save ends; also ends if the walrus moves).", "[Special Ability] Winter Wolf: The target takes 14 extra damage, or 28 extra damage if another winter wolf is engaged with it.", "Resist Cold 12+"],
+        isStaggered: false,
+        id: 188
+    },
+
+    {
+        name: "Ice Zombie",
+        level: 6,
+        type: "mook",
+        mookNumber: 1,
+        initiative: "+5",
+        ac: 22,
+        pd: 22,
+        md: 13,
+        hp: 20,
+        health: 20,
+        attacks: ["Chill Claws +11 vs AC - 12 cold damage", "Icy Breath of the Grave +11 vs PD - 9 cold damage, and the target is Vulnerable to cold attacks (save ends)."],
+        abilities: ["Vulnerability: Fire, Holy", "Resist Cold 18+", "Fiery Decapitation: Ice zombies have frozen, iron-hard flesh that makes them tougher than normal zombies - critical hits that deal fire damage deal triple damage to ice zombies; other critical hits just deal double damage."],
+        isStaggered: false,
+        id: 189
+    },
+
+    {
+        name: "Fungaloid Creeper",
+        level: 1,
+        type: "troop",
+        initiative: "+3",
+        ac: 16,
+        pd: 15,
+        md: 10,
+        hp: 30,
+        health: 30,
+        attacks: ["Probing Tendrils: +6 vs AC (1D3 attacks) - 2 damage. Natural 18+: the target is Stuck until the end of its next turn. Natural 1-5: Both the fungaloid and its target take 1D4 damage.", "[Fungal Attack] C: Poison Tentacles 5+level vs PD (1D3 nearby enemies) - 3+level poison damage, and the target is Vulnerable to fungal attacks (save ends).", "[Fungal Attack] C: Brown Noise 5+level vs PD (1D3 nearby enemies) - 3+level ongoing thunder damage.", "[Fungal Attack] C: Hallucinogenia 3+level vs MD (one nearby enemy) - the target is Confused (easy save ends 6+).", "[Fungal Attack] C: Infectious Spores 5+level vs PD (1D3 nearby enemies) - 3+level ongoing poison damage.", "[Fungal Attack] C: Piercing Shriek 5+level vs PD (1D3 nearby enemies) - 4+level psychic damage."],
+        abilities: ["Food is Here: When a fungaloid creeper scores a critical hit with an attack, all nearby fungaloids move to engage the fungaloid's target, even if that target has dropped to 0 HP. The move is a free action, and engaged creeper's can roll disengage attempts instead of taking opportunity attacks.", "Slow, Rolling Wave: Whenever the escalation die is even, each creeper must succeed on a normal save at the start of its turn or lose its move action that turn.", "[Nastier Special] Fungal Attack: Make ONE fungal attack."],
+        isStaggered: false,
+        id: 190
+    },
+
+    {
+        name: "Aerial Spore",
+        level: 2,
+        type: "mook",
+        mookNumber: 1,
+        initiative: "+1",
+        ac: 15,
+        pd: 9,
+        md: 13,
+        hp: 7,
+        health: 7,
+        attacks: ["C: Stinging Tendrils +6 vs PD (one nearby enemy) - 4 poison damage, and the target is Weakened until the end of its next turn."],
+        abilities: ["Puffball Exploder: The first time each round an aerial spore in the battle drops to 0 HP, it explodes and 1D3 nearby non-fungus non-construct creatures are covered in spores and begin to choke. Until the end of the battle, when a choking creature rolls a natural 1-5 on an attack roll, it takes damage equal to the natural roll. If a creature is affected twice by this attack, the damage it takes on a natural 1-5 doubles; if affected three times, it triples, etc.", "Spores: A creature choking from Puffball Exploder can use a standard action to wash the spores off itself and/or cough them up, preventing further choking effects until it's affected by Puffball Exploder again.", "Weightless: The aerial spore floats upon air currents, but it prefers to stay within 5 to 7 feet of the ground so it can use its tendrils to keep it in place or propel it. A free-floating spore too far away from the ground to use its tendrils can easily be blown about from strong winds or similar magical effects."],
+        isStaggered: false,
+        id: 191
+    },
+
+    {
+        name: "Sporrior",
+        level: 2,
+        type: "wrecker",
+        initiative: "+10",
+        ac: 18,
+        pd: 16,
+        md: 12,
+        hp: 36,
+        health: 36,
+        attacks: ["Chitinous Bite +7 vs AC - 5 damage. Natural Even Hit or Miss: the sporrior can make a Spore Cloud attack this turn as a quick action.", "R: Parasitic Darts +6 vs AC (1D3 nearby or far away enemies in a group) - 5 poison damage. Natural Even Hit or Miss: the sporrior can make a Spore Cloud attack this turn as a quick action.", "C: Spore Cloud +6 vs PD (1D3 nearby enemies) - 4 poison damage."],
+        abilities: ["Sprinter: A sporrior gains an extra move action when the escalation die is odd.", "Wall-crawler: A sporrior can climb on ceilings and walls as easily as it moves on the ground."],
+        isStaggered: false,
+        id: 192
+    },
+
+    {
+        name: "Fungaloid Drudge",
+        level: 3,
+        type: "troop",
+        initiative: "+5",
+        ac: 19,
+        pd: 17,
+        md: 13,
+        hp: 32,
+        health: 32,
+        attacks: ["Pitchfork +8 vs AC - 10 damage. Natural 16+: the drudge can make a Fungal Attack this turn as a quick action.", "[Fungal Attack] C: Poison Tentacles 5+level vs PD (1D3 nearby enemies) - 3+level poison damage, and the target is Vulnerable to fungal attacks (save ends).", "[Fungal Attack] C: Brown Noise 5+level vs PD (1D3 nearby enemies) - 3+level ongoing thunder damage.", "[Fungal Attack] C: Hallucinogenia 3+level vs MD (one nearby enemy) - the target is Confused (easy save ends 6+).", "[Fungal Attack] C: Infectious Spores 5+level vs PD (1D3 nearby enemies) - 3+level ongoing poison damage.", "[Fungal Attack] C: Piercing Shriek 5+level vs PD (1D3 nearby enemies) - 4+level psychic damage."],
+        abilities: ["N/A"],
+        isStaggered: false,
+        id: 193
+    },
+
+    {
+        name: "Braincap",
+        level: 3,
+        type: "wrecker (double-strength)",
+        initiative: "+5",
+        ac: 19,
+        pd: 13,
+        md: 17,
+        hp: 90,
+        health: 90,
+        attacks: ["R: Focused Brain Blast +8 vs PD (1 nearby or far away Staggered enemy) - 21 force damage. Miss: 5 psychic damage.", "C: Hallucinogenia +8 vs MD (1D3 nearby enemies) - The target is Confused (easy save ends 6+) and Vulnerable to psychic damage until the end of the battle. Miss: The target sees odd colors at the corners of its vision until it has taken a full heal-up (-2 penalty to skill checks to see things).", "C: Psionic Filaments +8 vs MD (1D3 nearby enemies) - 15 psychic damage."],
+        abilities: ["Programmed Brain: During its turn when one or more nearby enemies are Staggered, the braincap uses Focused Brain Blast. When no enemies are Staggered, the braincap uses Hallucinogenia if its hit points are even, and Psionic Filaments if its hit points are odd.", "Lost Opportunity: This creature can't make opportunity attacks."],
+        isStaggered: false,
+        id: 194
+    },
+
+    {
+        name: "Fungaloid Monarch",
+        level: 4,
+        type: "leader (double-strength)",
+        initiative: "+8",
+        ac: 20,
+        pd: 14,
+        md: 18,
+        hp: 98,
+        health: 98,
+        attacks: ["Mycotic Scepter +9 vs AC - 24 damage. Natural 12+: one nearby fungaloid can make a fungal attack as a free action. Natural 16+: up to three nearby fungaloids can each make a fungal attack as a free action. Natural 20: Up to 5 nearby fungaloids can each make a fungal attack as a free action.", "[Fungal Attack] C: Poison Tentacles 5+level vs PD (1D3 nearby enemies) - 3+level poison damage, and the target is Vulnerable to fungal attacks (save ends).", "[Fungal Attack] C: Brown Noise 5+level vs PD (1D3 nearby enemies) - 3+level ongoing thunder damage.", "[Fungal Attack] C: Hallucinogenia 3+level vs MD (one nearby enemy) - the target is Confused (easy save ends 6+).", "[Fungal Attack] C: Infectious Spores 5+level vs PD (1D3 nearby enemies) - 3+level ongoing poison damage.", "[Fungal Attack] C: Piercing Shriek 5+level vs PD (1D3 nearby enemies) - 4+level psychic damage."],
+        abilities: ["Group Mind: The monarch's attacks deal +1 damage for each other allied creature with the plant type in the battle (max +10).", "Drudge Summons: If there are not enough nearby fungaloids to use up all of the fungal attacks granted by the Mycotic Scepter, skip the extra fungal attacks but add a full-strength fungaloid drudge to the battle next to the fungaloid monarch."],
+        isStaggered: false,
+        id: 195
+    },
+
+    {
+        name: "Fungaloid Empress",
+        level: 4,
+        type: "wrecker (huge)",
+        initiative: "+15",
+        ac: 20,
+        pd: 18,
+        md: 18,
+        hp: 170,
+        health: 170,
+        attacks: ["Crushing Limbs +9 vs AC (1D3 enemies engaged with the empress) - 18 damage."],
+        abilities: ["Combat Womb: At the end of each of the empress' turns, if there are fewer than two elder spores (see below) per enemy, add a number of elder spores to the battle so that there are two spores per enemy. A spore can sprout already engaged wit ha nearby or far away enemy or on its own, it's up to you.", "Sporulating Spiracles: Fungus grows on everything in the area! Whenever a non-fungus creature attempts to move, it must make a DC 18 Dexterity or Strength check to do so or it loses its move action. If the creature uses a standard action to clear away fungus, it can move normally that turn."],
+        isStaggered: false,
+        id: 196
+    },
+
+    {
+        name: "Elder Spore",
+        level: 4,
+        type: "mook",
+        mookNumber: 1,
+        initiative: "Directly after the fungaloid empress in the initiative order",
+        ac: 18,
+        pd: 12,
+        md: 16,
+        hp: 7,
+        health: 7,
+        attacks: ["Slime Spikes +9 vs AC - 6 poison damage"],
+        abilities: ["N/A"],
+        isStaggered: false,
+        id: 197
     }
 
 ]
