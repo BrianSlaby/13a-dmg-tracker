@@ -3191,6 +3191,231 @@ const monsterData = [
         abilities: ["N/A"],
         isStaggered: false,
         id: 197
+    },
+
+    {
+        name: "Gelatinous Tetrahedron",
+        level: 4,
+        type: "blocker (huge)",
+        initiative: "+3",
+        ac: 19,
+        pd: 17,
+        md: 14,
+        hp: 160,
+        health: 160,
+        attacks: ["Shlup'n'schlorp +9 vs PD - 22 acid damage, and the tetrahedron engulfs the target (functions like a grab; see below) if it's smaller than the tetrahedron. Miss: the tetrahedron can make a Spasms attack as a free action.", "[Special Trigger] C: Spasms +9 vs AC (up to 2 attacks, each against a different nearby enemy) - 11 damage.", "[Instinctive Action] 1. C: Fling +9 vs PD (one engaged enemy) - 14 damage, and the target pops free from the ooze and must roll an easy save; on a failure, it loses its next move action.", "[Instinctive Action] 2. C: Fling +9 vs PD (one nearby enemy not engaged with the ooze) - 28 damage, and the target is flung somewhere nearby and must roll an easy save; on a failure, it loses its next move action.", "[Instinctive Action] 3. C: Fling +9 vs PD (one far away enemy) - 42 damage, and the target is flung somewhere far away and must roll an easy save; on a failure, it loses its next move action"],
+        abilities: ["Flows Where It Likes: The ooze is immune to opportunity attacks.", "Ooze: The ooze is immune to effects. When an attack applies a condition to an ooze (Dazed, Hampered, Weakened, Ongoing Damage, etc.), that condition doesn't affect it.", "Engulf and Dissolve: Targets engulged/grabbed by the tetrahedron take 22 acid damage at the start of the cube's turn but are not viable targets for additional attacks by the tetrahedron. Multiple targets can be held within the tetrahedron simultaneously. Any engulfed creature that is also Staggered must begin making last gasp saves or become paralyzed as the tetrahedron's toxins overwhelm it.", "Instinctive Actions: Gelatinous creatures have no brains, sometimes they just do things. When the escalation die is odd, instead of making an attack or moving, roll a D4 to see what the tetrahedron does. If an option is not viable (you roll a 1 but there's no engaged enemy), reroll until you get a valid option.", "[Instinctive Action] 4. As a standard action the ooze quickly moves around the battlefield, oozing over 1D3 nearby enemies. Those enemies become engaged with the ooze and stuck (save ends)."],
+        isStaggered: false,
+        id: 198
+    },
+
+    {
+        name: "Gelatinous Cubahedron, aka Cube",
+        level: 5,
+        type: "blocker (huge)",
+        initiative: "+4",
+        ac: 20,
+        pd: 18,
+        md: 15,
+        hp: 200,
+        health: 200,
+        attacks: ["Shlup'n'schlorp +10 vs PD - 30 acid damage, and the cube engulfs the target (functions like a grab; see below) if it's smaller than the cube. Miss: the cube can make a Spasms attack as a free action.", "[Special Trigger] C: Spasms +10 vs AC (up to 2 attacks, each against a different nearby enemy) - 15 damage.", "[Special Trigger; Instinctive Action] Gel Drop +10 vs PD (1D3 nearby enemies) - 15 damage, and the cube engulfs the target if it's smaller than the cube."],
+        abilities: ["Flows Where It Likes: The ooze is immune to opportunity attacks.", "Ooze: The ooze is immune to effects. When an attack applies a condition to an ooze (Dazed, Hampered, Weakened, Ongoing Damage, etc.), that condition doesn't affect it.", "Engulf and Dissolve: Targets engulfed/grabbed by the cube take 30 acid damage at the start of the cube's turn but are not viable targets for additional attacks by the cube. Multiple targets can be held within the cube simultaneously.Any engulfed creature that is also Staggered must begin making last gasp saves or become paralyzed as the cube's toxins overwhelm it.", "Instinctive Actions: Gelatinous creatures have no brains, sometimes they just do things. When the escalation die is odd, instead of making an attack or moving, roll a D6 to see what the cubahedron does. If an option is not viable (you roll a 5 but there is no engulfed enemy), reroll until you get a valid option.", "[Instinctive Action] 1. The cubahedron jiggles in place. Each nearby enemy takes 5 acid damage. Each creature engulfed by the cube takes a -4 penalty to its saves until the end of its next turn.", "[Instinctive Action] 2. The cubahedron moves as a quick action. If the cube ends its move engaged with enemies, each of those enemies must roll a save; on a failure, the cubahedron grabs them (but they're not engulfed).", "[Instinctive Action] 3. The cubahedron spits an engulfed creature into the air above it and makes a Shlup'n'schlorp attack against that creature with a +5 attack bonus. Then the creature is engulfed again.", "[Instinctive Action] 4. The cubahedron flattens itself slightly and crawls up a wall and possibly across the ceiling. The cube falls at the end of its turn. Each creature engulfed by the cube takes 30 damage, and it makes a Gel Drop attack against enemies below it.", "[Instinctive Action] 5. The cubahedron moves one creature engulfed by it to the surface. The target gains a +4 bonus to attempts to escape the cube, but each time the cube is targeted by an attack, the engulfed creature must roll a save; on a failure, it becomes the target of the attack instead.", "[Instinctive Action] 6. The cubahedron spits out each enemy engulfed by it with great force in different directions; each of those creatures takes 50 damage."],
+        isStaggered: false,
+        id: 199
+    },
+
+    {
+        name: "Gelatinous Octahedron",
+        level: 6,
+        type: "blocker (huge)",
+        initiative: "+5",
+        ac: 21,
+        pd: 19,
+        md: 16,
+        hp: 280,
+        health: 280,
+        attacks: ["Shlup'n'schlorp +11 vs PD - 38 acid damage, and the ooze engulfs the target (functions like a grab; see below) if it's smaller than the ooze. Miss: the ooze can make a Spasms attack as a free action.", "[Special Trigger] C: Spasms +11 vs AC (up to 2 attacks, each against a different nearby enemy) - 19 damage.", "[Instinctive Action] 1. C: Acid Splash +11 vs PD (1D3 nearby or far away enemies in a group) - 8 ongoing acid damage. Each failed save: Acid destroys one of the target's non-magical items. The target takes a cumulative -1 attack penalty until the end of the battle (boots fall apart, shield straps snap, etc.). Miss: 5 ongoing acid damage.", "[Special Trigger; Instinctive Action] C: Fire Gout +11 vs PD (1D3 nearby or far away enemies in a group) - 8 ongoing fire damage. Each Failed Save: the ongoing damage for all enemies hit by the attack increases by 1.", "[Instinctive Action] 6. C: Acid Jet +11 vs PD (one nearby or far away enemy) - 45 acid damage. Miss: 8 ongoing acid damage.", "[Instinctive Action] 7. C: Acid Geyser +11 vs PD (1D3 nearby or far away enemies) - 30 acid damage, and the octahedron is propelled uncontrollably about the area, passing next to each of the enemies. Unlike normal, each enemy can make an opportunity attack against the ooze as it moves this way, but the ooze can make a Glomp attack against those who do so as a free action as it passes (tell the PCs that the ooze will get a counter-attack).", "[Special Trigger] Glomp +9 vs PD - 10 acid damage, and the octahedron engulfs the target if it's smaller than the octahedron."],
+        abilities: ["Flows Where It Likes: The ooze is immune to opportunity attacks.", "Ooze: The ooze is immune to effects. When an attack applies a condition to an ooze (Dazed, Hampered, Weakened, Ongoing Damage, etc.), that condition doesn't affect it.", "Engulf and Dissolve: Targets engulfed/grabbed by the ooze take 38 acid damage at the start of the ooze's turn but are not viable targets for additional attacks by the ooze. Multiple targets can be held within the ooze simultaneously. Any engulfed creature that is also Staggered must begin making last gasp saves or become paralyzed as the cube's toxins overwhelm it.", "Instinctive Actions: Gelatinous creatures have no brains, sometimes they just do things. When the escalation die is odd, instead of making an attack or moving, roll a D8 to see what the octahedron does. If an option is not viable (you roll a 3 but there are no nearby targets), reroll until you get a valid option.", "[Instinctive Action] 2. The octahedron grows an orifice that gushes out a liquid glue that floods the area. Each enemy engaged with the octahedron is Stuck (hard save ends). Each nearby enemy not engaged with the octahedron is Stuck (save ends). Each far away enemy is stuck (easy save ends). The glue has no effect on creatures who are flying or have some way of avoiding it.", "[Instinctive Action] 3. The octahedron squirts a slick slime that targets 1D3 nearby enemies. Until the end of the battle, each target must roll an easy save each time it moves; on a failure, it's Hampered until the end of its next turn.", "[Instinctive Action] 4. The octahedron makes a Fire Gout attack as it splashes out a gel that ignites in the air and sticks to skin and clothing.", "[Instinctive Action] 5. The octahedron sweats acid. Each enemy engaged with the octahedron must roll a normal save; on a failure, it takes 40 acid damage. On a success, it takes 20 acid damage.", "[Instinctive Action] 8. The octahedron splits into two tetrahedrons, and each one can act this turn (roll a D4 for the Instinctive Actions of each one). Divide the octahedron's current hit points equally between the two new creatures."],
+        isStaggered: false,
+        id: 200
+    },
+
+    {
+        name: "Gelatinous Dodecahedron",
+        level: 7,
+        type: "blocker (huge)",
+        initiative: "+5",
+        ac: 21,
+        pd: 19,
+        md: 16,
+        hp: 550,
+        health: 550,
+        attacks: ["Shlup'n'schlorp +10 vs PD - 30 acid damage, and the dodecahedron engulfs the target (functions like a grab; see below) if it's smaller than the dodecahedron. Miss: the dodecahedron can make a Spasms attack as a free action.", "[Special Trigger] C: Spasms +10 vs AC (up to 2 attacks, each against a different nearby enemy) - 15 damage.", "[Special Trigger; Instinctive Action] C: Squash +10 vs PD (1D4 nearby enemies) - 20 damage, and the target is Stunned (easy save ends).", "[Special Trigger; Instinctive Action] Sudden Orifice +12 vs PD (each enemy engaged with it) - the dodecahedron engulfs the target if it's smaller than the dodecahedron.", "[Special Trigger; Instinctive Action] C: Stretch and Engulf +12 vs. PD (one nearby or far away enemy)— 30 acid damage, and the dodecahedron engulfs the target if it's smaller than the dodecahedron.", "[Instinctive Action] 8. C: Pseudopod Slaps +10 vs. AC (one nearby enemy) — 25 thunder damage. Natural Odd Hit: The target pops free from the dodecahedron and is knocked far away, and the ooze makes the attack again against a different nearby enemy as a free action. Natural Even Hit: The dodecahedron engulfs the target if it's smaller than the dodecahedron."],
+        abilities: ["Flows Where It Likes: The ooze is immune to opportunity attacks.", "Ooze: The ooze is immune to effects. When an attack applies a condition to an ooze (Dazed, Hampered, Weakened, Ongoing Damage, etc.), that condition doesn't affect it.", "Engulf and Dissolve: Targets engulfed/grabbed by the ooze take 30 acid damage at the start of the ooze's turn but are not viable targets for additional attacks by the ooze. Multiple targets can be held within the ooze simultaneously. Any engulfed creature that is also Staggered must begin making last gasp saves or become paralyzed as the ooze's toxins overwhelm it.", "Instinctive Actions: Gelatinous creatures have no brains, sometimes they just do things. When the escalation die is odd, instead of making an attack or moving, roll a D12 to see what the dodecahedron does. If an option is not available (you roll a 1 but there are no nearby enemies), reroll until you get a valid option.", "[Instinctive Action] 1. The dodecahedron makes a Squash attack against 1D4 nearby enemies as it rolls and shlorps around the area. Any enemies already engulfed by the dodecahedron take 10 thunder damage.", "[Instinctive Action] 2. The dodecahedron throws out whip-like tendrils and makes a Sudden Orifice attack against each enemy engaged with it. Then it pulls each nearby enemy next to it and engages that creature.", "[Instinctive Action] 3. Hundreds of finger-size slimes slither out from the interior of the dodecahedron and begin worming their way across the bodies of each of its enemies in the battle. Until the end of the battle, when a non-ooze creature takes any damage besides ongoing acid damage, it also takes 10 acid damage. ", "[Instinctive Action] 4. The dodecahedron bounces and thrums. Each enemy engaged with it or engulfed by it must roll a save; on a failure, that enemy takes 30 thunder damage. On a success, it takes 15 thunder damage and pops free from the dodecahedron.", "[Instinctive Action] 5. The dodecahedron hunkers down and produces acidic spikes. It gains a +4 bonus to all defenses until the end of the battle, and each enemy who makes a melee attack against it with a non-magical weapon must roll a save; on a failure the weapon dissolves. When a creature's weapon dissolves, that creature is hampered and weakened (save ends both). Magical weapons lose their bonuses to hit and damage until the end of the battle instead of being dissolved (but the owner is still hampered and weakened). They can be “restored” after the battle by taking a few minutes during a rest to re-attune them.", "[Instinctive Action] 6. The dodecahedron moves, rolling around the battlefield, then makes a Shlup'n'schlorp attack at the end of its movement with a +5 bonus. If the attack misses, instead of making a spasms attack the dodecahedron rolls about the area again and makes a second shlup'n'schlorp attack with a +10 bonus. If the second attack misses, it doesn't get a spasms attack and the dodecahedron's turn ends. ", "[Instinctive Action] 7. The dodecahedron makes a Spasms attack. If it misses with either attack roll, after the attacks, it can make a Stretch and Engulf attack as a free action.", "[Instinctive Action] 9. Each enemy engulfed by the dodecahedron takes 40 acid damage, and the dodecahedron heals 40 hp for each enemy it has engulfed.", "[Instinctive Action] 10. The dodecahedron splits into an octahedron and a tetrahedron, and each one can act this turn (roll a D8 and D4 for the instinctive actions of each one). Divide the dodecahedron's current hit points into thirds, and give one third to the tetrahedron and two thirds to the octahedron.", "[Instinctive Action] 11. The dodecahedron splits into three tetrahedrons, and each one can act this turn (roll a D4 for the instinctive actions of each one). Divide the dodecahedron's current hit points equally between the three new creatures.", "[Instinctive Action] 12. The dodecahedron splits into two cubahedrons, and each one can act this turn (roll a D6 for the instinctive actions of each one). Divide the dodecahedron's current hit points equally between the two new creatures. "],
+        isStaggered: false,
+        id: 201
+    },
+
+    {
+        name: "Djinn",
+        level: 9,
+        type: "spoiler (large)",
+        initiative: "+15",
+        ac: 25,
+        pd: 22,
+        md: 21,
+        hp: 350,
+        health: 350,
+        attacks: ["Greatsword +13 vs AC (2 attacks) - 40 damage. Natural 5, 10, 15, 20: Increase the escalation die by 1 (cumulative), and until the end of the battle, the djinn adds the escalation die to its attacks.", "C: Assault of the Whirlwind +13 vs PD (1D4+1 nearby creatures, including invisible creatures) - 35 damage, and after the attack the djinn teleports to one of the targets and engages it. Natural 5, 10, 15, 20: the target is Hampered until the end of its next turn. Miss: 10 damage. Limit Use: the djinn can only use this attack while it's not staggered."],
+        abilities: ["Flight: Genies fly extremely well, but lumber, at best, when walking on the ground.", "Grant-a-wish: A PC whose attack drops a djinn to 0 HP gains the equivalent of an extremely favorable roll of 6 with an icon relationship die with an icon of the PC's choice that the PC already has a positive or conflicted relationship with. Treat this advantage as if it came from a positive relationship. The GM is encouraged to treat this result with the utmost benevolence and compassion.", "[Nastier Special - Archmage or Priestess] Protection Boon: While not Staggered, the djinn gains Resist Spell Damage 16+ against all spells except those cast by a PC that has at least a one point icon relationship with the Archmage or Priestess.", "[Nastier Special - Crusader] Spiky Bits: When an enemy makes a melee attack against the djinn and misses, it takes 2D20 damage.", "[Nastier Special - Diabolist] Demonic Taint: The djinn gains a random demonic feature from the table on Bestiary page 233.", "[Nastier Special - Dwarf King] Unwelcome Resonance: Whenever a nearby enemy attempts to trigger a magic item power, there's a 50% chance that the power fails. If it does, the item refuses to let its owner use that power until the end of the battle.", "[Nastier Special - Elf Queen or The Three] Sorcerous Reach: The djinn's Assault of the Whirlwind attack can also target far away enemies", "[Nastier Special - Emperor or Lich King] Aura of Command: Twice per battle as a free action, the djinn can turn an ally's normal save into an easy save, or an enemy's normal save into a hard save.", "[Nastier Special - High Druid or Prince of Shadows] Wind/Shadow Form: While not Staggered, the djinn has Resist Melee Damage 16+.", "[Nastier Special - Orc Lord] Frenzied: The djinn takes a -1 penalty to all defenses. While not Staggered, its crit range expands by 3."],
+        isStaggered: false,
+        id: 202
+    },
+
+    {
+        name: "Efreet",
+        level: 10,
+        type: "wrecker (large)",
+        initiative: "+15",
+        ac: 25,
+        pd: 24,
+        md: 23,
+        hp: 420,
+        health: 420,
+        attacks: ["Blade of the Perfect Warrior +15 vs AC (3 attacks) - 35 damage. Natural 5, 10, 15, 20: Each nearby enemy takes 20 fire damage.", "R: Jet of Absolute Conflagration +15 vs PD (one random nearby conscious enemy) - 110 fire damage. Natural 5, 10, 15, 20: The target loses all fire resistance until the end of the battle and is Hampered (save ends)."],
+        abilities: ["Vulnerability: Cold (only while Staggered)", "Resist Fire 18+", "Flight: Efreet don't fly as well or as quickly as djinn, but they are able to get around ok.", "Grant-a-wish: A PC whose attack drops an efreet to 0 HP gains the equivalent of an extremely favorable roll of 6 with an icon relationship die with an icon of the PC's choice that the PC already has a positive or conflicted relationship with. Treat this advantage as if it came from a positive relationship. The GM is encouraged to treat this result with the utmost benevolence and compassion.", "[Nastier Special - Archmage or Priestess] Reinforced Aura/Spirit: The efreet gains a +1 bonus to MD and has no Vulnerability to cold while Staggered.", "[Nastier Special - Crusader] Spiky Bits: When an enemy makes a melee attack against the efreet and misses, it takes 2D20 damage.", "[Nastier Special - Diabolist] Demonic Taint: The efreet gains a random demonic feature from the table on Bestiary page 233.", "[Nastier Special - Dwarf King or Lich King] Stone Slumbers: When the escalation die is 4+ at the start of a round, reset the escalation value by rolling it.", "[Nastier Special - Elf Queen or The Three] Energy Transformation: The efreet can choose to deal lightning damage instead of fire damage with its attack.", "[Nastier Special - Emperor] Imperial Mark: While not Staggered, the efreet gains Resist Damage 16+ against enemies that have a positive or conflicted relationship with the Emperor.", "[Nastier Special - High Druid or Prince of Shadows] Wind/Shadow Form: While not Staggered, the efreet has Resist Melee Damage 16+.", "[Nastier Special - Orc Lord] Frenzied: The efreet takes a -1 penalty to all defenses. While not Staggered, its crit range expands by 3."],
+        isStaggered: false,
+        id: 203
+    },
+
+    {
+        name: "Gravemeat",
+        level: 1,
+        type: "mook",
+        mookNumber: 1,
+        initiative: "+2",
+        ac: 17,
+        pd: 12,
+        md: 10,
+        hp: 5,
+        health: 5,
+        attacks: ["Dirtcaked Claw +5 vs AC - 3 damage, or 6 damage if the target is Vulnerable. Natural 18+: The gravemeat can make another Dirtcaked Claw attack as a free action, then it takes 1D6 damage from the exertion."],
+        abilities: ["Vulnerability: Holy"],
+        isStaggered: false,
+        id: 204
+    },
+
+    {
+        name: "Ghoul Fleshripper",
+        level: 4,
+        type: "wrecker",
+        initiative: "+9",
+        ac: 19,
+        pd: 18,
+        md: 13,
+        hp: 54,
+        health: 54,
+        attacks: ["Bony Claws +7 vs AC (2 attacks) - 6 damage, and the target is Vulnerable (save ends). Critical Hit: Until the target saves against the Vulnerable effect, it also takes 2D6 ongoing damage each turn."],
+        abilities: ["Vulnerability: Holy", "Infected Bite: Any creature that is slain by a ghoul and not consumed with rise as a ghoul the next night."],
+        isStaggered: false,
+        id: 205
+    },
+
+    {
+        name: "Ghoul Licklash",
+        level: 4,
+        type: "blocker",
+        initiative: "+8",
+        ac: 21,
+        pd: 17,
+        md: 13,
+        hp: 48,
+        health: 48,
+        attacks: ["Bloody Claws +8 vs AC - 12 damage, and the target is Vulnerable (save ends).", "C: Flesh-seeking Tongue +8 vs PD (one nearby enemy) - 8 damage. Natural Even Hit: the target pops free from each enemy it's engaged with and is pulled to the ghoul licklash, who engages it. Natural Odd Hit: The target is Vulnerable (save ends). Critical Hit: the licklash can make a Flesh-seeking Tongue attack against a different target as a free action."],
+        abilities: ["Vulnerability: Holy", "Infected Bite: Any creature that is slain by a ghoul and not consumed will rise as a ghoul the next night.", "Tongue Lash: Once per round when a nearby enemy makes a ranged attack, teh ghoul licklash can make a Flesh-seeking Tongue attack against that enemy before the attack as a free action."],
+        isStaggered: false,
+        id: 206
+    },
+
+    {
+        name: "Ghoul Pusbuster",
+        level: 4,
+        type: "spoiler",
+        initiative: "+7",
+        ac: 19,
+        pd: 16,
+        md: 13,
+        hp: 60,
+        health: 60,
+        attacks: ["Feeble Claws +8 vs AC - 9 damage", "C: Vomit Comet +8 vs PD (1D3 nearby enemies) - 10 ongoing damage, and the target is Vulnerable (save ends both). Natural Even Hit: the target is Hampered (save ends). Natural Odd Hit: the target is Dazed (save ends). Self-diminishing: the ghoul pusbuster takes 2D6 damage for each creature it targets with this attack."],
+        abilities: ["Vulnerability: Holy"],
+        isStaggered: false,
+        id: 207
+    },
+
+    {
+        name: "Ghast",
+        level: 5,
+        type: "wrecker",
+        initiative: "+12",
+        ac: 22,
+        pd: 18,
+        md: 14,
+        hp: 74,
+        health: 74,
+        attacks: ["Finely Honed Claws +11 vs AC (2 attacks) - 8 damage, and the target is Vulnerable (save ends).", "Paralyzing Bite +11 vs AC (one vulnerable enemy) - 12 damage, and the target is Stunned (save ends).", "C: Hungry Howl +11 vs MD (each nearby enemy) - the target must choose one: 15 psychic damage; or 5 psychic damage and the target is Vulnerable (save ends). Limited Use: 1/battle."],
+        abilities: ["N/A"],
+        isStaggered: false,
+        id: 208
+    },
+
+    {
+        name: "Bronze Golem",
+        level: 7,
+        type: "blocker (large)",
+        initiative: "+11",
+        ac: 22,
+        pd: 21,
+        md: 17,
+        hp: 190,
+        health: 190,
+        attacks: ["Gong-like Fists of Bronze +12 vs AC (2 attacks) - 20 damage. Natural Even Hit Against Target in Heavy Armor: the target is Dazed (save ends). Natural Odd Hit Against Target in Light Armor or No Armor: the target takes 10 extra damage. Miss: 4D6 damage."],
+        abilities: ["Golem Immunity: Non-organic golems are immune to effects. They can't be Dazed, Weakened, Confused, made Vulnerable, or touched by Ongoing Damage. you can damage a golem, but that's about it.", "Hidden Flaw: An enemy who hits the bronze golem with a natural 18+ attack roll can roll a DC 25 skill check using Intelligence or Wisdom to notice the bronze golem's hidden flaw! On a success, until the end of the battle, the golem loses its damage resistance and becomes Vulnerable to all attacks (against each enemy informed of the flaw).", "Resist Damage 18+", "[Nastier Special] Percussion Resonance: When the escalation die reaches 3+, the bronze golem gains a bonus to its first Gong-like Fists of Bronze attack roll each turn equal to the number of attacks made against it so far that turn (each turn is separate, not cumulative).", "[Nastier Special] Spiky: When an enemy engaged with the bronze golem misses it with a melee attack, that enemy takes 2D12 damage."],
+        isStaggered: false,
+        id: 209
+    },
+
+    {
+        name: "Marble Golem",
+        level: 9,
+        type: "troop (large)",
+        initiative: "+10",
+        ac: 25,
+        pd: 20,
+        md: 22,
+        hp: 340,
+        health: 340,
+        attacks: ["Enormous Maul +15 vs AC - 60 damage. Natural Even Hit or Miss: the golem can make a Backswing attack as a free action.", "[Special Trigger] Backswing +14 vs PD - 40 damage"],
+        abilities: ["Golem Immunity: Non-organic golems are immune to effects. They can't be Dazed, Weakened, Confused, made Vulnerable, or touched by Ongoing Damage. You can damage a golem, but that's about it.", "Special Virtues: Each marble golem is infused with two virtues - magical properties that relate to the emotion or feeling incorporated into the sculpture as its dominant theme. Choose two virtues from the list below, or for a unique marble golem, invent your own.", "[Special Virtue] Awe (fear effect): While nearby the golem, enemies with 40 HP or fewer are Dazed and do not add the escalation die to their attacks.", "[Special Virtue] Beauty: The first time each enemy attacks the marble golem this battle, it must roll a normal save; on a failure, the attack takes a -6 penalty.", "[Special Virtue] Courage: While Staggered, the marble golem adds the escalation die to its attack rolls.", "[Special Virtue] Endurance: When the marble golem rolls a natural 1-5 with an attack roll, it heals 1D10 HP per point on the escalation die (it was checking for damage and got distracted).", "[Special Virtue] Hatred: When an enemy is Staggered by the marble golem's attack, that enemy takes 4D10 extra damage", "[Special Virtue] Patience: Each turn, the marble golem can use one standard action to gain a +2 bonus to all defenses until the start of its next turn. If it does, it gains an extra standard action during its next turn.", "[Special Virtue] Protection: When the marble golem rolls a natural 16+ with an attack, decrease the escalation die by 1.", "[Special Virtue] Strength: The marble golem's melee attacks now deal half damage on a miss.", "[Nastier Special] More Virtues: Statues that capture even more themes make stronger marble golems. Add one or two more virtues to the golem."],
+        isStaggered: false,
+        id: 210
+    },
+
+    {
+        name: "Hag",
+        level: 6,
+        type: "spoiler",
+        initiative: "+10",
+        ac: 21,
+        pd: 19,
+        md: 15,
+        hp: 108,
+        health: 108,
+        attacks: ["Iron Claws +10 vs AC (2 attacks) - 9 damage. Natural 14+: the hag triggers one hag ability as a free action. Natural 18+: the hag triggers two hag abilities as a free action (can't be the same ability twice).", "R: Evil Eye +10 vs MD - Ongoing 12 damage (hard save ends). Natural 16+: the attack roll also targets a second different enemy of the hag's choice. Natural 18+: As above, and the attack roll also targets a third different enemey of the hag's choice."],
+        abilities: ["Death Curse: Each hag can lay a curse upon the one who ends its horrible life. After dropping to 0 HP, a hag always lingers long enough to pronounce the words of the curse (see curse options on page 106 of the Bestiary).", "Delusionist: All hags have the ability to twist the perceptions of others. If the hag has a short time to prepare, it can hide a small hut, disguise a volunteer or captive as a monster, disguise itself as a harmless peasant woman, etc. A DC 30 skill check is required to overcome the delusion and see the truth of it (if a player gives reason for not trusting what their character sees; perhaps add subtle clues toward that end). The magic fades as soon as the hag enters combat.", "Fear: While engaged with this creature, enemies with 30 HP or fewer are Dazed and do not add the escalation die to their attacks.", "Hag Abilities: Choose TWO.", "[Hag Ability] Annis Illusions: The hag gains a +5 bonus to initiative checks due to being not quite where she seems. Hag Ability: As a distraction, the hag creates an illusion of her doing one thing, when she is in fact setting a trap. The hag throws out a bear-trap or other impediment and one nearby enemy becomes stuck (save ends). While stuck this way, the target takes 6 damage at the start of each of its turns.", "[Hag Ability] Annis Skin: On the hag's first round of combat each battle, she gains a +2 attack bonus due to her victims being shocked as she bursts out of her false outer skin. Hag ability: The hag coughs up a glob of liquid pseudo-flesh that globs onto a nearby enemy (no attack roll). The glob solidifies causing an effect of the hag's choice: the target is stuck (save ends); OR the target is unable to cast spells during its next turn (the pseudo-flesh covers their mouth and face).", "[Hag Ability] Blood Pact: Each creature allied to the hag through a pact gains a +2 bonus with their first attack each battle if the hag is present. Hag ability: The hag spits blood in the face of the target and makes a command. The target must roll an immediate save; on a failure, as a free action it makes basic attack against an ally or against itself (target's choice).", "[Hag Ability] Breath Stealing: The hag starts combat with 10 temporary hit points. Hag ability: The hag steals a recovery from the target and heals 20 hp.", "[Hag Ability] Death Shriek: When a melee attack hits the hag, she lets out a shriek as a free action and the attacker takes 2d4 thunder damage. Hag ability: The hag begins to shriek, and each enemy in the battle takes a -4 attack penalty with spells until the start of her next turn.", "[Hag Ability] Dusk Walk: Once per day the hag can implant a suggestion in the mind of a target sleeping within a day's travel of her. Hags use these suggestions to sow discord and suffering. The hag rolls an attack: +10 vs. MD; on a hit, she implants a suggestion in the target that they must obey when a condition she chooses is met (“When you see the mayor, loudly insult his ugly wife.” “When you pass the village smith, throw dung at him.” “At sunset walk into the deep swamp without a lantern.”) Suggested actions can't cause direct harm (the target can't be forced to fight another or harm themselves), can be no longer than 12 words, and affects the target for a week or until triggered. (GM, keep the roll hidden.) Hag ability: The hag becomes immaterial, pops free from all enemies engaged with her, and enters the land of dreams, re-appearing next to any nearby conscious creature (or a nearby or far away creature that is unconscious). The hag then makes the following attack: C: +10 vs. MD (each nearby unconscious enemy)—The hag implants a suggestion in the target that they must obey when they become conscious (usually “When you awake, flee this fight and discard your equipment.”) Suggested actions can't cause direct harm. The round after the target acts on the implanted suggestion it can start rolling normal saves to throw off the effect.", "[Hag Ability] Fateful Visions: The hag uses a +2 magical weapon traded to her for her services (she gains a +2 bonus to attack and damage with melee attacks). Hag ability: The hag has seen this fight in a vision. Her crit range expands by 2 until the end of the battle. Each increase is cumulative.", "[Hag Ability] Foul-touched: Just looking at the hag's true form causes mental anguish. When an enemy is battling the hag, at the start of each of its turns, it takes 2d6 psychic damage from the horror of the hag's visage unless it takes precautions to avoid directly glancing at her terrible face (mirror, blindfold, etc., which might cause attack penalties). Hag ability: The hag chooses a nearby enemy and glares at it. That target must roll an immediate save; on a failure, the target is stricken blind by her ugliness. While blinded this way, the target is hampered, weakened, and can't make ranged attacks. The target can end the effect by splashing liquid into its eyes or using a similar act to clear the ugly out as a standard action.", "[Hag Ability] Song of Dreams: Enemies take a -4 penalty to their initiative rolls in battles with the hag. Hag ability: The hag begins to sing and the two enemies closest to her (even if far away) must roll an immediate save; on a failure, the target is dazed (save ends). If the dazed target fails its first save, instead it's weakened (save ends). If the weakened target fails its second save, instead it's helpless (save ends).", "[Hag Ability] Thief of Mist: The hag ignores opportunity attacks and can't be intercepted while moving. Hag ability: The hag becomes a mist until the start of her next turn. While a mist, only spells cast with a +3 implement and attacks using a +3 magical weapon can harm her. (Some special story item might also allow attacks to hit if no PC has a +3 item.)", "[Hag Ability] Twist the Path: Once per day the hag can enspell an area to attract visitors, causing those traveling nearby to get lost and wander to that location. Alternately, the hag can cause the location to repel visitors. Finding the correct path to that location requires a DC 20 check if it is a familiar place, a DC 25 check if the travelers only have a map or guide, or a DC 30 check if the travelers are unfamiliar with the area. Hag ability: The target is also confused (easy save ends, 6+).", "[Hag Ability] Weakening Touch: Each enemy fighting the hag must roll a normal save at the start of the battle; on a failure, that creature starts the battle weakened (easy save ends, 6+). Hag ability: The target is dazed (save ends). If the dazed target fails its first save, instead it's weakened (save ends). When the target saves against this effect, it takes a -2 attack penalty until the end of its next turn. ", "[Hag Ability] Winter Breath: The hag’s attacks deal cold damage. Hag ability: The target takes 6 ongoing cold damage."],
+        isStaggered: false,
+        id: 211
     }
 
 ]
