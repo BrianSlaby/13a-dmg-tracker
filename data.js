@@ -3416,6 +3416,118 @@ const monsterData = [
         abilities: ["Death Curse: Each hag can lay a curse upon the one who ends its horrible life. After dropping to 0 HP, a hag always lingers long enough to pronounce the words of the curse (see curse options on page 106 of the Bestiary).", "Delusionist: All hags have the ability to twist the perceptions of others. If the hag has a short time to prepare, it can hide a small hut, disguise a volunteer or captive as a monster, disguise itself as a harmless peasant woman, etc. A DC 30 skill check is required to overcome the delusion and see the truth of it (if a player gives reason for not trusting what their character sees; perhaps add subtle clues toward that end). The magic fades as soon as the hag enters combat.", "Fear: While engaged with this creature, enemies with 30 HP or fewer are Dazed and do not add the escalation die to their attacks.", "Hag Abilities: Choose TWO.", "[Hag Ability] Annis Illusions: The hag gains a +5 bonus to initiative checks due to being not quite where she seems. Hag Ability: As a distraction, the hag creates an illusion of her doing one thing, when she is in fact setting a trap. The hag throws out a bear-trap or other impediment and one nearby enemy becomes stuck (save ends). While stuck this way, the target takes 6 damage at the start of each of its turns.", "[Hag Ability] Annis Skin: On the hag's first round of combat each battle, she gains a +2 attack bonus due to her victims being shocked as she bursts out of her false outer skin. Hag ability: The hag coughs up a glob of liquid pseudo-flesh that globs onto a nearby enemy (no attack roll). The glob solidifies causing an effect of the hag's choice: the target is stuck (save ends); OR the target is unable to cast spells during its next turn (the pseudo-flesh covers their mouth and face).", "[Hag Ability] Blood Pact: Each creature allied to the hag through a pact gains a +2 bonus with their first attack each battle if the hag is present. Hag ability: The hag spits blood in the face of the target and makes a command. The target must roll an immediate save; on a failure, as a free action it makes basic attack against an ally or against itself (target's choice).", "[Hag Ability] Breath Stealing: The hag starts combat with 10 temporary hit points. Hag ability: The hag steals a recovery from the target and heals 20 hp.", "[Hag Ability] Death Shriek: When a melee attack hits the hag, she lets out a shriek as a free action and the attacker takes 2d4 thunder damage. Hag ability: The hag begins to shriek, and each enemy in the battle takes a -4 attack penalty with spells until the start of her next turn.", "[Hag Ability] Dusk Walk: Once per day the hag can implant a suggestion in the mind of a target sleeping within a day's travel of her. Hags use these suggestions to sow discord and suffering. The hag rolls an attack: +10 vs. MD; on a hit, she implants a suggestion in the target that they must obey when a condition she chooses is met (“When you see the mayor, loudly insult his ugly wife.” “When you pass the village smith, throw dung at him.” “At sunset walk into the deep swamp without a lantern.”) Suggested actions can't cause direct harm (the target can't be forced to fight another or harm themselves), can be no longer than 12 words, and affects the target for a week or until triggered. (GM, keep the roll hidden.) Hag ability: The hag becomes immaterial, pops free from all enemies engaged with her, and enters the land of dreams, re-appearing next to any nearby conscious creature (or a nearby or far away creature that is unconscious). The hag then makes the following attack: C: +10 vs. MD (each nearby unconscious enemy)—The hag implants a suggestion in the target that they must obey when they become conscious (usually “When you awake, flee this fight and discard your equipment.”) Suggested actions can't cause direct harm. The round after the target acts on the implanted suggestion it can start rolling normal saves to throw off the effect.", "[Hag Ability] Fateful Visions: The hag uses a +2 magical weapon traded to her for her services (she gains a +2 bonus to attack and damage with melee attacks). Hag ability: The hag has seen this fight in a vision. Her crit range expands by 2 until the end of the battle. Each increase is cumulative.", "[Hag Ability] Foul-touched: Just looking at the hag's true form causes mental anguish. When an enemy is battling the hag, at the start of each of its turns, it takes 2d6 psychic damage from the horror of the hag's visage unless it takes precautions to avoid directly glancing at her terrible face (mirror, blindfold, etc., which might cause attack penalties). Hag ability: The hag chooses a nearby enemy and glares at it. That target must roll an immediate save; on a failure, the target is stricken blind by her ugliness. While blinded this way, the target is hampered, weakened, and can't make ranged attacks. The target can end the effect by splashing liquid into its eyes or using a similar act to clear the ugly out as a standard action.", "[Hag Ability] Song of Dreams: Enemies take a -4 penalty to their initiative rolls in battles with the hag. Hag ability: The hag begins to sing and the two enemies closest to her (even if far away) must roll an immediate save; on a failure, the target is dazed (save ends). If the dazed target fails its first save, instead it's weakened (save ends). If the weakened target fails its second save, instead it's helpless (save ends).", "[Hag Ability] Thief of Mist: The hag ignores opportunity attacks and can't be intercepted while moving. Hag ability: The hag becomes a mist until the start of her next turn. While a mist, only spells cast with a +3 implement and attacks using a +3 magical weapon can harm her. (Some special story item might also allow attacks to hit if no PC has a +3 item.)", "[Hag Ability] Twist the Path: Once per day the hag can enspell an area to attract visitors, causing those traveling nearby to get lost and wander to that location. Alternately, the hag can cause the location to repel visitors. Finding the correct path to that location requires a DC 20 check if it is a familiar place, a DC 25 check if the travelers only have a map or guide, or a DC 30 check if the travelers are unfamiliar with the area. Hag ability: The target is also confused (easy save ends, 6+).", "[Hag Ability] Weakening Touch: Each enemy fighting the hag must roll a normal save at the start of the battle; on a failure, that creature starts the battle weakened (easy save ends, 6+). Hag ability: The target is dazed (save ends). If the dazed target fails its first save, instead it's weakened (save ends). When the target saves against this effect, it takes a -2 attack penalty until the end of its next turn. ", "[Hag Ability] Winter Breath: The hag’s attacks deal cold damage. Hag ability: The target takes 6 ongoing cold damage."],
         isStaggered: false,
         id: 211
+    },
+
+    {
+        name: "Watch Skull",
+        level: 1,
+        type: "troop",
+        initiative: "+9",
+        ac: 16,
+        pd: 11,
+        md: 16,
+        hp: 20,
+        health: 20,
+        attacks: ["C: Screech +8 vs MD (1D3 random nearby creatures) - 4 psychic damage. Natural 16+: the target is Stuck (save ends). Natural Roll is Equal to or Lower than the Escalation Die: 1D3 nearby enemies hear the alarm and join the battle. The creatures attracted by the constant screeching are (usually) level 1 mooks of a type that would be appropriate for the skull's location."],
+        abilities: ["Immobile: The skull can't hop, jump, roll, or fly. It can't even move its jaw.", "Lost Opportunity: This creature can't make opportunity attacks.", "[Nastier Special] Allies: Creatures that have been mystically 'keyed' to the skull aren't affected by its Screech attack.", "[Nastier Special] Gem Eyes: The skull can sense the unseen and things from beyond the world. A wizard using a blur spell, a rogue shadow walking, and other similar abilities offer no protection from the skull and its Screech attack. (If the PCs come up with a plausible tactic to bypass the skull, give the skull a normal save to detect them.)", "[Nastier Special] Move-triggered: When an enemy near the skull uses a move action to move, the skull can make a Screech attack against that creature as a free action that interrupts the move. The skull can use this ability twice per round. Shadow walking, teleporting, and other non-standard modes of movement will trigger the Screech attack."],
+        isStaggered: false,
+        id: 212
+    },
+
+    {
+        name: "Slime-skull",
+        level: 3,
+        type: "spoiler",
+        initiative: "+5",
+        ac: 18,
+        pd: 10,
+        md: 18,
+        hp: 36,
+        health: 36,
+        attacks: ["Slam +10 vs AC - 7 damage", "C: Grasping Slime Tendrils +10 vs PD (one nearby enemy) - 7 acid damage. Natural 16+: the target takes 3 extra acid damage and is Stuck (hard save ends)."],
+        abilities: ["Acidic: When a creature is engaged with the slime-skull or Stuck from its Grasping Slime Tendrils attack at the start of its turn, it takes 3 acid damage.", "Slimy Blastback: When an enemy engaged with the slime-skull hits it with a melee attack, the slime-skull fires a blast of acidic slime back at that creature, which takes 1D4 acid damage.", "Slow: This creature is slow. It only moves when the escalation die is odd or 6+.", "Wall-crawler: A slime-skull can climb on ceilings and walls as easily as it moves on the ground.", "[Nastier Special] Breeder: If the slime-skull kills a creature, it takes that creature's head as a standard action and attempts to escape (it can squeeze through gaps as small as the skull). The slain creature can't be resurrected until its skull is recovered because its spirit is now trapped within the skull. If the PCs don't track down the slime-skull before the next full heal up (or within a day), the stolen skull will transform into another slime-skull. Attempts to resurrect the creature become much more difficult, perhaps even impossible, at that point."],
+        isStaggered: false,
+        id: 213
+    },
+
+    {
+        name: "Jest Bones",
+        level: 4,
+        type: "spoiler",
+        initiative: "+8",
+        ac: 19,
+        pd: 11,
+        md: 19,
+        hp: 41,
+        health: 41,
+        attacks: ["C: Puns +11 vs PD (1D4 nearby enemies) - 5 psychic damage, plus 1D6 ongoing psychic damage if the GM makes a horrible pun while rolling the attacks. Bad Puns: Creatures that can't hear or that have attempted to reduce their hearing are only affected by a jest bones' Puns attack if the natural roll is odd."],
+        abilities: ["Limited Flight: The haunted skull can glide and hover, always within seven or eight feet of the ground. It also performs barrel rolls.", "Lost Opportunity: This creature can't make opportunity attacks."],
+        isStaggered: false,
+        id: 214
+    },
+
+    {
+        name: "Screaming Skull",
+        level: 4,
+        type: "troop",
+        initiative: "+7",
+        ac: 19,
+        pd: 11,
+        md: 19,
+        hp: 45,
+        health: 45,
+        attacks: ["C: Treacherous Scream +11 vs MD (up to 2 nearby or far away enemies) - 6 psychic damage, and the target takes 2D6 psychic damage the first time it succeeds at a save before the end of its next turn."],
+        abilities: ["Limited Flight: The haunted skull can glide and hover, always within seven or eight feet of the ground.", "Lost Opportunity: This creature can't make opportunity attacks."],
+        isStaggered: false,
+        id: 215
+    },
+
+    {
+        name: "Flaming Skull",
+        level: 5,
+        type: "caster",
+        initiative: "+10",
+        ac: 20,
+        pd: 12,
+        md: 20,
+        hp: 54,
+        health: 54,
+        attacks: ["R: Burning Gaze +12 vs PD (1D3 nearby enemies or one far away enemy) - 10 fire damage. First Natural Even Hit Each Battle: the target is Confused (easy save ends).", "C: Smoldering Flames +11 vs PD (one nearby enemy) - 14 fire damage, and each time the target fails a save this battle, it bursts into flames and takes 5 ongoing fire damage."],
+        abilities: ["Vulnerability: Holy OR Negative Energy, depending on the skull", "Resist Fire 16+", "Limited Flight: The haunted skull can glide and hover, always within seven or eight feet of the ground.", "Lost Opportunity: This creature can't make opportunity attacks."],
+        isStaggered: false,
+        id: 216
+    },
+
+    {
+        name: "Black Skull",
+        level: 8,
+        type: "caster",
+        initiative: "+13",
+        ac: 23,
+        pd: 15,
+        md: 23,
+        hp: 110,
+        health: 110,
+        attacks: ["R: Telekinetic Grasp +15 vs PD (1D3 nearby enemies) - 28 force damage. Natural Even Hit: the target is Stuck (save ends). Telekinetic Crush: When the escalation die is even, one enemy of the skull's choice that is Stuck from its Telekinetic Grasp takes 18 force damage at the start of the skull's turn. When the escalation die is odd, one such Stuck enemy of its choice is Hampered (save ends)."],
+        abilities: ["Limited Flight: The haunted skull glides and hovers, always within seven or eight feet of the ground. If the skull is incognito, its empty clothing moves around beneath it, held in the shape of a person by telekinesis and it stays closer to the ground to appear normal.", "Lost Opportunity: This creature can't make opportunity attacks."],
+        isStaggered: false,
+        id: 217
+    },
+
+    {
+        name: "Skull of the Beast",
+        level: 9,
+        type: "wrecker (large)",
+        initiative: "+10",
+        ac: 21,
+        pd: 13,
+        md: 21,
+        hp: 400,
+        health: 400,
+        attacks: ["Huge Club +17 vs AC - 50 damage. Miss: 18 thunder damage to 1D3 nearby enemies (the beast screams and bellows in disappointment).", "C: Baleful Gaze +15 vs PD (1D3 nearby enemies) - 25 negative energy damage. Natural Odd Hit: The target is Stuck (save ends) from looking into the void within it. Limited Use: 1/battle."],
+        abilities: ["Fear: While engaged with this creature, enemies that have 60 HP or fewer are Dazed and do not add the escalation die to their attacks."],
+        isStaggered: false,
+        id: 218
     }
 
 ]
