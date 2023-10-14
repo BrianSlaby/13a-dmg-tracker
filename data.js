@@ -3577,6 +3577,102 @@ const monsterData = [
         abilities: ["Death Spasms: When a headless zombie drops to 0 HP, it flails with its fists and makes a Mouthless Cry attack as a free action before it dies.", "Inevitable Hunger: When a creature tries to affect the zombie's attack, such as forcing a reroll or applying a penalty, it must roll a normal save; on a failure, the effect is negated.", "[Nastier Special] Baleful Aura: While nearby a headless zombie, when a creature would heal, it only heals half the normal hit points.", "[Nastier Special] Necrotic Supremacy: When the escalation die increases to 6, each headless zombie in the battle is restored to maximum hit points, including the dead ones."],
         isStaggered: false,
         id: 221
+    },
+
+    {
+        name: "Boombug",
+        level: 2,
+        type: "troop",
+        initiative: "+5",
+        ac: 16,
+        pd: 15,
+        md: 11,
+        hp: 36,
+        health: 36,
+        attacks: ["Gnawing Teeth +6 vs AC - 5 damage. Miss: 2 damage. Puff Go Boom: When an enemy's attack hits the boombug and leaves it Staggered with an odd number of hit points, it explodes and dies. (Even hit points? No problem). When it explodes, each nearby creature not engaged with it takes 1D4 thunder damage, and it makes the following attack against each creature engaged with it.", "[Special Trigger] C: Thunderous Explosion +9 vs PD - 12 thunder damage. Miss: 5 thunder damage."],
+        abilities: ["[Nastier Special] Latches On: When the boombug hits with Gnawing Teeth, the target takes a -5 penalty to disengage checks until it's no longer engaged with the boombug."],
+        isStaggered: false,
+        id: 222
+    },
+
+    {
+        name: "Hellwasp",
+        level: 2,
+        type: "spoiler",
+        initiative: "+8",
+        ac: 18,
+        pd: 16,
+        md: 12,
+        hp: 28,
+        health: 28,
+        attacks: ["Necrotizing Stinger +6 vs PD - 5 damage. Natural Even Hit: 5 ongoing acid damage (easy save ends), and the hellwasp can pop free from the target."],
+        abilities: ["Virulent Injection: When a creature fails a save against the hellwasp's ongoing acid damage, it gains a random condition until it saves against that damage. Have the player roll a D4 to determine the condition: 1. Confused, 2. Weakened, 3. Dazed, 4. Vulnerable.", "Flight: Hellwasps are adroit flyers that can hover and even fly backward.", "[Nastier Special] Lethal Injection: The save versus the stinger's ongoing acid damage is a normal save instead of an easy save."],
+        isStaggered: false,
+        id: 223
+    },
+
+    {
+        name: "Hook Scuttler",
+        level: 2,
+        type: "blocker",
+        initiative: "+5",
+        ac: 20,
+        pd: 15,
+        md: 14,
+        hp: 30,
+        health: 30,
+        attacks: ["Claws and Mandibles +7 vs AC - 8 damage"],
+        abilities: ["Spiky Bits: When a hook scuttler moves to engage an enemy it wasn't engaged with at the start of its turn, that enemy takes 1D6 damage. When an enemy tries to disengage from the hook scuttler and fails, it takes 1D6 damage.", "[Nastier Special] Corpse Eater: When a nearby enemy drops to 0 HP or below in battle, the hook scuttler will ignore other enemies and move to attack that unconscious enemy until that enemy is dead."],
+        isStaggered: false,
+        id: 224
+    },
+
+    {
+        name: "Swarming Maw",
+        level: 2,
+        type: "wrecker",
+        initiative: "+6",
+        ac: 17,
+        pd: 15,
+        md: 14,
+        hp: 38,
+        health: 38,
+        attacks: ["Serrated Maw +8 vs AC - 6 damage. Natural Even Hit: The swarming maw can teleport to engage a nearby enemy it can see that is already engaged by at least one other hellbug. Miss: The first time each battle the serrated maw misses, the target takes 1D4 damage for each hellbug engaged with it."],
+        abilities: ["[Nastier Special] Ongoing Swarm: The serrated maw also deals miss damage the second time it misses with a Serrated Maw attack each battle."],
+        isStaggered: false,
+        id: 225
+    },
+
+    {
+        name: "Intellect Devourer",
+        level: 3,
+        type: "spoiler",
+        initiative: "+5",
+        ac: 19,
+        pd: 15,
+        md: 19,
+        hp: 56,
+        health: 56,
+        attacks: ["C: Recall Trauma +8 vs MD (one nearby enemy) - 16 psychic damage. Natural Even Hit: the target can't add the escalation die to its attacks (save ends).", "C: Ego Scourge +8 vs MD (one nearby or far away enemy) - 10 psychic damage, and the target must choose one: take 10 extra damage, OR lose two points (cumulative) from its highest current background (min 0) until the next full heal up.", "C: Mind Wipe +10 vs MD (one nearby enemy per point on escalation die) - The target can neither detect the intellect devourer's presence nor remember it was ever there to begin with. If no enemy in the battle remembers the devourer is there, remove it from play. Each nearby enemy immediately detects the devourer's presence if it makes an attack or if it doesn't leave the battle by the end of its next turn. Limited Use: 1/battle."],
+        abilities: ["Exploit Trauma: The intellect devourer's crit range with attacks against MD expands by 2.", "Lost Opportunity: This creature can't make opportunity attacks.", "Psychovore: An intellect devourer remembers the current escalation die value the first time its host body drops to 0 hit points in a battle and gains a bonus equal to that value to all attacks and defenses until the end of the battle.", "[Nastier Special] Increased Trauma: Add the following extra effect trigger to the intellect devourer's Recall Trauma attack. Natural 5, 10, 15, 20: The target can't cast spells until the end of its next turn."],
+        isStaggered: false,
+        id: 226
+    },
+
+    {
+        name: "Intellect Assassin",
+        level: 6,
+        type: "blocker",
+        initiative: "+9",
+        ac: 22,
+        pd: 16,
+        md: 20,
+        hp: 90,
+        health: 90,
+        attacks: ["Formless Fist +9 vs PD (one enemy) - 25 damage; OR if the target is fighting a Psychic Duel (see below), it can choose to take a -4 penalty to its next check instead. Quick Use: The assassin can take 15 damage to make this attack as a quick action (once per round).", "C: Insidious Domination +11 vs MD (one enemy) - 14 damage, and the opponent is locked in a psychic duel with the assassin (see below).", "C: Mind Thrust +10 vs MD (one Confused enemy) - 35 damage (but only 50 damage on a crit)."],
+        abilities: ["Exploit Trauma: An intellect assassin's crit range with attacks against MD expands by 2.", "Lost Opportunity: This creature can't make opportunity attacks.", "Psychovore: An intellect devourer remembers the current escalation die value the first time it becomes unhosted in a battle and gains a bonus equal to that value to all attacks and defenses until the end of the battle.", "Psychic Duel: A psychic duel occurs when the intellect assassin hits with an Insidious Domination attack against a creature. At the start of the creature's next turn, it must make an Intelligence skill check and can use a background that applies to psychic ability (if any). The result of this check determines that creature's status until the start of its next turn. To maintain the psychic duel, the assassin must spend a move action each turn.", "[Psychic Duel Results - Status] 15 or less: the creature is Confused until the end of its turn. It also can't make opportunity attacks until the start of its next turn and takes a -2 penalty to its next Psychic Duel check.", "[Psychic Duel Results - Status] 16-22: The creature is pressured - it takes a -2 penalty to attacks against any enemy except the assassin (dueling opponent).", "[Psychic Duel Results - Status] 23-27: The creature steadies itself and can use a move action this turn to escape the Psychic Duel. If the creature chooses not to (or can't) escape the duel, it gains a +2 bonus to its next Psychic Duel check.", "[Psychic Duel Results - Status] 28+: As 23-27, but the creature takes advantage and gains a +4 bonus to its next Psychic Duel check instead of +2. In addition, the assassin takes a -2 penalty to attack rolls that target other creatures."],
+        isStaggered: false,
+        id: 227
     }
 
 ]
