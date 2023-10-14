@@ -10,17 +10,15 @@ body {
 }
 
 main {
-    background-color: #e0d2c1;
-    background-image: url(images/corkboard-bg.jpg);
-    background-size: cover;
+    background-color: #f0fffd;
+    background-color: #d6d6d6;
     min-height: 80vh;
     padding: 1em;
-    background-blend-mode: overlay;
  }
 
 
 /* ===================*/
-/*     TYPOGRAPHY     */
+/*    HEADER/FOOTER   */
 /* ===================*/
 header,
 main,
@@ -54,7 +52,17 @@ footer {
     gap: 3em;
     padding: 2em;
     font-size: 0.75rem;
-    background-color: #f0f0f0;
+    background-color: #335C67;
+    color: #fcfcfc;
+}
+
+footer a:visited {
+    color: #e6d4fc;
+}
+
+footer a:hover,
+footer a:active {
+    color: #d4f1fc;
 }
 
 .footer-column {
@@ -62,7 +70,7 @@ footer {
 }
 
 /* ====================*/
-/*       LAYOUT        */
+/*    MONSTER CARDS    */
 /* ====================*/
 
 #statblock-container {
@@ -74,9 +82,10 @@ footer {
 }
 
 .monster-card {
-    border-radius: 7px;
+    border-radius: 8px;
     max-width: 300px;
-    box-shadow: 1px 1px 3px grey;
+    color: #04010f;
+    box-shadow: 1px 1px 3px 0 #575757;
     background-image: linear-gradient(
         90deg,
         hsl(53deg 17% 90%) 0%,
@@ -96,8 +105,8 @@ footer {
 }
 
 .card-header {
-    background-color: #415c2d;
-    color: #FFF;
+    background-color: #335C67;
+    color: #fcfcfc;
     border-radius: 7px 7px 0 0;
     display: flex;
     justify-content: space-between;
@@ -218,10 +227,22 @@ footer {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1px;
-    padding: 0.7em 1.4em;
+    padding: 1em 1.75em;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px #1b1314;
     cursor: pointer;
+}
+
+.text-btn:hover,
+.text-btn:focus {
+    transform: scale(1.05);
+    box-shadow: 2px 2px 5px #1b1314;
+}
+
+.text-btn:active {
+    transform: scale(0.98);
+    box-shadow: 0 0 1px #1b1314;
 }
 
 .icon-btn {
@@ -232,30 +253,58 @@ footer {
     cursor: pointer;
 }
 
-.main-btn {
+.icon-btn:hover,
+.icon-btn:focus {
+    transform: scale(1.18);
+}
+
+#main-button-container button {
     margin: 0.5em 1em;
-    color: #f5f5f5;
 }
 
 #select-monsters-btn {
-    background-color: #415c2d;
+    background-color: #4f5096;
+    color: #fcfcfc;
+}
+
+/* @keyframes monster-btn-transition {
+    from {
+        background-color: #21b5a1;
+        color: #1b1314;
+    }
+    to {
+        background-color: #086357;
+        color: #fcfcfc;    
+    }
 }
 
 #select-monsters-btn:hover,
 #select-monsters-btn:focus {
-    background-color: #7dbf4d;
-    color: #1f1e1e;
-}
+    animation-name: monster-btn-transition;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+} */
 
 #clear-monsters-btn {
-    background-color: #9c2d40;
+    background-color: #878787;
+    color: #fcfcfc;
+}
+
+/* @keyframes clear-btn-transition {
+    from {
+        background-color: #5f7b8c;
+    }
+    to {
+        background-color: #344752;
+    }
 }
 
 #clear-monsters-btn:hover,
 #clear-monsters-btn:focus {
-    background-color: #cc6e7e;
-    color: #1f1e1e;
-}
+    animation-name: clear-btn-transition;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+} */
 
 .dmg-btn-container {
     display: flex;
@@ -264,35 +313,13 @@ footer {
 
 .dmg-btn {
     margin-top: 0.5em;
-    background-image: linear-gradient(
-        160deg,
-        hsl(349deg 49% 23%) 0%,
-        hsl(349deg 50% 25%) 22%,
-        hsl(349deg 51% 27%) 33%,
-        hsl(349deg 52% 29%) 42%,
-        hsl(349deg 52% 31%) 50%,
-        hsl(349deg 53% 33%) 58%,
-        hsl(350deg 54% 35%) 67%,
-        hsl(350deg 55% 37%) 78%,
-        hsl(350deg 55% 39%) 100%
-        );
-    color: #f5f5f5;
+    background-color: #9E2A2B;
+    color: #fcfcfc;
 } 
 
-.dmg-btn:hover,
-.dmg-btn:focus {
-    background-image: none;
-    background-color: #cc6e7e;
-    color: #1f1e1e;
-}
-
 .rmvbtn {
-    color: #f5f5f5;
+    color: #fcfcfc;
     justify-self: flex-end;
-}
-
-.rmvbtn:hover {
-    color: #adadad;
 }
 
 /* ===================*/
@@ -334,7 +361,7 @@ input[type=number] {
     max-width: 600px;
     padding: 1em;
     background-color: #f0f0f0;
-    box-shadow: 2px 2px 8px #6e6e6e;
+    box-shadow: 6px 6px 20px 2px #575757;
     border-radius: 8px;
 }
 
@@ -344,11 +371,7 @@ input[type=number] {
 }
 
 #close-modal-btn {
-    color: firebrick;
-}
-
-#close-modal-btn:hover {
-    color: #6e6e6e;
+    color: #9E2A2B;
 }
 
 #level-check-container {
