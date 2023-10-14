@@ -47,7 +47,7 @@ header {
 
 footer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     gap: 3em;
     padding: 2em;
@@ -407,3 +407,9 @@ input[type=number] {
 /* ===================*/
 /*    MEDIA QUERIES   */
 /* ===================*/
+
+@media (min-width: 850px) {
+    footer {
+        flex-direction: row;
+    }
+}
