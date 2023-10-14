@@ -3673,6 +3673,87 @@ const monsterData = [
         abilities: ["Exploit Trauma: An intellect assassin's crit range with attacks against MD expands by 2.", "Lost Opportunity: This creature can't make opportunity attacks.", "Psychovore: An intellect devourer remembers the current escalation die value the first time it becomes unhosted in a battle and gains a bonus equal to that value to all attacks and defenses until the end of the battle.", "Psychic Duel: A psychic duel occurs when the intellect assassin hits with an Insidious Domination attack against a creature. At the start of the creature's next turn, it must make an Intelligence skill check and can use a background that applies to psychic ability (if any). The result of this check determines that creature's status until the start of its next turn. To maintain the psychic duel, the assassin must spend a move action each turn.", "[Psychic Duel Results - Status] 15 or less: the creature is Confused until the end of its turn. It also can't make opportunity attacks until the start of its next turn and takes a -2 penalty to its next Psychic Duel check.", "[Psychic Duel Results - Status] 16-22: The creature is pressured - it takes a -2 penalty to attacks against any enemy except the assassin (dueling opponent).", "[Psychic Duel Results - Status] 23-27: The creature steadies itself and can use a move action this turn to escape the Psychic Duel. If the creature chooses not to (or can't) escape the duel, it gains a +2 bonus to its next Psychic Duel check.", "[Psychic Duel Results - Status] 28+: As 23-27, but the creature takes advantage and gains a +4 bonus to its next Psychic Duel check instead of +2. In addition, the assassin takes a -2 penalty to attack rolls that target other creatures."],
         isStaggered: false,
         id: 227
+    },
+
+    {
+        name: "Spinneret Doxy",
+        level: 3,
+        type: "spoiler",
+        initiative: "+5",
+        ac: 19,
+        pd: 17,
+        md: 13,
+        hp: 45,
+        health: 45,
+        attacks: ["Bite of the Love Bug +8 vs AC (or automatic critical hit vs. an Infatuated enemy) - 10 damage, and the target is Infatuated (save ends). Infatuated: Infatuated enemies can't attack the spinneret doxy or her Woven, but can convince themselves that other allies of the doxy don't love her properly and should be slain. They also prattle on about how their friends shouldn't attack her, but are too love-smitten to properly prevent it - they won't attack their real allies.", "R: Bring me Flowers +8 vs MD (one Infatuated enemy) - The target chooses one: it takes 6D6 psychic damage; OR as a free action, it moves next to the spinneret doxy (possibly provoking opportunity attacks), who engages is.", "C: Stop in the Name of Love +8 vs MD (each nearby Infatuated enemy) - The target chooses one: it takes 6D6 psychic damage; OR it's Stuck (save ends)."],
+        abilities: ["Give Me Your Heart: When the doxy drops an enemy to 0 hit points or lower, she will move next to that creature and attempt to remove the target's heart. The creature must begin making last gasp saves as she cuts their chest open. On the fourth failure, the doxy takes the heart and the target dies and becomes undead under her control. If the doxy is Stunned or moved away from the creature and can't return to it on her turn, the creature doesn't have to make a last gasp save that turn."],
+        isStaggered: false,
+        id: 228
+    },
+
+    {
+        name: "Lethal Lothario",
+        level: 4,
+        type: "leader",
+        initiative: "+7",
+        ac: 20,
+        pd: 18,
+        md: 17,
+        hp: 50,
+        health: 50,
+        attacks: ["Brutal Kiss +9 vs AC - 10 damage. Natural Even Hit: any woven engaged with the target can attack it as a free action.", "C: Unhealthy Attraction +9 vs MD (nearby enemy with the fewest hit points) - 10 psychic damage and the target is Hampered until the end of the battle or until it takes one turn as if it were Confused. Miss: 5 ongoing psychic damage."],
+        abilities: ["Give Me Your Heart: When the lothario drops an enemy to 0 hit points or lower, he will move next to that creature and attempt to remove the target's heart. The creature must begin making last gasp saves as he cuts their chest open. On the fourth failure, the lothario takes the heart and the target dies and becomes undead under his control. If the lothario is Stunned or moved away from the creature and can't return to it on his turn, the creature doesn't have to make a last gasp save that turn."],
+        isStaggered: false,
+        id: 229
+    },
+
+    {
+        name: "Binding Bride",
+        level: 5,
+        type: "spoiler",
+        initiative: "+8",
+        ac: 21,
+        pd: 15,
+        md: 19,
+        hp: 72,
+        health: 72,
+        attacks: ["Biting Kiss +10 vs AC - 18 damage. Natural 16+: The target takes 10 ongoing poison damage.", "Unwrapping My Gift +10 vs AC - 18 damage. Natural Even Hit or Miss: The binding bride can make a Biting Kiss attack as a free action.", "R: A Bouquet of Webs +10 vs PD (up to 2 enemies in a group) - The target is Hampered (save ends).", "R: You Ruined My Special Day +10 vs MD - The target takes 18 psychic damage each time it attacks the binding bride (save ends). Limited Use: 1/battle, as a quick action."],
+        abilities: ["Give Me Your Heart: When the binding bride drops an enemy to 0 hit points or lower, she will move next to that creature and attempt to remove the target's heart. The creature must begin making last gasp saves as she cuts their chest open. On the fourth failure, the bride takes the heart and the target dies and becomes undead under her control. If the bride is Stunned or moved away from the creature and can't return to it on her turn, the creature doesn't have to make a last gasp save that turn."],
+        isStaggered: false,
+        id: 230
+    },
+
+    {
+        name: "Swarm Prince",
+        level: 5,
+        type: "spoiler",
+        initiative: "+9",
+        ac: 19,
+        pd: 18,
+        md: 16,
+        hp: 80,
+        health: 80,
+        attacks: ["Palm Strike +10 vs PD - 10 damage, and 10 ongoing poison damage. Miss: 5 damage.", "R: Royal Blessing +10 vs MD - 15 negative energy damage, and if one or more woven have been slain this battle, return one woven to life in the location where it died. Limited Use: The swarm prince can use this ability only when the escalation die is even.", "C: Hush My Darling +10 vs MD (the nearby conscious enemy with the fewest hit points) - 5 psychic damage, and the target is unconscious (hard save ends; it also ends if the target takes 15 damage). Limited Use: 1/battle, and the ability recharges when the swarm prince hits with a Palm Strike."],
+        abilities: ["Surrounded by Friends: The swarm prince gains a +1 bonus to all defenses for each nearby woven.", "Give Me Your Heart: When the swarm prince drops an enemy to 0 hit points or lower, he will move next to that creature and attempt to remove the target's heart. The creature must begin making last gasp saves as he cuts their chest open. On the fourth failure, the prince takes the heart and the target dies and becomes undead under his control. If the prince is Stunned or moved away from the creature and can't return to it on his turn, the creature doesn't have to make a last gasp save that turn."],
+        isStaggered: false,
+        id: 231
+    },
+
+    {
+        name: "The Woven",
+        level: 4,
+        type: "mook",
+        mookNumber: 1,
+        initiative: "+6",
+        ac: 18,
+        pd: 16,
+        md: 12,
+        hp: 13,
+        health: 13,
+        attacks: ["Clumsy Strike +9 vs AC - 7 damage", "R: Why Aren't You Happy for Usssss +8 vs MD (1D3 nearby enemies) - 5 psychic damage as the target's mind reels against the horror of the truth."],
+        abilities: [""],
+        isStaggered: false,
+        id: 232
     }
 
 ]
