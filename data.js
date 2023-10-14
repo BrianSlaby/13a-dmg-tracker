@@ -3751,7 +3751,7 @@ const monsterData = [
         hp: 13,
         health: 13,
         attacks: ["Clumsy Strike +9 vs AC - 7 damage", "R: Why Aren't You Happy for Usssss +8 vs MD (1D3 nearby enemies) - 5 psychic damage as the target's mind reels against the horror of the truth."],
-        abilities: [""],
+        abilities: ["none"],
         isStaggered: false,
         id: 232
     }
