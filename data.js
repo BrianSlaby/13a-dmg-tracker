@@ -3754,6 +3754,137 @@ const monsterData = [
         abilities: ["none"],
         isStaggered: false,
         id: 232
+    },
+
+    {
+        name: "Kobold Grand Wizard",
+        level: 0,
+        type: "mook",
+        mookNumber: 1,
+        initiative: "+8",
+        ac: 15,
+        pd: 13,
+        md: 9,
+        hp: 5,
+        health: 5,
+        attacks: ["Static Jolt +5 vs AC - 2 lightning damage", "R: Painful Liver Inversion Hex +4 vs PD - 4 poison damage, or 6 poison damage against dwarves."],
+        abilities: ["Evasive: Kobolds take no damage from missed attacks."],
+        isStaggered: false,
+        id: 233
+    },
+
+    {
+        name: "Kobold Skyclaw",
+        level: 2,
+        type: "mook",
+        mookNumber: 1,
+        initiative: "+9",
+        ac: 18,
+        pd: 16,
+        md: 13,
+        hp: 7,
+        health: 7,
+        attacks: ["Spike-toed Boots +5 vs AC - 4 damage", "C: Alchemical Flask +6 vs PD (one nearby enemy or a far away enemy at -2 attack) - 3 damage, and roll a D4 for the effect of the flask's contents. 1. Distilled Ankheg Spit: The target takes 3 ongoing acid damage. 2. Reconstituted Remorhaz Lymph: The target takes 3 ongoing fire damage. 3. Essence of Giant Spider Web: The target is Stuck (save ends). 4. Kobold Blasting Powder: There's a loud bang and the battlefield is obscured with thick smoke. Each non-kobold creature takes a -2 attack penalty during its next turn. Natural 1: The kobold explodes."],
+        abilities: ["Evasive: Kobolds take no damage from missed attacks.", "Erratic Flight: The kobold flings itself from a trebuchet or ignites an unstable alchemical propellant and lands among its enemies. Each time the kobold uses a move action to fly, roll a D20. 1. It crashes and explodes. 2-15: It lands safely. 16+: It stays aloft and can keep flying.", "Mook: If an attack roll against a skyclaw is a natural 20 or a skyclaw rolls a natural 1 attack roll or flight roll, it triggers a chain reaction that ripples through all nearby skyclaws in the mob; each one makes an Alchemical Flask attack as a free action as it explodes and dies."],
+        isStaggered: false,
+        id: 234
+    },
+
+    {
+        name: "Kobold Engineer",
+        level: 3,
+        type: "leader",
+        initiative: "+8",
+        ac: 19,
+        pd: 17,
+        md: 13,
+        hp: 45,
+        health: 45,
+        attacks: ["Wrench, Pick, or Shovel +8 vs AC - 8 damage. Natural 16+: the engineer's kobold allies gain a +2 attack bonus against the target until the start of the engineer's next turn.", "R: Explosive Flask +5 vs PD - The target is Vulnerable to non-magical attacks (easy save ends). Natural Roll is Above Target's Wisdom (Trapster): The blast knocks the target into a trap. See 'Trapster' on Bestiary page 128 for trap examples."],
+        abilities: ["Evasive: Kobolds take no damage from missed attacks."],
+        isStaggered: false,
+        id: 235
+    },
+
+    {
+        name: "Kobold Dog Rider",
+        level: 3,
+        type: "troop",
+        initiative: "+8",
+        ac: 19,
+        pd: 16,
+        md: 12,
+        hp: 41,
+        health: 41,
+        attacks: ["Flaming Lance +8 vs AC - 6 damage, and 3 ongoing fire damage. Natural 16+: The kobold and its steed pop free from all enemies and can move as a free action.", "R: Tiny Crossbow +8 vs AC - 9 damage, and the kobold and its steed can move as a free action. Natural Roll is Above Target's Wisdom (Trapster): There is a line tied to the barbed dart, pulling/tripping the target into a trap. See 'Trapster' on Bestiary page 128 for trap examples."],
+        abilities: ["Evasive: Kobolds take no damage from missed attacks.", "Canine Steed: The steed can't be targeted separately from the kobold. If the kobold dies the dog runs away."],
+        isStaggered: false,
+        id: 236
+    },
+
+    {
+        name: "Kobold Bravescale",
+        level: 4,
+        type: "blocker",
+        initiative: "+9",
+        ac: 20,
+        pd: 18,
+        md: 14,
+        hp: 55,
+        health: 55,
+        attacks: ["Spear +9 vs AC - 13 damage. Natural Roll is Above Target's Wisdom (Trapster): The kobold pushes or trips the target into a trap. See 'Trapster' on Bestiary page 128 for example traps.", "[Special Trigger] Spear Porcupine +11 vs AC - 10 damage."],
+        abilities: ["Disciplined Maneuver: If the escalation die is 3+ and this creature has at least 2 bravescale allies in the battle, whenever an enemy moves to engage the bravescale, it can make a Spear Porcupine attack against that enemy as a free action.", "Lock Shields: For each other kobold bravescale next to the bravescale or engaged with a creature that this bravescale is engaged with, the bravescale gains a +2 bonus to AC (maximum of +4), and each enemy engaged with the bravescale takes a -2 penalty (maximum of -4) to disengage checks."],
+        isStaggered: false,
+        id: 237
+    },
+
+    {
+        name: "Kobold Dungeon Shaman",
+        level: 4,
+        type: "caster (double strength)",
+        initiative: "+9",
+        ac: 19,
+        pd: 17,
+        md: 15,
+        hp: 110,
+        health: 110,
+        attacks: ["Bear Traps on Chains +9 vs AC (2 attacks) - 13 damage. Natural Roll is Above Target's Wisdom (Trapster): The kobold drags the target into a trap. See 'Trapster' on Bestiary page 128 for trap examples.", "R: Hex of Entrapment +9 vs MD - 26 damage. Natural Roll is Above Target's Wisdom (Trapster): The kobold summons a trap that was not previously there, which the target triggers. See 'Trapster' on Bestiary page 128 for trap examples. Miss: The target is Stuck and Hampered (save ends both)."],
+        abilities: ["Evasive: Kobolds take no damage from missed attacks."],
+        isStaggered: false,
+        id: 238
+    },
+
+    {
+        name: "Kobold Shadow Warrior",
+        level: 4,
+        type: "mook",
+        mookNumber: 1,
+        initiative: "+9",
+        ac: 20,
+        pd: 13,
+        md: 17,
+        hp: 14,
+        health: 14,
+        attacks: ["C: Throwing Star +9 vs AC (one nearby enemy) - 7 damage.", "C: Stinging Dust +6 vs PD (up to two nearby enemies in a group) - 5 damage, and the target takes a -1 penalty to attacks until the end of its next turn.", "[Special Trigger] C: Elusive Strike +13 vs AC (one nearby creature) - 18 damage."],
+        abilities: ["Evasive: Kobolds take no damage from missed attacks.", "Elusive: If a shadow warrior hasn't been attacked since the end of its last turn, it can spend all of its actions on its turn to disappear from sight (remove it from play as it gets into position). At the start of its next turn, it reappears (dropping down from the ceiling or springing out of cover and re-entering play) and can make an Elusive Strike attack as a standard action.", "Wall-crawler: A kobold shadow warrior can climb on ceilings and walls as easily as it moves on the ground."],
+        isStaggered: false,
+        id: 239
+    },
+
+    {
+        name: "Kobold Dragon Soul",
+        level: 5,
+        type: "troop",
+        initiative: "+10",
+        ac: 22,
+        pd: 19,
+        md: 14,
+        hp: 70,
+        health: 70,
+        attacks: ["Claws +10 vs AC - 17 damage. Natural Even Hit: The target also takes 8 ongoing acid damage.", "R: Fire Spit +10 vs PD - 18 fire damage. Natural Even Hit: If flying, the kobold can remain in the air until the end of its next turn if it would normally have to land at the end of this turn."],
+        abilities: ["Evasive: Kobolds take no damage from missed attacks.", "Flight: A dragon soul's wings aren't strong enough for sustained flapping flight, but with a headwind and a tall place to launch from it can glide for hours. During battle, however, it must land at the end of its turn if the escalation die is even (but see Fire Spit)."],
+        isStaggered: false,
+        id: 240
     }
 
 ]
