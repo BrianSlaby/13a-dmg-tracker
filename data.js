@@ -3333,7 +3333,7 @@ const monsterData = [
         hp: 48,
         health: 48,
         attacks: ["Bloody Claws +8 vs AC - 12 damage, and the target is Vulnerable (save ends).", "C: Flesh-seeking Tongue +8 vs PD (one nearby enemy) - 8 damage. Natural Even Hit: the target pops free from each enemy it's engaged with and is pulled to the ghoul licklash, who engages it. Natural Odd Hit: The target is Vulnerable (save ends). Critical Hit: the licklash can make a Flesh-seeking Tongue attack against a different target as a free action."],
-        abilities: ["Vulnerability: Holy", "Infected Bite: Any creature that is slain by a ghoul and not consumed will rise as a ghoul the next night.", "Tongue Lash: Once per round when a nearby enemy makes a ranged attack, teh ghoul licklash can make a Flesh-seeking Tongue attack against that enemy before the attack as a free action."],
+        abilities: ["Vulnerability: Holy", "Infected Bite: Any creature that is slain by a ghoul and not consumed will rise as a ghoul the next night.", "Tongue Lash: Once per round when a nearby enemy makes a ranged attack, the ghoul licklash can make a Flesh-seeking Tongue attack against that enemy before the attack as a free action."],
         isStaggered: false,
         id: 206
     },
