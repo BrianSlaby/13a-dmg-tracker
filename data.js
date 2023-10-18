@@ -3885,6 +3885,166 @@ const monsterData = [
         abilities: ["Evasive: Kobolds take no damage from missed attacks.", "Flight: A dragon soul's wings aren't strong enough for sustained flapping flight, but with a headwind and a tall place to launch from it can glide for hours. During battle, however, it must land at the end of its turn if the escalation die is even (but see Fire Spit)."],
         isStaggered: false,
         id: 240
+    },
+
+    {
+        name: "Lammasu Warrior",
+        level: 7,
+        type: "troop (large)",
+        initiative: "+10",
+        ac: 23,
+        pd: 20,
+        md: 17,
+        hp: 220,
+        health: 220,
+        attacks: ["Hooves +12 vs AC (2 attacks) - 28 damage, and the lammasu can pop free from the target. Natural Even Hit or Miss While the Warrior is Staggered: The target is Hampered (save ends).", "Roaring Impact +12 vs PD - 35 damage, and 1D4 nearby enemies each take 2D10 thunder damage. Miss: 1D4 nearby enemis take 2D6 thunder damage. Limited Use: The lammasu warrior can make this attack only when it starts its turn flying and unengaged. It engages the target as it lands and ends its turn on the ground."],
+        abilities: ["Flight: All lammasu fly. Warrior lammasu fly with upright dignity, sometimes a bit slower than is wise. Fallen lammasu fly well enough to keep up with all but the quickest demons. Lammasu wizards and priests fly more gracefully than the warriors, but only because they're less eager to run into things.", "Refuge of Stone: When the lammasu fails a save, it becomes a creature of living stone until the ends of its next turn. While made of living stone, the lammasu warrior gains Resist Damage 16+ to all attacks against AC and PD. If it's flying when it becomes living stone, its magic allows it to remain in the air if it wishes.", "[Nastier Special] On the Crusade: When an enemy misses the lammasu warrior with a melee attack, that enemy takes 2D10 damage from the lammasu's Crusader-forged spiked armor."],
+        isStaggered: false,
+        id: 241
+    },
+
+    {
+        name: "Fallen Lammasu",
+        level: 7,
+        type: "wrecker (large)",
+        initiative: "+11",
+        ac: 22,
+        pd: 16,
+        md: 21,
+        hp: 205,
+        health: 205,
+        attacks: ["Fiery Hoof +12 vs AC - 30 damage. Natural Even Hit: The target takes 20 ongoing fire damage. Natural Odd Hit: The fallen lammasu can make a second Fiery Hoof attack (but not a third) as a free action.", "R: Rain of Hellfire +11 vs PD (1D4 random nearby creatures) - 20 fire damage. Natural Even Hit Against an Ally: The target takes 10 ongoing damage instead of 20 fire damage, and until that ally saves against that damage, it adds the escalation die to its attacks. Natural Even Hit Against an Enemy: The target also takes 15 ongoing fire damage.", "[Nastier Special] C: Abyssal Curse +12 vs MD (1 nearby enemy) - the target takes 10 ongoing negative energy damage each time the fallen lammasu hits it with an attack (hard save ends). Limited Use: When the escalation die is odd, as a quick action (once per round)."],
+        abilities: ["Flight: All lammasu fly. Warrior lammasu fly with upright dignity, sometimes a bit slower than is wise. Fallen lammasu fly well enough to keep up with all but the quickest demons. Lammasu wizards and priests fly more gracefully than the warriors, but only because they're less eager to run into things.", "Blessing of Hellfire: When the fallen lammasu fails a save against an effect created by an enemy, each enemy engaged with it takes 3D10 fire damage.", "[Nastier Special] Curse of the Fallen: The lammasu gains an Abyssal Curse attack.", "[Nastier Special] The Fire That Burns: When the fallen lammasu makes an attack that deals fire damage and the attack roll beats the target's fire resistance, the target loses its fire resistance until the end of the battle."],
+        isStaggered: false,
+        id: 242
+    },
+
+    {
+        name: "Lammasu Wizard",
+        level: 8,
+        type: "spoiler (large)",
+        initiative: "+14",
+        ac: 22,
+        pd: 18,
+        md: 23,
+        hp: 275,
+        health: 275,
+        attacks: ["Disdainful Hoof +12 vs AC - 60 damage", "R: Perfect Energy Sphere +13 vs PD (1D3 nearby or far away enemies in a group) - 40 damage of an energy type of the lammasu's choice: cold, fire, lightning, or thunder. Natural 18+: The target can't cast spells (easy save ends).", "C: Superior Words of Power +13 vs MD (one nearby or far away enemy) - 65 psychic damage. Natural Even Hit: One spell or effect created by the target this battle is cancelled (lammasu's choice).", "[Special Trigger] C: Master Wizard's Rejoinder +12 vs MD (one enemy spellcaster) - 30 damage, the triggering attack misses and has no effect against the lammasu wizard, and the target is Hampered (save ends). Limited Use: 1/round, as an interrupt action when an enemy attacks the lammasu wizard with a spell and rolls a natural odd attack roll."],
+        abilities: ["Flight: All lammasu fly. Warrior lammasu fly with upright dignity, sometimes a bit slower than is wise. Fallen lammasu fly well enough to keep up with all but the quickest demons. Lammasu wizards and priests fly more gracefully than the warriors, but only because they're less eager to run into things.", "Refuge of Stone: When the lammasu fails a save, it becomes a creature of living stone until the end of its next turn. While made of living stone, the lammasu wizard gains Resist Damage 16+ to all attacks against AC and PD. If it's flying when it becomes living stone, its magic allows it to remain in the air if it wishes."],
+        isStaggered: false,
+        id: 243
+    },
+
+    {
+        name: "Lammasu Priest",
+        level: 9,
+        type: "caster (large)",
+        initiative: "+13",
+        ac: 25,
+        pd: 17,
+        md: 23,
+        hp: 330,
+        health: 330,
+        attacks: ["Hooves of Command +14 vs AC (2 attacks) - 40 damage, and the target can't attack the lammasu priest until the end of its next turn.", "R: Righteous Ray of Faith +13 vs PD (one nearby or far away enemy) - 80 holy damage. Natural 16+: The lammasu priest can make a Righteous Ray of Faith attack against a different target.", "C: Judgement of the Lammasu +14 vs MD (each nearby conscious enemy that's Staggered) - 50 holy damage. Natural Even Miss: Half Damage. Limited Use: 2/battle.", "[Special Trigger] C: Overworld's Rebuke +13 vs PD (one nearby enemy) - 25 holy or lightning damage, and the target can't move to engage an enemy until the end of its next turn (it can move if it doesn't engage). Natural Even Miss: Half damage."],
+        abilities: ["Flight: All lammasu fly. Warrior lammasu fly with upright dignity, sometimes a bit slower than is wise. Fallen lammasu fly well enough to keep up with all but the quickest demons. Lammasu wizards and priests fly more gracefully than the warriors, but only because they're less eager to run into things.", "Invocation of the World Unseen: Once per battle, the lammasu priest can make this invocation as a quick action. At the start of each of the lammasu priest's turns until the roll succeeds, roll a D4. If the roll is less than or equal to the escalation die, each nearby enemy is Hampered (easy save ends).", "Invocation of the Highest Court: Once per battle, the lammasu priest can make this invocation as a quick action if it has used Invocation of the World Unseen. At the start of each of the lammasu priest's turns, roll a D8. If the roll is less than or equal to the escalation die, the lammasu can make an Overworld's Rebuke attack as a free action that turn.", "Refuge of Stone: When the lammasu fails a save, it becomes a creature of living stone until the end of its next turn. While made of living stone, the lammasu wizard gains Resist Damage 16+ to all attacks against AC and PD. If it's flying when it becomes living stone, its magic allows it to remain in the air if it wishes."],
+        isStaggered: false,
+        id: 244
+    },
+
+    {
+        name: "Lich Baroness",
+        level: 4,
+        type: "spoiler",
+        initiative: "+6",
+        ac: 20,
+        pd: 14,
+        md: 18,
+        hp: 54,
+        health: 54,
+        attacks: ["Crystal Scepter +9 vs AC - 12 damage. Natural Even Hit: The target is Dazed (save ends).", "R: Soul Blast +9 vs PD - 10 negative energy damage, and 5 ongoing psychic damage (hard save ends).", "C: Shroud of Souls +9 vs MD (each enemy engaged with it) - 5 psychic damage, and the target takes 10 psychic damage each time it attacks the baroness (save ends)."],
+        abilities: ["I Drink Your Death Save: When the lich baroness scores a critical hit, the target loses a death save until the end of the battle (effectively, it now dies after failing three death saves, and the effect is cumulative). In addition, the crit range of attacks by the lich against her target expands by the escalation die.", "Immortality: When the lich drops to 0 hit points, it crumbles to dust but does not die. It begins to reform near its phylactery, taking a number of days to regain its full strength equal to its level. If the phylactery has been destroyed, the lich dies when it drops to 0 hit points."],
+        isStaggered: false,
+        id: 245
+    },
+
+    {
+        name: "Lich Count",
+        level: 8,
+        type: "spoiler (double strength)",
+        initiative: "+11",
+        ac: 24,
+        pd: 18,
+        md: 22,
+        hp: 240,
+        health: 240,
+        attacks: ["Touch of the Grave +13 vs AC - 50 cold damage, and the target is Dazed (hard save ends). Natural Even Hit: The target is Weakened instead of Dazed (Hard Save Ends). Miss: 25 cold damage.", "R: Shadow Rays +12 vs PD (2 attacks) - 35 negative energy damage. Natural 16+: The target is encased in shadows (save ends). While under this effect, it's Weakened and takes 10 ongoing cold damage.", "R: Empowered Fireball +12 vs PD (1D3 +1 nearby creatures in a group) - 35 fire damage, and 10 ongoing fire damage. Natural Even Hit: The target takes 20 ongoing fire damage instead of 10. Miss: 15 fire damage, and 5 ongoing fire damage. Limited Use: 2/battle.", "[Nastier Special] C: Look Upon Your Doom +13 vs MD (up to 3 nearby enemies) - The lich gains a Fear aura against the target until the end of the battle. Fear Aura: While engaged with this creature, if the target has 48 HP or fewer, it's Dazed and does not add the escalation die to its attacks."],
+        abilities: ["Thank You For the Best Ten Years of Your Life: When the lich count scores a critical hit, the target loses a death save until the end of the battle (effectively, it now dies after failing three death saves, and the effect is cumulative). In addition, the crit range of attacks by the lich against the target expands by the escalation die and the lich heals 40 hit points.", "Immortality: When the lich drops to 0 hit points, it crumbles to dust but does not die. It begins to reform near its phylactery, taking a number of days to regain its full strength equal to its level. If the phylactery has been destroyed, the lich dies when it drops to 0 hit points."],
+        isStaggered: false,
+        id: 246
+    },
+
+    {
+        name: "Lich Prince",
+        level: 12,
+        type: "spoiler (double-strength)",
+        initiative: "+17",
+        ac: 28,
+        pd: 24,
+        md: 26,
+        hp: 620,
+        health: 620,
+        attacks: ["Draining Bone Rod +17 vs AC - 40 damage, 60 negative energy damage, and the target is Dazed (hard save ends). Natural Even Hit: The target is Weakened instead of Dazed (hard save ends). Miss: 40 damage.", "R: Arcane Blast +16 vs PD (up to 3 nearby or far away enemies in a group) - 50 force damage, and the target must roll a normal save; on a failure, it loses its next move action. Natural Even Hit or Miss: Each enemy engaged with the lich prince pops free from it as a bubble of arcane energy pushes them away.", "C: Soul Rend +17 vs PD (each nearby enemy) - 30 negative energy damage, and ghostly hands reach up from the ground and grab the target (as they try to pull the target's spirit out of its body). Ghostly Grasping Hands: When a creature is being grabbed by the ghostly hands, it takes 30 negative energy damage at the start of its turn and it must make a last gasp save. On the fourth failed last gasp save, the creature's soul is torn from it and it dies. Unconscious creatures take a -4 penalty to their last gasp saves. Note, grabbed creatures take a -5 penalty to disengage checks. Limited Use: 2/battle.", "[Nastier Special] C: Look Upon Your Doom +17 vs MD (each enemy engaged with the lich's allies) - The lich gains a Fear aura against the target until the end of the battle. Fear Aura: While engaged with this creature, if the target has 120 HP or fewer, it's Dazed and does not add the escalation die to its attacks."],
+        abilities: ["Blink and You Missed It: Once per battle when an attack would hit the lich prince, the attack misses instead and the lich teleports to a nearby location it can see as a free action.", "Heartstopper: When the lich prince scores a critical hit, if after taking damage the target still has hit points, it drops to 0 HP, falls onconscious, and begins making death saves. When the target saves against this effect, it regains hit points equal to the amount it had before dropping to 0 HP (after the crit damage). In addition, the crit range of attacks by the lich against the target expands by an amount equal to the escalation die and the lich heals 60 hit points.", "Immortality: When the lich drops to 0 hit points, it crumbles to dust but does not die. It begins to reform near its phylactery, taking a number of days to regain its full strength equal to its level. If the phylactery has been destroyed, the lich dies when it drops to 0 hit points."],
+        isStaggered: false,
+        id: 247
+    },
+
+    {
+        name: "Manticore Bard",
+        level: 5,
+        type: "caster (large)",
+        initiative: "+12",
+        ac: 21,
+        pd: 19,
+        md: 15,
+        hp: 150,
+        health: 150,
+        attacks: ["Battering Paws +10 vs AC (2 attacks) - 18 damage. Natural 16+: The manticore can make a single Volley of Tail Spikes attack (one attack roll) against a different target as a free action without taking an opportunity attack.", "Crushing Leonine Jaws +10 vs AC - 30 damage, or 40 damage against a creature taking poison damage.", "C: Musical Voice +13 vs MD (1D3 nearby enemies) - 20 psychic damage, and the target is Dazed (hard save ends). Natural 16+: In addition, the target can't use the escalation die until it saves. Intermittent Song: The manticore can use Musical Voice only 1D4 times during the battle, and never two turns in a row.", "R: Volley of Tail Spikes +11 vs AC (1D3 nearby or far away enemies in a group) - 5 ongoing poison damage (hard save ends)."],
+        abilities: ["Poison Reservoirs: Each time the manticore uses its Volley of Tail Spikes attack, it takes 1D6 damage, or 2D6 damage if it's Staggered.", "[Nastier Special] Battle Music: The manticore has songs for many different purposes. When the manticore makes a Musical Voice attack and rolls a natural even hit, choose one song (or roll a D4): 1. Fortissimo - Each of the manticore's allies gains a +2D6 damage bonus with attacks that hit until the end of the battle (non-cumulative). 2. Profundo - The manticore's Musical Voice attack now deals 40 psychic damage instead of 20 until the end of the battle. 3. Furioso - The target is Confused instead of Dazed. 4. Largo - The manticore can make a Musical Voice attack during its next turn as a free action, but with a +3 attack bonus. This free attack won't trigger another Battle Music effect."],
+        isStaggered: false,
+        id: 248
+    },
+
+    {
+        name: "Mantikumhar",
+        level: 5,
+        type: "spoiler (large)",
+        initiative: "+14",
+        ac: 23,
+        pd: 19,
+        md: 15,
+        hp: 119,
+        health: 119,
+        attacks: ["Pincer Claws +11 vs AC (2 attacks) - 18 damage. Natural 16+: The mantikumhar pulls its target under the soil/ground. The target is Stuck, Hampered, and takes 5 ongoing damage from suffocation (save ends all). Miss: The target must roll an immediate save; on a failure, it's Dazed until the end of its next turn from dirt or sand thrown in its face.", "Crushing Leonine Jaws +10 vs AC - 30 damage, or 40 damage against a creature taking ongoing poison damage.", "C: Serpent Sting +12 vs AC - 10 damage, and 5 ongoing poison damage (hard save ends).", "[Nastier Special] C: Serpent Sting +15 vs AC (one nearby enemy) - 10 damage, and 5 ongoing poison damage (hard save ends)."],
+        abilities: ["Burrowing: The mantikumhar can move rapidly through sand, loose soil, or dry eroded earth. It prefers to dig out a wide pit and lie in wait for prey.", "Can't Be Blinded: Between nictitating membranes that keep its eyes from being scratched out by the sand and its weird burrowing echolocation sense, the mantikumhar can't be blinded.", "Poison Reservoirs: Each time the mantikumhar uses its Serpent Sting attack, it takes 1D6 damage, or 2D6 damage if it's Staggered.", "[Nastier Special] Hunker Down: A mantikumhar can burrow into the soil as a move action, concealing itself from attacks. A hunkered mantikumhar gains a +3 bonus to AC and PD, but it can't use Crushing Leonine Jaws.", "Sand Ambush: The mantikumhar's extensible tail can strike by surprise like a cobra from anywhere in its pit."],
+        isStaggered: false,
+        id: 249
+    },
+
+    {
+        name: "Coursing Manticore",
+        level: 6,
+        type: "spoiler (large)",
+        initiative: "+13",
+        ac: 23,
+        pd: 21,
+        md: 15,
+        hp: 170,
+        health: 170,
+        attacks: ["Battering Paws +11 vs AC (2 attacks) - 20 damage. Natural 16+: The manticore can make a Scorpion Sting attack against a different target as a free action.", "Crushing Leonine Jaws +11 vs AC - 30 damage, or 50 damage against a creature taking poison damage.", "C: Scorpion Sting +13 vs AC - 10 damage, and 5 ongoing poison damage (hard save ends).", "[Nastier Special] R: Volley of Tail Spikes +13 vs AC (1D3 nearby or far away enemies in a group) - 5 ongoing poison damage (hard save ends)."],
+        abilities: ["Fly-by Attack: While flying, the manticore can make a Scorpion Sting attack, pop free from the target, and keep flying to somewhere nearby.", "Flight: Giant batlike dragon wings put the final horrid touch on the coursing manticore's 'everything awful' design aesthetic.", "Poison Reservoirs: Each time the manticore uses its Scorpion Sting attack, it takes 1D6 damage, or 2D6 damage if it's Staggered.", "[Nastier Special] Aerial Archer: Instead of a scorpion tail, the manticore has a spiked tail full of quills and can make Volley of Tail Spikes attacks instead of Scorpion Sting attacks.", "Diving Leap: The manticore leaps toward its prey, using its wings to arrow into battle at tremendous speed. During its first turn only, add +6 to its initiative count. After that, the beast returns to its normal initiative order."],
+        isStaggered: false,
+        id: 250
     }
 
 ]
