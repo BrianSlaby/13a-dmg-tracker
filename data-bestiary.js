@@ -2051,8 +2051,102 @@ const bestiaryMonsterData = [
 },
 
 // NAGA
-// Dusk Zorigami was id: 253
 
+{
+    name: "Swaysong Naga",
+    level: 5,
+    type: "leader (large)",
+    initiative: "+8",
+    ac: 21,
+    pd: 16,
+    md: 18,
+    hp: 144,
+    health: 144,
+    attacks: ["Bite +10 vs AC - 24 damage. Natural 16+: The target also takes 15 ongoing poison damage.  Miss: 12 damage.", "R: Song of Reversals +10 vs MD (1D3 nearby or far away enemies) - 25 psychic damage. Natural 16+: The target is Confused (save ends). Miss: 10 psychic damage. Limited Use: 1/battle.", "C: Hypnotic Movements +10 vs MD (one nearby enemy, or one nearby enemy per point of escalation die if Mystic Escalator benefit is active) - 10 psychic damage, an the target is Hampered (save ends)."],
+    abilities: ["Arcane Mirror: When an enemy targets the swaysong naga with a spell, the naga regains the use of Song of Reversals if it's expended. In addition, if that spell is a recharge spell, roll its recharge check immediately after the spell is cast. If the spell is a per-battle or daily spell, roll a hard save immediately after the spell is cast; on a success, the spellcaster doesn't expend the spell.", "Mystic Escalator: The naga and each of its nearby allies can use the escalation die unless the naga has been targeted by an enemy's spell since the last turn.", "[Nastier Special] Arcane Balance: Whenever the naga rolls a natural 1-5 with an attack roll, it can cancel one magical effect created by a spell or magic items that is affecting the naga or a nearby creature (including a beneficial effect on a PC). It can be an ongoing effect, and effect that only lasts a round, or even an effect that was supposed to last until the end of the battle. Use your sense of what is magical and what isn't; a bard's song is clearly magical, but a rogue's shadow walk talent probably isn't, despite the wizard's arguments that it should be."],
+    isStaggered: false,
+    id: 254
+},
+
+{
+    name: "Sparkscale Naga",
+    level: 6,
+    type: "leader (large)",
+    initiative: "",
+    ac: 21,
+    pd: 20,
+    md: 16,
+    hp: 190,
+    health: 190,
+    attacks: ["Bite +11 vs AC - 30 damage. Natural 16+: Each nearby enemy takes 10 thunder damage. Miss: 20 damage.", "R: Bloom of Lightning +10 vs PD (1D3 nearby or far away enemies) - 30 lightning damage. Natural 16+: Each nearby enemy takes 10 thunder damage. Miss: Each nearby creature (including allies) takes 5 thunder damage. Limited Use: 1/battle.", "C: Sparking Aura +10 vs PD (one nearby enemy, or one nearby enemy per point of escalation die if Mystic Escalator benefit is active) - 20 lightning damage, and the target is Vulnerable (save ends)."],
+    abilities: ["Arcane Mirror: When an enemy targets the sparkscale naga with a spell, the naga regains the use of Sparking Aura if it's expended. In addition, if that spell is a recharge spell, roll its recharge check immediately after the spell is cast. If the spell is a per battle or daily spell, roll a hard save immediately after the spell is cast; on a success, the spellcaster doesn't expend the spell.", "Mystic Escalator: The naga and each of its nearby allies can use the escalation die unless the naga has been targeted by an enemy's spell since the last turn.", "[Nastier Special] Arcane Balance: Whenever the naga rolls a natural 1-5 with an attack roll, it can cancel one magical effect created by a spell or magic items that is affecting the naga or a nearby creature (including a beneficial effect on a PC). It can be an ongoing effect, and effect that only lasts a round, or even an effect that was supposed to last until the end of the battle. Use your sense of what is magical and what isn't; a bard's song is clearly magical, but a rogue's shadow walk talent probably isn't, despite the wizard's arguments that it should be."],
+    isStaggered: false,
+    id: 255
+},
+
+{
+    name: "Manafang Naga",
+    level: 7,
+    type: "leader (large)",
+    initiative: "+14",
+    ac: 23,
+    pd: 17,
+    md: 21,
+    hp: 210,
+    health: 210,
+    attacks: ["Bite +12 vs AC - 45 damage. Natural 16+: The naga gains Resist Spell Damage 16+ against the target's spells until the end of the battle. Miss: 25 damage.", "R: Force Missiles (1D4 nearby or far away enemies) - 25 force damage. Limited Use: 1/battle.", "C: Ritual Movements +12 vs MD (one nearby enemy, or one nearby enemy per point of escalation die if Mystic Escalator benefit is active) - 40 psychic damage, and the target can't cast spells or use the activated powers of true magic items (save ends)."],
+    abilities: ["Arcane Mirror: When an enemy targets the manafang naga with a spell, the naga regains the use of Force Missiles if it's expended. In addition, if that spell is a recharge spell, roll its recharge check immediately after the spell is cast. If the spell is a per battle or daily spell, roll a hard save immediately after the spell is cast; on a success, the spellcaster doesn't expend the spell.", "Mystic Escalator: The naga and each of its nearby allies can use the escalation die unless the naga has been targeted by an enemy's spell since the last turn.", "[Nastier Special] Arcane Balance: Whenever the naga rolls a natural 1-5 with an attack roll, it can cancel one magical effect created by a spell or magic items that is affecting the naga or a nearby creature (including a beneficial effect on a PC). It can be an ongoing effect, and effect that only lasts a round, or even an effect that was supposed to last until the end of the battle. Use your sense of what is magical and what isn't; a bard's song is clearly magical, but a rogue's shadow walk talent probably isn't, despite the wizard's arguments that it should be."],
+    isStaggered: false,
+    id: 256
+},
+
+{
+    name: "Elder Swaysong Naga",
+    level: 8,
+    type: "leader",
+    initiative: "+12",
+    ac: 24,
+    pd: 19,
+    md: 21,
+    hp: 144,
+    health: 144,
+    attacks: ["Bite +13 vs AC - 24 damage. Natural 16+: The target also takes 15 ongoing poison damage. Miss: 12 damage.", "R: Song of Reversals +13 vs MD (1D3 nearby or far away enemies) - 25 psychic damage. Natural 16+: The target is confused (save ends). Miss: 10 psychic damage. Limited Use: 1/battle.", "C: Hypnotic Movements +13 vs MD (one nearby enemy, or one nearby enemy per point of escalation die if Supreme Mystic Escalator benefit is active) - 15 psychic damage, and the target is Hampered (save ends); until the target saves, it takes 15 psychic damage each time it attacks the naga."],
+    abilities: ["Arcane Mirror: Whenever an enemy targets the elder swaysong naga with a spell, the naga regains the use of Song of Reversals if it's expended. In addition, if that spell is a recharge spell, roll its recharge check immediately after the spell is cast. If the spell is a per battle or daily spell, roll a hard save immediately after the spell is cast; on a success, the spellcaster doesn't expend the spell.", "Supreme Mystic Escalator: The naga and each of its nearby allies can use the escalation die unless the naga has been hit by two enemy spells since its last turn.", "[Nastier Special] Arcane Balance: Whenever the naga rolls a natural 1-5 with an attack roll, it can cancel one magical effect created by a spell or magic items that is affecting the naga or a nearby creature (including a beneficial effect on a PC). It can be an ongoing effect, and effect that only lasts a round, or even an effect that was supposed to last until the end of the battle. Use your sense of what is magical and what isn't; a bard's song is clearly magical, but a rogue's shadow walk talent probably isn't, despite the wizard's arguments that it should be."],
+    isStaggered: false,
+    id: 257
+},
+
+{
+    name: "Elder Sparkscale Naga",
+    level: 9,
+    type: "leader",
+    initiative: "+15",
+    ac: 24,
+    pd: 23,
+    md: 19,
+    hp: 190,
+    health: 190,
+    attacks: ["Bite +14 vs AC - 30 damage. Natural 16+: Each nearby enemy takes 10 thunder damage. Miss: 20 damage.", "R: Bloom of Lightning +14 vs PD (1D3 nearby or far away enemies) - 30 lightning damage. Natural 16+: Each nearby enemy takes 10 thunder damage. Miss: Each nearby creature (including allies) takes 5 thunder damage. Limited Use: 1/battle.", "C: Sparking Aura +14 vs PD (one nearby enemy, or one nearby enemy per point of escalation die if Supreme Mystic Escalator benefit is active) - 40 lightning damage, and the target is Vulnerable (save ends)."],
+    abilities: ["Arcane Mirror: Whenever an enemy targets the elder sparkscale naga with a spell, the naga regains the use of Bloom of Lightning if it's expended. In addition, if that spell is a recharge spell, roll its recharge check immediately after the spell is cast. If the spell is a per battle or daily spell, roll a hard save immediately after the spell is cast; on a success, the spellcaster doesn't expend the spell.", "Supreme Mystic Escalator: The naga and each of its nearby allies can use the escalation die unless the naga has been hit by two enemy spells since its last turn.", "[Nastier Special] Arcane Balance: Whenever the naga rolls a natural 1-5 with an attack roll, it can cancel one magical effect created by a spell or magic items that is affecting the naga or a nearby creature (including a beneficial effect on a PC). It can be an ongoing effect, and effect that only lasts a round, or even an effect that was supposed to last until the end of the battle. Use your sense of what is magical and what isn't; a bard's song is clearly magical, but a rogue's shadow walk talent probably isn't, despite the wizard's arguments that it should be."],
+    isStaggered: false,
+    id: 258
+},
+
+{
+    name: "Elder Manafang Naga",
+    level: 10,
+    type: "leader",
+    initiative: "+18",
+    ac: 26,
+    pd: 20,
+    md: 24,
+    hp: 210,
+    health: 210,
+    attacks: ["Bite +15 vs AC - 45 damage. Natural 16+: The naga gains Resist Spell Damage 16+ against the target's spells until the end of the battle. Miss: 25 damage.", "R: Force Missiles (1D4 nearby or far away enemies) - 45 force damage. Limited Use: 1/battle.", "C: Ritual Movements +15 vs MD (one nearby enemy, or one nearby enemy per point of escalation die if Supreme Mystic Escalator benefit is active) - 45 psychic damage, and the target can't cast spells or use the activated powers of true magic items (save ends). Miss: 20 psychic damage."],
+    abilities: ["Arcane Mirror: Whenever an enemy targets the elder manafang naga with a spell, the naga regains the use of Force Missiles if it's expended. In addition, if that spell is a recharge spell, roll its recharge check immediately after the spell is cast. If the spell is a per battle or daily spell, roll a hard save immediately after the spell is cast; on a success, the spellcaster doesn't expend the spell.", "Supreme Mystic Escalator: The naga and each of its nearby allies can use the escalation die unless the naga has been hit by two enemy spells since its last turn.", "[Nastier Special] Arcane Balance: Whenever the naga rolls a natural 1-5 with an attack roll, it can cancel one magical effect created by a spell or magic items that is affecting the naga or a nearby creature (including a beneficial effect on a PC). It can be an ongoing effect, and effect that only lasts a round, or even an effect that was supposed to last until the end of the battle. Use your sense of what is magical and what isn't; a bard's song is clearly magical, but a rogue's shadow walk talent probably isn't, despite the wizard's arguments that it should be."],
+    isStaggered: false,
+    id: 259
+},
 
 // OGRES
 
