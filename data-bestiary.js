@@ -2249,7 +2249,53 @@ const bestiaryMonsterData = [
 
 // OGRE MAGI
 
+{
+    name: "Ogre Mage Knight",
+    level: 6,
+    type: "wrecker (large)",
+    initiative: "+13",
+    ac: 22,
+    pd: 19,
+    md: 17,
+    hp: 160,
+    health: 160,
+    attacks: ["Naginata +11 vs AC - The effect depends on the roll. Natural Even Hit: 25 damage, and the ogre mage knight can use Lightning Pulse as a free action. Natural Odd Hit: 20 damage, and the ogre mage knight can use Voice of Thunder as a free action. Natural Even Miss: 10 damage, and the ogre mage knight can teleport to any nearby location it can see before using Magi's Lightning Chain as a free action. Natural Odd Miss: The ogre mage knight can use Cone of Cold as a free action.", "R: Magi's Lightning Chain +11 vs PD - 15 lightning damage, and each time this attack has a natural even attack roll, the ogre mage knight can target a different creature with the ability.", "C: Cone of Cold +11 vs PD (up to 3 nearby enemies in a group, also target's the ogre's allies engaged with the targets) - 20 cold damage. Miss: 10 cold damage.", "C: Lightning Pulse +11 vs PD (one random nearby or far away enemy) - 20 lightning damage. Natural Even Hit: The target is Weakened (save ends).", "C: Voice of Thunder +11 vs PD (1D3 nearby enemies) - 15 thunder damage."],
+    abilities: ["Resist Exceptional Attacks 16+: When a limited attack (not an at-will attack) targets this creature, the attacker must roll a natural 16+ on the attack roll or it only deals half damage.", "Trollish Regeneration 15: While an ogre mage is damaged, its uncanny flesh heals 15 hit points at the start of the ogre mage's turn. It can regenerate five times per battle. If it heals to its maximum hit points, then that use of regeneration doesn't count against the five-use limit. When the ogre mage is hit by an attack that deals fire or acid damage, it loses one use of its regeneration, and it can't regenerate during its next turn. Dropping an ogre mage to 0 HP doesn't kill it if it has any uses of regeneration left.", "[Nastier Special] Ki: Gain 1D4 ki at the start of each battle. Spend a point of ki as a free action, once per round, to change the ogre mage knight's natural attack result by one; a natural 1 could become a 2, a natural 19 could become a 20, and so on."],
+    isStaggered: false,
+    id: 266
+},
 
+{
+    name: "Ogre Lightning Mage",
+    level: 8,
+    type: "caster (large)",
+    initiative: "+15",
+    ac: 24,
+    pd: 20,
+    md: 22,
+    hp: 230,
+    health: 230,
+    attacks: ["Naginata +14 vs AC (2 attacks) - 40 damage. Miss: 15 damage.", "R: Lightning From Torn Sky +14 vs PD (up to 2 nearby enemies, plus one far away enemy, if any) - 52 lightning damage. Limited Use: 1/battle, but the ogre lightning mage regains the use of this attack if it's expended each time it uses its Naginata attack.", "R: Past Master's Judgement +14 vs MD (1D3 nearby enemies) - 25 psychic damage. First Natural Even Hit Each Attack: The ogre lightning mage can cancel one spell or magical effect created by the target."],
+    abilities: ["Flight: The ogre lightning mage flies well using the sheer power of its superior mind.", "Invisibility: While not engaged, the ogre lightning mage can turn invisible as an at-will standard action. It becomes visible when it attacks. The ogre mage takes 1D10 damage each time it uses Invisibility while it's Staggered.", "Resist Exceptional Attacks 16+: When a limited attack (not an at-will attack) targets this creature, the attacker must roll a natural 16+ on the attack roll or it only deals half damage.", "Trollish Regeneration 20: While an ogre mage is damaged, its uncanny flesh heals 20 hit points at the start of the ogre mage's turn. It can regenerate five times per battle. If it heals to its maximum hit points, then that use of regeneration doesn't count against the five-use limit. When the ogre mage is hit by an attack that deals fire or acid damage, it loses one use of its regeneration, and it can't regenerate during its next turn. Dropping an ogre mage to 0 HP doesn't kill it if it has any uses of regeneration left."],
+    isStaggered: false,
+    id: 267
+},
+
+{
+    name: "Prismatic Ogre Mage",
+    level: 9,
+    type: "caster (large)",
+    initiative: "+16",
+    ac: 25,
+    pd: 22,
+    md: 18,
+    hp: 360,
+    health: 360,
+    attacks: ["Horns and Claws +15 vs AC - 75 damage. Natural 2-5: The prismatic ogre mage can use Prismatic Blast as a free action without provoking an opportunity attack.", "Force Shove +15 vs PD (each enemy engaged with the ogre) - 10 force damage, and the target pops free from the ogre mage. Quick Use: This power only requires a quick action (once per round) instead of a standard action when the escalation die is odd.", "R: Prismatic Blast +15 vs PD (1D3 nearby or far away enemies in a group) - Roll a D8 against each hit target to determine the type of ray and effect. 1. Red: 75 fire damage. Miss: 40 fire damage. 2. Orange: 50 damage, and the target is Confused (save ends). 3. Yellow: 40 ongoing poison damage. 4. Green: The target loses a recovery, and the prismatic ogre mage heals 70 HP. 5. Blue: 60 lightning damage, and make a secondary attack. 6. Cyan: The target is Stunned (save ends). 7. Purple: The target is Dazed and Confused (save ends both). When the target saves, it takes 40 psychic damage. 8. Magenta: The target is transported into the future. Remove that creature from play, returning it to the battle in (or near) its previous location at the end of its next turn. No time seems to pass for the target while it's gone.", "[Special Trigger] Blue Ray +15 vs PD (one enemy near the target) - 20 lightning damage."],
+    abilities: ["Resist Exceptional Attacks 16+: When a limited attack (not an at-will attack) targets this creature, the attacker must roll a natural 16+ on the attack roll or it only deals half damage.", "Warp: The prismatic ogre mage warps reality with its presence. Each character hit by the Prismatic Blast attack during battle must write down one true personal trait or preference about their character, such as: 'yellow hair,' 'afraid of spiders,' 'prefers white wine to red,' or 'tattoo of a halfling on left bicep.' These personal traits are shuffled and randomly distributed equally by the GM after the battle is over. Whichever trait each player receives is now true for their character as well as for the character of the player who wrote it down (unless there has somehow turned out to be a swap...). These traits don't alter game mechanics (feats, powers, backgrounds, icon relationships, attributes, bonuses, etc.). They are personal details that have been warped and scrambled by the prismatic ogre mage's magic."],
+    isStaggered: false,
+    id: 268
+},
 
 // ORCS
 
@@ -2353,7 +2399,21 @@ const bestiaryMonsterData = [
 
 // PREDATORY PLANTS
 
-
+{
+    name: "Claw Flower",
+    level: 2,
+    type: "spoiler",
+    initiative: "+6",
+    ac: 16,
+    pd: 12,
+    md: 15,
+    hp: 40,
+    health: 40,
+    attacks: ["Serrated Claw +7 vs AC - 8 damage. Natural 1-5: The claw flower takes 1D4 damage from burst roots.", "C: Bumble Spores +4 vs MD (1D2 nearby random non-plant creatures) - The effect depends on the roll. Natural Even Hit: 4 psychic damage, and the target is Confused until the end of its next turn. Natural Odd Hit: 3 psychic damage, and the target is Stuck until the end of its next turn. Miss: 2 psychic damage."],
+    abilities: ["Immobile Until Pressed: The claw flower has roots and normally can't move, but when it takes 10 or more damage from a single attack it can move normally during its next turn.", "Spore Escalator: The claw flower adds the escalation die to its Bumble Spores attack rolls.", "[Nastier Special] Gentle Roar: Once per battle, the claw flower can make a Bumble Spores attack as a quick action."],
+    isStaggered: false,
+    id: 269
+},
 
 // PURPLE WORMS
 
