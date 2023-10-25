@@ -2150,7 +2150,102 @@ const bestiaryMonsterData = [
 
 // OGRES
 
+{
+    name: "Ogre Penitent",
+    level: 3,
+    type: "blocker (large)",
+    initiative: "+4",
+    ac: 18,
+    pd: 16,
+    md: 14,
+    hp: 100,
+    health: 100,
+    attacks: ["Remorseful Flail +6 vs AC - 20 damage. Natural 5, 10, 15, or 20: Until the end of the battle, when an enemy engaged with the ogre mage attacks it, that enemy can't target other enemies with that attack. Miss: Half damage to a different nearby enemy."],
+    abilities: ["Closer My Death to Thee: While Staggered, the ogre penitent gains a +4 attack bonus.", "Crumbling Ego: Each time the ogre fails a save, it takes 1D8 psychic damage.", "[Nastier Special] Frenzied Disappointment: If the ogre penitent rolls a natural 1 or 2 with an attack roll, it can take an extra standard action during its next turn."],
+    isStaggered: false,
+    id: 260
+},
 
+{
+    name: "Demonic Ogre",
+    level: 4,
+    type: "spoiler (large)",
+    initiative: "+8",
+    ac: 20,
+    pd: 16,
+    md: 16,
+    hp: 100,
+    health: 100,
+    attacks: ["Demon-kissed Blade +9 vs AC - 24 damage. Natural 5, 10, 15, or 20: The ogre gains a random demonic advantage (see below) until the end of the battle. All demonic advantages end if the ogre experiences a demonic eruption. Miss: Half damage.", "R: Flaming Spear +9 vs AC - 20 damage. Natural 5, 10, 15, or 20: The target takes 10 ongoing fire damage."],
+    abilities: ["Demonic Advantage: Roll a D6 to determine which demonic ability the ogre gains. 1: The ogre gains Resist Energy 16+. 2: Once per battle, the ogre can teleport anywhere it can see as a move action. 3: The ogre's attacks deal +1D8 damage, hit or miss. 4: At the start of the ogre's turn, each enemy engaged with it takes 2D6 negative energy damage. 5: The ogre gains a +5 bonus to saves this battle. 6: The ogre begins making Demonic Eruption rolls when the escalation die is 4+ instead of 6+.", "Demonic Eruption: When the escalation die is 6+, the demonic ogre rolls a normal save at the start of each of its turns. On a success, roll a D6 and replace the demonic ogre with a new undamaged demon. 1-2: Imp; 3-4: Despoiler; 5: Frenzy demon; 6: Cambion sickle.", "[Nastier Special] Early Eruption: Begin making demonic eruption rolls when the escalation die is 5+ instead of 6+. Also use stronger demons for the options that the ogre could turn into."],
+    isStaggered: false,
+    id: 261
+},
+
+{
+    name: "Ogre Berserker",
+    level: 4,
+    type: "wrecker (large)",
+    initiative: "+9",
+    ac: 18,
+    pd: 18,
+    md: 15,
+    hp: 120,
+    health: 120,
+    attacks: ["Giant Axe or Sword +8 vs AC - 28 damage. Natural 5, 10, 15, or 20: The ogre berserker gains the Escalator ability (it adds the escalation die to its attacks) until the end of the battle. Miss: Half damage, and the ogre berserker takes 1D6 damage."],
+    abilities: ["You Shouldn't Have Done That: When an enemy engaged with the berserker scores a critical hit against it, that enemy takes 7D6 damage.", "Incidental Damage: When an enemy makes an opportunity attack against the berserker, hit or miss, that enemy takes 2D6 damage.", "Rauguguggh: Once per battle as a free action, when the ogre berserker fails a save, it can take 3D6 damage to succeed at the save instead."],
+    isStaggered: false,
+    id: 262
+},
+
+{
+    name: "Ogre Crusader",
+    level: 4,
+    type: "troop (large)",
+    initiative: "+6",
+    ac: 21,
+    pd: 17,
+    md: 15,
+    hp: 106,
+    health: 106,
+    attacks: ["Jagged Greatsword or Greataxe +10 vs AC (2 attacks) - 18 damage. Natural 5, 10, 15, or 20: The ogre crusader can make a War-Curse attack as a free action. Miss: Half damage.", "R: War Javelin +8 vs AC - 18 damage.", "C: War-Curse +10 vs MD (the nearby conscious enemy with the lowest hit points) - 10 psychic damage."],
+    abilities: ["Special Hate: When the ogre crusader attacks an enemy that has a positive or conflicted relationship with either the Diabolist or the Great Gold Wyrm, it adds the escalation die to the attack roll."],
+    isStaggered: false,
+    id: 263
+},
+
+{
+    name: "Ogre Champion",
+    level: 5,
+    type: "wrecker (large)",
+    initiative: "+10",
+    ac: 21,
+    pd: 19,
+    md: 18,
+    hp: 140,
+    health: 140,
+    attacks: ["Champion's Battle-axe +10 vs AC - 30 damage. Natural 5, 10, 15, or 20: The ogre champion gains a second standard action this turn, but not a third. Miss: Half damage.", "R: Heavy Javelin +10 vs AC (one nearby or far away enemy) - 26 damage. Miss: 10 damage."],
+    abilities: ["Orc Lord's Enemies: Whenever a nearby dwarf or elf enemy attempts to use their racial power, they must roll a hard save. On a failure, the power fails and has no effect that turn (but they can try again next turn).", "Slayer of Wizards: Creatures engaged with the ogre champion take opportunity attacks from it when casting close spells as if they were casting ranged spells.", "[Nastier Special] Escalating Danger: The ogre champion adds the escalation die to the damage it deals with its attacks, hit or miss."],
+    isStaggered: false,
+    id: 264
+},
+
+{
+    name: "Ogre Minion (large mook)",
+    level: 9,
+    type: "mook",
+    mookNumber: 1,
+    initiative: "+11",
+    ac: 24,
+    pd: 23,
+    md: 19,
+    hp: 80,
+    health: 80,
+    attacks: ["Ogre-sized Chopper +14 vs AC - 35 damage. Miss: Half damage.", "R: Ogre-sized Javelin +14 vs AC (one nearby or far away enemy) - 20 damage."],
+    abilities: ["Incidental Damage: When an enemy makes an opportunity attack against the ogre minion, hit or miss, that enemy takes 4D6 damage.", "Double-strength Mook: The ogre minion mook counts as two 9th level mooks when you're building battles.", "[Nastier Special] Punching Above Its Weight: Once per round, the ogre minion mob can take 5D10 damage to reroll an attack (a member of the mob takes one for the team)."],
+    isStaggered: false,
+    id: 265
+},
 
 // OGRE MAGI
 
