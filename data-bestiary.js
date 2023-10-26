@@ -2415,9 +2415,106 @@ const bestiaryMonsterData = [
     id: 269
 },
 
+{
+    name: "Pixie Pod",
+    level: 3,
+    type: "leader (double-strength)",
+    initiative: "+7",
+    ac: 17,
+    pd: 13,
+    md: 16,
+    hp: 40,
+    health: 40,
+    attacks: ["C: Peripheral Summoning +8 vs MD (one random nearby enemy) - 8 psychic damage. Natural Even Hit: Add a new podling into the battle in a random location."],
+    abilities: ["Release the Pods: Once per battle when the pixie pod rolls a natural even hit with Peripheral Summoning, it adds a number of podlings into the battle equal to the escalation die instead of only 1.", "Immobile: Although its podlings occasionally pick up and move it around out of combat, in battle the pixie pod can't move and is Stuck except for its teleport ability.", "Lost Opportunity: This creature can't make opportunity attacks.", "Lurching Teleport: Once per battle as a move action, the pixie-pod can teleport to a nearby location. But its control sucks. The teleport goes in a random direction. Roll it using a D8 for direction.", "Magical Concealment: As long as one or more of its podlings are nearby, the pixie pod is invisible and extremely difficult to even detect. A PC who wants to locate the pixie pod must spend a standard action searching and succeed at a DC 25 skill check using Wisdom. Backgrounds connected to plants and the wildnerness help normally, and general searching skills and magic talents might help a bit but not at full strength. Once located, the plant can be attacked like a normal invisible creature. When it teleports, however, it must be located all over again.", "Start With Mooks: The pixie pod is normally accompanied by five active podlings that don't count toward the total when building a battle with the pod. Additional podlings do count, however."],
+    isStaggered: false,
+    id: 270
+},
+
+{
+    name: "Podling",
+    level: 3,
+    type: "mook",
+    mookNumber: 1,
+    initiative: "+9",
+    ac: 18,
+    pd: 17,
+    md: 13,
+    hp: 10,
+    health: 10,
+    attacks: ["Needle Sword +8 vs AC - 6 damage. Natural Even Hit: The target can't choose to search for the pixie-pod plant until all podlings in the battle are slain.", "R: Tiny Green Bow +8 vs AC - 5 damage."],
+    abilities: ["[Nastier Special] Flight: A podling that can fly, hovering out of reach and firing arrows, can be a real pain in the pate."],
+    isStaggered: false,
+    id: 271
+},
+
 // PURPLE WORMS
 
+{
+    name: "Purple Worm",
+    level: 8,
+    type: "wrecker (huge)",
+    initiative: "+11",
+    ac: 23,
+    pd: 22,
+    md: 17,
+    hp: 440,
+    health: 440,
+    attacks: ["Devouring Maw +13 vs PD - 50 damage. Natural Even Hit: The target is swallowed whole if it's smaller than the worm (see below). Miss: Half damage.", "Tail Sting +13 vs AC (one random nearby enemy) - 20 damage, and 20 ongoing poison damage.", "C: Mighty Thrash +13 vs AC (1D3 random nearby enemies) - 30 damage. Miss: Half damage. Natural 1-5: The worm takes 10 damage (but still deals miss damage on a 2-5). Limited Use: The worm can make this attack as a free action if it has no enemies swallowed after using its standard action during its turn."],
+    abilities: ["Swallow Whole: While a creature is swallowed whole, it takes 7D10 acid damage at the start of its turn and is Stuck, Hampered, and unable to attack or affect anything outside of the worm's stomach (and vice versa). Most teleport abilities don't work because you're Hampered and you can't see the location out of the worm you want to teleport to. There are two ways out. Cut Your Way Out: Deal 40 damage to the worm with a single attack and you can cut your way out. All edged or bladed weapons are reduced to D6 damage dice (at most) inside the worm's gullet, so good luck. At least you'll be damaging the worm attacking it from within. Get Upchucked: While the worm is Staggered, you can use a standard action to try and crawl out of its mouth. Roll a hard save; on a success, the worm vomits you out and spits you somewhere nearby. The worm also vomits out all creatures it has swallowed when it drops to 0 HP.", "Burrow: As the standard monster ability (13th Age core rulebook, page 200).", "[Nastier Special] Larval Feeding: The worm's stomach also includes a mob of larval mooks (purple larvae or parasitic lightning beetles). Feel free to add this nastier special if a PC acts dismissive about the possibility of being swallowed by the worm.", "[Nastier Special] Resist Most Energy Damage 16+: Purple worms generate weird energy resistances thanks to underworld radiation and their odd diets. Roll a D8 twice, in secret, to determine what energy types the worm is not resistant to. The PCs probably have to find out what energy works best against the worm the hard way, though you might have mercy and allow a DC 35 Wisdom skill check to figure out what energy types work against the worm. 1: acid; 2: cold; 3: fire; 4: lightning; 5: thunder; 6: holy; 7: negative energy; 8: poison."],
+    isStaggered: false,
+    id: 272
+},
 
+{
+    name: "Parasitic Lightning Beetle",
+    level: 8,
+    type: "mook",
+    mookNumber: 1,
+    initiative: "+14",
+    ac: 27,
+    pd: 22,
+    md: 17,
+    hp: 36,
+    health: 36,
+    attacks: ["Mouthparts +12 vs AC - 10 damage. Natural Even Hit or Miss: The target also takes 5 lightning damage.", "R: Lightning Zap +12 vs PD (one nearby enemy not engaged with a purple worm, purple larvae, or parasitic beetle) - 20 lightning damage. Natural Even Hit or Miss: The target takes 5 extra lightning damage."],
+    abilities: ["Flight: The beetles fly badly, usually just enough to get back to the worm when they've been shaken off from their hiding spots in its segments.", "Scaredy Bugs: Whenever one or more parasitic lightning beetles drop to 0 HP, roll a D6. If you roll less than or equal to the number of beetles that were destroyed by that attack, all beetles in the battle stop fighting, using all their actions during their next turn to disengage and fly away."],
+    isStaggered: false,
+    id: 273
+},
+
+{
+    name: "Purple Larva",
+    level: 8,
+    type: "mook",
+    mookNumber: 1,
+    initiative: "+9",
+    ac: 22,
+    pd: 20,
+    md: 16,
+    hp: 44,
+    health: 44,
+    attacks: ["Bitey Maw +13 vs AC - 20 damage. Natural Even Hit or Miss: The larva can make a Tail Stinger attack against a random enemy engaged with it as a free action.", "[Special Trigger] Tail Sting +13 vs AC - 5 damage, and 10 ongoing poison damage."],
+    abilities: ["Merge with Worm: Purple larvae can dig quickly in and out of the skin of the purple worm as if they were burrowing but without needing die rolls to succeed."],
+    isStaggered: false,
+    id: 274
+},
+
+{
+    name: "Ancient Purple Worm",
+    level: 12,
+    type: "wrecker (huge)",
+    initiative: "+17",
+    ac: 27,
+    pd: 25,
+    md: 21,
+    hp: 1200,
+    health: 1200,
+    attacks: ["Devouring Maw +18 vs PD - 100 damage. Natural Even Hit: The target is swallowed whole if it's smaller than the worm (see below). Miss: Half damage.", "Tail Sting +18 vs AC (up to 2 random nearby enemies) - 40 damage, and 40 ongoing poison damage. Miss: 20 damage.", "Prodigious Thrash +18 vs AC (1D4 random nearby enemies) - 50 damage. Miss: Half damage. Natural 1-2: The worm and any creatures it has swallowed take 8D6 damage (but it still deals miss damage on a 2). Limited Use: The worm can make this attack as a free action if it has one enemy swallowed or less after using its standard action during its turn."],
+    abilities: ["Swallow Whole: While a creature is swallowed whole, it takes 10D12 acid damage at the start of its turn and is Stuck, Hampered, and unable to attack or affect anything outside of the worm's stomach (and vice versa). Most teleport abilities don't work because you're Hampered and you can't see the location out of the worm you want to teleport to. There are two ways out. Cut Your Way Out: Deal 80 damage to the worm with a single attack and you can cut your way out. All edged or bladed weapons are reduced to D6 damage dice (at most) inside the worm's gullet, so good luck. At least you'll be damaging the worm attacking it from within. Get Upchucked: While the worm is Staggered, you can use a standard action to try and crawl out of its mouth. Roll a hard save; on a success, the worm vomits you out and spits you somewhere nearby. The worm also vomits out all creatures it has swallowed when it drops to 0 HP.", "Burrow: As the standard monster ability (13th Age core rulebook, page 200), but with a +5 bonus to the check.", "[Nastier Special] Resist Most Energy Damage 16+: Purple worms generate weird energy resistances thanks to underworld radiation and their odd diets. Roll a D8 twice, in secret, to determine what energy types the worm is not resistant to. The PCs probably have to find out what energy works best against the worm the hard way, though you might have mercy and allow a DC 35 Wisdom skill check to figure out what energy types work against the worm. 1: acid; 2: cold; 3: fire; 4: lightning; 5: thunder; 6: holy; 7: negative energy; 8: poison."],
+    isStaggered: false,
+    id: 275
+},
 
 // RED DRAGONS
 
