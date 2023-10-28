@@ -2518,7 +2518,102 @@ const bestiaryMonsterData = [
 
 // RED DRAGONS
 
+{
+    name: "Volcano Dragon",
+    level: 7,
+    type: "wrecker (large)",
+    initiative: "+12",
+    ac: 23,
+    pd: 22,
+    md: 16,
+    hp: 220,
+    health: 220,
+    attacks: ["Fangs, Claws, and Wings +12 vs AC (2 attacks) - 18 damage. Natural 16+: The target takes 5 extra damage from a wing buffet. Natural 18+: The target takes 10 extra damage from a claw strike.", "[Special Trigger] Tail Smash +12 vs PD (one nearby enemy) - 18 damage. Miss: 9 damage. Limited Use: When a nearby enemy attacks and rolls a natural even hit against the dragon, the dragon can make a Tail Smash attack against it as a free action.", "C: Volcanic Breath +12 vs PD (each nearby enemy) - 20 fire damage, and 5 ongoing fire damage. Natural 18+: The target takes 10 ongoing fire damage instead of 5."],
+    abilities: ["Escalator: A dragon adds the escalation die to its attack rolls.", "Flight: A dragon flies reasonably well, powerful and fast in a straight line though not as maneuverable as more agile flyers.", "Vulnerability: Cold.", "Burning Skin: When an enemy is engaged with the volcanic dragon at the start of its turn, it takes 5 fire damage.", "Continuous Breath: A volcanic dragon can use Volcanic Breath 1D3 times per battle, but if it does not use its breath weapon on consecutive rounds, it loses its remaining Volcanic Breath attacks for the battle.", "Resist Fire 14+"],
+    isStaggered: false,
+    id: 276
+},
 
+{
+    name: "Hoardsong Dragon",
+    level: 9,
+    type: "spoiler (large)",
+    initiative: "+13",
+    ac: 25,
+    pd: 24,
+    md: 18,
+    hp: 360,
+    health: 360,
+    attacks: ["Fangs and Claws +14 vs AC (3 attacks) - 30 damage. Natural 16+: The target takes 15 extra damage from a precise strike.", "C: Hoardsong +14 vs MD (one nearby enemy in the dragon's lair) - 10 psychic damage, and the target is Confused (save ends). Limited Use: 2/battle, as a quick action (once per round).", "C: Precise Breath +14 vs PD (1D4 + 1 nearby enemies, or one enemy) - 20 fire damage, and 10 ongoing fire damage; OR 80 fire damage, and 20 ongoing fire damage if used against a single enemy. Natural 18+: If the breath targeted multiple enemies, the target takes 20 ongoing fire damage instead of 10. If the breath targeted a single enemy, the target takes 40 ongoing fire damage instead of 20."],
+    abilities: ["Escalator: A dragon adds the escalation die to its attack rolls.", "Flight: A dragon flies reasonably well, powerful and fast in a straight line though not as maneuverable as more agile flyers.", "Vulnerability: Cold", "Intermittent Breath: A hoardsong dragon can use Precise Breath 1D4 times per battle, but never two turns in a row.", "Known to an Ounce: The dragon knows where every treasure in its hoard is located, allowing it to detect any movement or shifting of the coins and valuables. While in its lair with its hoard, the hoardsong dragon is immune to invisibility and ignores illusions, and creatures attempting to hide from it take a -5 penalty to their checks.", "Resist Fire 16+", "[Nastier Special] Hoard Minions: The dragon's connection to its hoard is so strong that it has some control over the souls of those it previously killed who owned the treasures. Once per round as a quick action, the hoardsong dragon can summon 1D4 hoard spirits that take form by surrounding themselves in coins, wear empty suits of armor, etc., and defend the dragon's hoard. Roll initiative for the minions once and use that count for all additional minions.", "[Nastier Special] The Call of the Hoard: The connection of a hoardsong dragon to its hoard imparts the dragon's magic upon the hoard. Before battle, if the PCs are able to see the hoard while the dragon speaks to them, each PC that can hear the dragon must roll a Wisdom check. On a result of 24 or less, that PC is charmed as per the Charm Person spell and considers the dragon a friend. On a result of 25-29, the PC is lulled by the dragon's words and the sight of the hoard; if combat occurs, the PC will be Stunned during their first round. The dragon will make a suggestion to charmed PCs to leave and bring it more treasure for its hoard (while it prepares surprises for their return). Charmed PCs won't attack the dragon, but can make a normal save each round in battle to break the charm effect (or every day outside of combat)."],
+    isStaggered: false,
+    id: 277
+},
+
+{
+    name: "Hoard Spirit",
+    level: 9,
+    type: "mook",
+    mookNumber: 1,
+    initiative: "+15",
+    ac: 24,
+    pd: 22,
+    md: 18,
+    hp: 50,
+    health: 50,
+    attacks: ["Hoard-fueled Strike +14 vs AC - 35 damage. Natural 16+: The target is Stuck under a pile of treasure until the end of its next turn."],
+    abilities: ["N/A"],
+    isStaggered: false,
+    id: 278
+},
+
+// {
+//     name: "",
+//     level: ,
+//     type: "",
+//     initiative: "",
+//     ac: ,
+//     pd: ,
+//     md: ,
+//     hp: ,
+//     health: ,
+//     attacks: [""],
+//     abilities: ["Escalator: A dragon adds the escalation die to its attack rolls.", "Flight: A dragon flies reasonably well, powerful and fast in a straight line though not as maneuverable as more agile flyers."],
+//     isStaggered: false,
+//     id: 279
+// },
+
+// {
+//     name: "",
+//     level: ,
+//     type: "",
+//     initiative: "",
+//     ac: ,
+//     pd: ,
+//     md: ,
+//     hp: ,
+//     health: ,
+//     attacks: [""],
+//     abilities: ["Escalator: A dragon adds the escalation die to its attack rolls.", "Flight: A dragon flies reasonably well, powerful and fast in a straight line though not as maneuverable as more agile flyers."],
+//     isStaggered: false,
+//     id: 280
+// },
+
+// {
+//     name: "",
+//     level: ,
+//     type: "",
+//     initiative: "",
+//     ac: ,
+//     pd: ,
+//     md: ,
+//     hp: ,
+//     health: ,
+//     attacks: [""],
+//     abilities: ["Escalator: A dragon adds the escalation die to its attack rolls.", "Flight: A dragon flies reasonably well, powerful and fast in a straight line though not as maneuverable as more agile flyers."],
+//     isStaggered: false,
+//     id: 281
+// },
 
 // REDCAPS
 
