@@ -2567,53 +2567,54 @@ const bestiaryMonsterData = [
     id: 278
 },
 
-// {
-//     name: "",
-//     level: ,
-//     type: "",
-//     initiative: "",
-//     ac: ,
-//     pd: ,
-//     md: ,
-//     hp: ,
-//     health: ,
-//     attacks: [""],
-//     abilities: ["Escalator: A dragon adds the escalation die to its attack rolls.", "Flight: A dragon flies reasonably well, powerful and fast in a straight line though not as maneuverable as more agile flyers."],
-//     isStaggered: false,
-//     id: 279
-// },
+{
+    name: "Greathoard Elder",
+    level: 11,
+    type: "wrecker (huge)",
+    initiative: "+14",
+    ac: 27,
+    pd: 26,
+    md: 20,
+    hp: 870,
+    health: 870,
+    attacks: ["Fangs, Claws, and Wings +16 vs AC (2 attacks) - 90 damage. Natural 14+: The target takes 12 extra damage from a wing buffet. Natural 16+: The target takes 20 extra damage from a claw strike. Natural 19+: The dragon can make a Treasury Master attack as a free action.", "C: Treasury Master +16 vs MD (the nearby non-confused enemy with the most true magic items) - 30 psychic damage, and the target is Confused (save ends). Limited Use: 2/battle, as a quick action (once per round).", "C: Precise Breath +16 vs PD (1D4 + 1 nearby enemies, or one enemy) - 50 fire damage, and 15 ongoing fire damage; OR 170 fire damage, and 30 ongoing fire damage if used against a single enemy. Natural 18+: If the breath weapon targeted multiple enemies, the target takes 25 ongoing fire damage instead of 15. if the breath targeted a single enemy, the target takes 60 ongoing fire damage instead of 30."],
+    abilities: ["Escalator: A dragon adds the escalation die to its attack rolls.", "Flight: A dragon flies reasonably well, powerful and fast in a straight line though not as maneuverable as more agile flyers.", "Call of the Hoard: When an enemy is engaged with the greathoard elder in its lair at the start of its turn, it must roll a normal save; on a failure, it hurls one random non-armor true magic item into the dragon's hoard (adjust stats accordingly). The item is unavailable until the end of the battle. if the dragon flees or is defeated, lost magic items can be retrieved.", "Greathoard Rage: When an enemy scores a critical hit against the greathoard elder while it's in its lair, the elder can reroll one of its missed attacks each round (cumulative) as its hoard sings a song of carnage to it.", "Intermittent Breath: A greathoard elder can use Precise Breath 1D4 + 1 times per battle, but never two turns in a row.", "Resist Fire 16+", "[Nastier Special] Iconic Comparisons: The dragon is enamored/envious of the icons with the greatest hoards: the Dwarf King, Elf Queen, Emperor, Prince of Shadows, and the Three. For each PC who has at least one positive or conflicted relationship point with one or more of those icons, the greathoard elder gains an extra use of Treasury Master this battle."],
+    isStaggered: false,
+    id: 279
+},
 
-// {
-//     name: "",
-//     level: ,
-//     type: "",
-//     initiative: "",
-//     ac: ,
-//     pd: ,
-//     md: ,
-//     hp: ,
-//     health: ,
-//     attacks: [""],
-//     abilities: ["Escalator: A dragon adds the escalation die to its attack rolls.", "Flight: A dragon flies reasonably well, powerful and fast in a straight line though not as maneuverable as more agile flyers."],
-//     isStaggered: false,
-//     id: 280
-// },
+{
+    name: "Flamewreathed Dragon",
+    level: 12,
+    type: "spoiler (huge)",
+    initiative: "+15",
+    ac: 28,
+    pd: 21,
+    md: 27,
+    hp: 1100,
+    health: 1100,
+    attacks: ["Fangs and Claws +17 vs AC (3 attacks) - 75 damage. Natural 16+: The target takes 20 ongoing fire damage.", "C: Primal Fire Breath +17 vs PD (1D4 + 1 nearby enemies, or one enemy) - 60 fire damage, and 15 ongoing fire damage; OR 180 fire damage, and 30 ongoing fire damage and the target is Weakened (save ends both) if used against a single enemy. Natural 18+: If the breath targeted multiple enemies, the target takes 25 ongoing fire damage instead of 15. If the breath targeted a single enemy, the target takes 60 ongoing fire damage instead of 30.", "C: Whirling Inferno +17 vs PD (each nearby enemy taking ongoing fire damage) - The target's ongoing fire damage increases by 5 and becomes hard save ends as the dragon fans the flames. Limited Use: 2/battle, as a quick action (once per round)."],
+    abilities: ["Escalator: A dragon adds the escalation die to its attack rolls.", "Flight: A dragon flies reasonably well, powerful and fast in a straight line though not as maneuverable as more agile flyers.", "Intermittent Breath: A flamewreathed dragon can use Primal Fire Breath 1D4 + 2 times per battle, but never two turns in a row.", "Resist Fire 18+", "Wyrm of Fear and Flame: While engaged with this creature, enemies with 120 HP or fewer are Dazed, do not add the escalation die to their attacks, and take 4D20 fire damage at the start of their turn.", "[Nastier Special] Draconic Fire: The dragon's will and magic are so powerful that it ignores the fire resistance of creatures battling it.", "[Nastier Special] Smoke Minions: The dragon's lair is wreathed in smoke and fumes, and through its magic the dragon has some control over those hot gases. Once per round as a quick action, the flamewreathed dragon can summon 1D4 smoke minions that take humanoid or bestial form and defend the dragon's lair. Roll initiative for the minions once and use that count for all additional minions."],
+    isStaggered: false,
+    id: 280
+},
 
-// {
-//     name: "",
-//     level: ,
-//     type: "",
-//     initiative: "",
-//     ac: ,
-//     pd: ,
-//     md: ,
-//     hp: ,
-//     health: ,
-//     attacks: [""],
-//     abilities: ["Escalator: A dragon adds the escalation die to its attack rolls.", "Flight: A dragon flies reasonably well, powerful and fast in a straight line though not as maneuverable as more agile flyers."],
-//     isStaggered: false,
-//     id: 281
-// },
+{
+    name: "Smoke Minions",
+    level: 12,
+    type: "mook",
+    mookNumber: 1,
+    initiative: "+13",
+    ac: 26,
+    pd: 20,
+    md: 24,
+    hp: 80,
+    health: 80,
+    attacks: ["Invasive Gases +17 vs AC - 55 damage. Natural 16+: The target is Hampered from burning eyes and gases in its lungs until the end of its next turn."],
+    abilities: ["N/A"],
+    isStaggered: false,
+    id: 281
+},
 
 // REDCAPS
 
