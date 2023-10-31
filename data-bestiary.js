@@ -2618,7 +2618,69 @@ const bestiaryMonsterData = [
 
 // REDCAPS
 
+{
+    name: "Splotchcap",
+    level: 2,
+    type: "archer",
+    initiative: "+8",
+    ac: 16,
+    pd: 17,
+    md: 14,
+    hp: 32,
+    health: 32,
+    attacks: ["Stabby Knife +5 vs AC - 6 damage. Natural 16+: The target also takes 2 ongoing damage.", "R: Smashy Slingstone +7 vs AC - 7 damage. Natural 18+: The target can't cast a spell until the end of its next turn or until the splotchcap drops to 0 HP, whichever comes first.", "[Special Trigger] C: Pop-out and Stab 'Em +7 vs AC (one nearby enemy) - 8 damage. Miss: Damage equal to the escalation die."],
+    abilities: ["Impossible Teleport: When the splotchcap scores a critical hit OR when a PC or player at the table says the 'bad word,' the splotchcap can teleport to a nearby hidden location it can see as a free action.", "Pop-out Surprise: When the splotchcap starts its turn and no enemy can see it, it can make a Pop-out and Stab 'Em attack that turn as a standard action."],
+    isStaggered: false,
+    id: 282
+},
 
+{
+    name: "Redcap",
+    level: 3,
+    type: "wrecker",
+    initiative: "+9",
+    ac: 17,
+    pd: 18,
+    md: 15,
+    hp: 42,
+    health: 42,
+    attacks: ["Twin Skinning Knives +8 vs AC (2 attacks) - 6 damage. Miss: Damage equal to the escalation die.", "Stompy Iron Boots +8 vs PD (one staggered or unconscious enemy) - 12 damage. Miss: 5 damage.", "[Special Trigger] C: Pop-out and Ride 'Em +10 vs AC (one nearby enemy) - 10 damage, and 5 ongoing damage. Ridey Horsey: While the target is taking ongoing damage from this attack, the redcap is riding the target's shoulders with its knives in the target's ears, and once during its turn the redcap can use a move action to make the target move anywhere nearby that won't directly cause it harm (but opportunity attacks are fair game). Miss: 5 damage."],
+    abilities: ["Impossible Teleport: When the redcap scores a critical hit OR when a PC or player at the table says the 'bad word,' the redcap can teleport to a nearby hidden location it can see as a free action.", "Pop-out Surprise: When the redcap starts its turn and no enemy can see it, it can make a Pop-out and Ride 'Em attack that turn as a standard action."],
+    isStaggered: false,
+    id: 283
+},
+
+{
+    name: "Crimsoncap",
+    level: 6,
+    type: "spoiler",
+    initiative: "+11",
+    ac: 20,
+    pd: 21,
+    md: 18,
+    hp: 84,
+    health: 84,
+    attacks: ["Huge Bloody Cleavers +11 vs AC (2 attacks) - 13 damage, and the crimsoncap can pop free from the target.", "Horrible Stompy Boots +11 vs PD (one staggered or unconscious enemy) - 20 damage, and the target is Hampered (save ends). Miss: 5 damage.", "[Special Trigger] C: Pop-out and Slash 'Em +11 vs AC (1D4 nearby enemies) - 15 damage, and 5 ongoing damage. Miss: 10 damage."],
+    abilities: ["Impossible Teleport: When the crimsoncap scores a critical hit OR when a PC or player at the table says the 'bad word,' the crimsoncap can teleport to a nearby hidden location it can see or can't see (like inside a closet) as a free action.", "Pop-out Surprise: When the crimsoncap starts its turn and no enemy can see it, it can make a Pop-out and Slash 'Em attack that turn as a standard action.", "[Nastier Special] F*** T***: The crimsoncap has two 'bad words' instead of one. And the PCs find that out the hard way. Write the words down ahead of time to prove you're not just being a mean GM."],
+    isStaggered: false,
+    id: 284
+},
+
+{
+    name: "Crustycap",
+    level: 7,
+    type: "wrecker",
+    initiative: "+14",
+    ac: 21,
+    pd: 22,
+    md: 19,
+    hp: 100,
+    health: 100,
+    attacks: ["Big Bloody Axe +12 vs AC (2 attacks) - 10 damage. Natural Even Hit: The crustycap can make a single Big Bloody Axe attack against a different nearby enemy as a free action. Miss: 5 ongoing damage.", "Devastating Stompy Boots +12 vs PD (one staggered or unconscious enemy) - 40 damage. Miss: 10 damage."],
+    abilities: ["Oh No Oh No: When a PC or a player at the table says the 'bad word,' the crustycap can take an extra standard action during its next turn. Feel free to let the extra actions stack a few times if someone gets cocky.", "[Nastier Special] Just Plain Mean: When the crustycap scores a critical hit OR when a PC or player at the table says the 'bad word,' the crustycap can teleport away as a free action. Far away, even to a location it can't see, and out of the battle. Then at the start of the PCs' next battle, it teleports back and attacks the PCs, no matter what enemies they are fighting. It will continue to use this power if it can until the PCs take a full heal up, at which point, if it's still alive, it loses interest."],
+    isStaggered: false,
+    id: 285
+},
 
 // REMORHAZ
 
