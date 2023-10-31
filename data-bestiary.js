@@ -2684,7 +2684,86 @@ const bestiaryMonsterData = [
 
 // REMORHAZ
 
+{
+    name: "Remorhaz (Squib Swarm)",
+    level: 0,
+    type: "mook",
+    mookNumber: 1,
+    initiative: "+0",
+    ac: 14,
+    pd: 12,
+    md: 8,
+    hp: 5,
+    health: 5,
+    attacks: ["Sharp Nibbling Beaks +5 vs AC - 3 cold damage"],
+    abilities: ["Heat Absorption: When a creature is engaged with the squib swarm at the start of its turn, it takes cold damage equal to the escalation die."],
+    isStaggered: false,
+    id: 286
+},
 
+{
+    name: "Remorhaz (Barbellite)",
+    level: 3,
+    type: "troop",
+    initiative: "+7",
+    ac: 18,
+    pd: 16,
+    md: 12,
+    hp: 36,
+    health: 36,
+    attacks: ["Arctic Bite +11 vs AC - 7 cold damage"],
+    abilities: ["Heat Absorption: When a creature is engaged with the remorhaz at the start of its turn, it takes cold damage equal to the escalation die.", "Shatterer: Death can cause fluid-filled sacks inside the barbellite to explode. When the attack roll that kills the barbellite is a natural even roll, each nearby creature takes 10 cold damage."],
+    isStaggered: false,
+    id: 287
+},
+
+{
+    name: "Remorhaz (Frost-Würm)",
+    level: 6,
+    type: "troop (large)",
+    initiative: "+9",
+    ac: 22,
+    pd: 20,
+    md: 16,
+    hp: 180,
+    health: 180,
+    attacks: ["Würm Glaciation +11 vs AC - 18 damage. Natural Even Hit: The target and one other nearby enemy takes 18 cold damage as the area freezes over. Miss: The target and one other nearby enemy takes 6 cold damage.", "Trilling Vibrations +9 vs MD (1D3 nearby enemies in a group) - The target is Stunned (save ends). Limited Use: The remhorhaz can use Trilling Vibrations only when the escalation die is odd."],
+    abilities: ["Burrow: As the standard monster ability (13th Age core rulebook, page 200), except the remorhaz only needs to roll a 6+ in snow.", "Massive Heat Absorption: When a creature is engaged with the remorhaz at the start of its turn, it takes cold damage equal to twice the escalation die.", "Shatterer: Death can cause fluid-filled sacks inside the frost-würm to explode. When the attack roll that kills the frost-würm is a natural even roll, each nearby creature takes 20 cold damage."],
+    isStaggered: false,
+    id: 288
+},
+
+{
+    name: "Remorhaz (adult)",
+    level: 8,
+    type: "wrecker (large)",
+    initiative: "+11",
+    ac: 24,
+    pd: 22,
+    md: 18,
+    hp: 280,
+    health: 280,
+    attacks: ["[Special Trigger] C: Death From Below! +14 vs AC (each nearby creature) - 45 damage; OR 22 damage, and the target is Stunned (save ends). Miss: 15 damage. Limited Use: 1/battle, during the remorhaz's first turn or if appearing on the surface after burrowing.", "Savage Bite +16 vs AC - 50 damage, 20 fire damage, and the remorhaz grabs the target if it's not already grabbing a creature. Miss: 15 fire damage."],
+    abilities: ["Burrow: As the standard monster ability (13th Age core rulebook, page 200), except the remorhaz only needs to roll a 6+ in snow and ice.", "Furnace Aura: When a creature is engaged with the remorhaz (or grabbed by it) at the start of its turn, it takes fire damage equal to 6x the escalation die.", "[Nastier Special] Bejeweled Remorhaz: The remorhaz has glowing 'jewels' on its armored plates. When a nearby or far away enemy misses with an attack against the remorhaz, that enemy chooses one: It takes 10 fire damage; OR one piece of its non-magical equipment (something useful, but player's choice) melts or burns up. Adjust skill checks or stats accordingly.", "[Nastier Special] Remorhaz Steamer: The remorhaz is melting the ice/snow all the time and obscuring steam rises into the air. Ranged attacks against the remorhaz take a -2 penalty, or a -4 penalty if the attacker is far away.", "[Nastier Special] Spiney Remorhaz: The remorhaz is covered in red-hot spines. When a nearby enemy rolls a natural 1-5 with an attack roll, it takes 20 fire damage unless it has somehow protected itself from the heat."],
+    isStaggered: false,
+    id: 289
+},
+
+{
+    name: "Remorhaz (Queen)",
+    level: 11,
+    type: "wrecker (large)",
+    initiative: "+2D10 (see Sluggish Initiative)",
+    ac: 27,
+    pd: 26,
+    md: 22,
+    hp: 580,
+    health: 580,
+    attacks: ["Bite and Trample +17 vs AC - 80 damage, 40 fire damage, and the remorhaz grabs the target. Miss: The target and each other creature engaged with the remorhaz takes 20 fire damage.", "R: Nova Blast +16 vs PD (1D3 nearby enemies) - 100 fire damage. Miss: 25 fire damage."],
+    abilities: ["Burrow: As the standard monster ability (13th Age core rulebook, page 200), except the remorhaz only needs to roll a 6+ in snow and ice.", "Furnace Aura: When a creature is engaged with the remorhaz (or grabbed by it) at the start of its turn, it takes fire damage equal to 10x the escalation die.", "Sluggish Initiative: The queen may be sluggish after eating unsuccessful suitors, laying eggs, or moving across the ice like a rushing avalanche. Roll 2D10 to determine her current initiative.", "[Nastier Special] Bejeweled Remorhaz: The remorhaz has glowing 'jewels' on its armored plates. When a nearby or far away enemy misses with an attack against the remorhaz, that enemy chooses one: It takes 25 fire damage; OR one piece of its non-magical equipment (something useful, GM's choice) melts or burns up. Adjust skill checks or stats accordingly.", "[Nastier Special] Remorhaz Steamer: The remorhaz is melting the ice/snow all the time and obscuring steam rises into the air. Ranged attacks against the remorhaz take a -2 penalty, or a -4 penalty if the attacker is far away.", "[Nastier Special] Spiney Remorhaz: The remorhaz is covered in red-hot spines. When a nearby enemy rolls a natural 1-5 with an attack roll, it takes 30 fire damage unless it has somehow protected itself from the heat."],
+    isStaggered: false,
+    id: 290
+},
 
 // RUST MONSTERS
 
