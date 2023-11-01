@@ -2920,69 +2920,70 @@ const bestiaryMonsterData = [
 
 // STIRGES
 
-// {
-//     name: "",
-//     level: ,
-//     type: "",
-//     initiative: "",
-//     ac: ,
-//     pd: ,
-//     md: ,
-//     hp: ,
-//     health: ,
-//     attacks: [""],
-//     abilities: [""],
-//     isStaggered: false,
-//     id: 
-// },
+{
+    name: "Stirge",
+    level: 0,
+    type: "troop",
+    initiative: "+4",
+    ac: 16,
+    pd: 14,
+    md: 10,
+    hp: 18,
+    health: 18,
+    attacks: ["Claws +7 vs AC - 2 damage, and the stirge can make a Draining Probe attack against the target during its next turn if it's still engaged with the target.", "[Special Trigger] Draining Probe +7 vs AC (one enemy hit by Claws last turn) - 5 damage, and 5 ongoing damage."],
+    abilities: ["Flight: Stirges fly well. Also, the pitch of their wings is high and thin, allowing a stirge to get very close without tipping off its prey.", "[Nastier Special] One and Done: After hitting a living creature that has blood with its Draining Probe attack, the stirge heals 5 hit points and will use its next turn to move, fleeing to the hive to feed the stirgelings...and to alert the hive that there is an easy meal nearby. A new full strength stirge enters the battle during the next round on the same initiative count."],
+    isStaggered: false,
+    id: 300
+},
 
-// {
-//     name: "",
-//     level: ,
-//     type: "",
-//     initiative: "",
-//     ac: ,
-//     pd: ,
-//     md: ,
-//     hp: ,
-//     health: ,
-//     attacks: [""],
-//     abilities: [""],
-//     isStaggered: false,
-//     id: 
-// },
+{
+    name: "Archer Stirge",
+    level: 1,
+    type: "archer",
+    initiative: "+6",
+    ac: 18,
+    pd: 14,
+    md: 12,
+    hp: 22,
+    health: 22,
+    attacks: ["Serrated Claws +7 vs AC - 4 damage", "R: Barbed Stinger +9 vs AC (one nearby enemy) - 3 damage, and 3 ongoing damage. Natural 16+: One stirge ally engaged with the target can make a melee attack against it as a free action."],
+    abilities: ["Flight: The archer stirge flies faster and higher than a normal stirge, but on louder wings."],
+    isStaggered: false,
+    id: 301
+},
 
-// {
-//     name: "",
-//     level: ,
-//     type: "",
-//     initiative: "",
-//     ac: ,
-//     pd: ,
-//     md: ,
-//     hp: ,
-//     health: ,
-//     attacks: [""],
-//     abilities: [""],
-//     isStaggered: false,
-//     id: 
-// },
+{
+    name: "Cobbler Stirge",
+    level: 1,
+    type: "blocker",
+    initiative: "+5",
+    ac: 16,
+    pd: 14,
+    md: 12,
+    hp: 30,
+    health: 30,
+    attacks: ["Claws +7 vs AC - 6 damage", "C: Gooey Bloody Spray +7 vs PD (1D4 nearby enemies) - 5 damage. Natural Even Hit or Miss: The target is Stuck (save ends). Natural Odd Hit or Miss: The cobbler stirge takes 3 damage."],
+    abilities: ["Painful Flight: The cobbler has stubby ill-proportioned wings and takes 1D6 damage at the end of each round that it flies during battle."],
+    isStaggered: false,
+    id: 302
+},
 
-// {
-//     name: "",
-//     level: ,
-//     type: "",
-//     initiative: "",
-//     ac: ,
-//     pd: ,
-//     md: ,
-//     hp: ,
-//     health: ,
-//     attacks: [""],
-//     abilities: [""],
-//     isStaggered: false,
-//     id: 
-// },
+{
+    name: "Stirgelings",
+    level: 0,
+    type: "mook",
+    mookNumber: 1,
+    initiative: "+2",
+    ac: 15,
+    pd: 13,
+    md: 9,
+    hp: 4,
+    health: 4,
+    attacks: ["Claws +5 vs AC - The effect depends on the roll. Natural Odd Hit: 2 damage. Natural Even Hit: Choose one effect, and then the stirgeling mob takes 4 damage (killing this creature first). Regular Stirgeling: The target takes 3 damage, and 3 ongoing damage. Archer Stirgeling: The target takes 6 damage. Cobbler Stirgeling: The target takes 3 damage and is Stuck until the end of its turn."],
+    abilities: ["Flight: The aren't strong fliers but they are quick and agile."],
+    isStaggered: false,
+    id: 303
+},
 
 // TARRASQUE
 
