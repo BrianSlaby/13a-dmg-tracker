@@ -2883,41 +2883,424 @@ const bestiaryMonsterData = [
     id: 297
 },
 
-// SHADOW DRAGONS
+// SHADOW DRAGON
 
+{
+    name: "Shadow Dragon",
+    level: 8,
+    type: "caster (large)",
+    initiative: "+13",
+    ac: 25,
+    pd: 22,
+    md: 22,
+    hp: 260,
+    health: 260,
+    attacks: ["Shadow Claws +13 vs AC - 50 psychic damage. Natural 16+: The target is Confused (hard save ends).", "C: Nightmare Breath +12 vs MD (1D3 nearby or far away enemies) - 60 negative energy damage, and the target becomes a living shadow (hard save ends). Living Shadow: While a living shadow, the target can't physically interact with or gain aid from companions or aid them (including healing, bonuses, and effects) but is otherwise 'normal.' Limited Use: 1/battle, but the ability recharges when the dragon is Staggered. If it hasn't already made a Nightmare Breath attack when it becomes Staggered, the dragon makes the attack as a free action and then the breath recharges."],
+    abilities: ["Made of Shadow: The shadow dragon perceives the invisible, is unaffected by the Blur spell, and ignores illusions. Rogues attempting to Shadow Walk near a shadow dragon end up in the dragon's belly (save ends). While there, they are helpless and take 2D12 damage at the start of each of their turns until they save and fall back out of the shadow.", "Shadowy Escalation: When in poorly lit areas of shadow, the dragon adds the escalation die to its attack rolls. Complete darkness or bright daylight negates the ability.", "[Nastier Special] Shadow Illusions: As a standard action, the dragon can appear to be humanoid, usually disguising itself as an unthreatening old man in a cloak (DC 35 to detect). Daylight will show the illusion for what it is - an insubstantial dragon. Dragons with a Book of Many Faces will have perfect humanoid disguises. Dropping the illusion is a free action.", "[Nastier Special] Shadowy Phasing: When the escalation die is even, natural odd attack rolls against the dragon automatically miss. When the escalation die is odd, natural even attack rolls against the dragon automatically miss. Attacks that deal holy damage ignore this ability."],
+    isStaggered: false,
+    id: 298
+},
 
+{
+    name: "Shadow Thief",
+    level: 8,
+    type: "mook",
+    mookNumber: 1,
+    initiative: "+17",
+    ac: 25,
+    pd: 20,
+    md: 16,
+    hp: 38,
+    health: 38,
+    attacks: ["Shadow Strangulation +13 vs PD - 20 psychic damage. Natural 16+: The target takes 20 negative energy damage, and the shadow thief can make a Shadow Possession attack as a free action (but see group ability).", "[Group Ability] C: Shadow Possession +13 vs MD (one enemy hit by Shadow Strangulation) - The shadow thief 'crawls inside' the target. The target is Confused (save ends), and the shadow thief can't be the target of an attack or effect until it's forced from the target's body when that creature saves against the confusion effect. Group Ability: For every four shadow thieves in the battle (round up), one of them can use Shadow Possession during the battle."],
+    abilities: ["Shadow Thievery: The shadow thief is an extension of the shadow dragon, not really a separate entity. When it drops to 0 HP, it flees back to the shadow dragon and merges with it. When this happens, if there is at least one enemy engaged with that shadow thief, the thief chooses one enemy engaged with it. Roll a D20; on a 16+, the shadow thief steals a random magic item from the chosen enemy as it flees back to the dragon (but see Stop...Thief below). Stolen items are replaced with shadowy duplicates that work until the end of the battle, then fade to nothingness. The items can be recovered if the dragon is slain in the same battle.", "Stop...Thief!: When a shadow thief steals an item, the creature it steals from can choose to prevent the theft, but at a cost. If the natural D20 thievery roll was odd, the target of the thievery attempt can choose to keep the item but become Hampered (save ends) as they wrestle with the shadow. If the natural thievery roll was even, the target has the same choice, but it's a hard save to end the Hampered effect."],
+    isStaggered: false,
+    id: 299
+},
 
 // STIRGES
 
+// {
+//     name: "",
+//     level: ,
+//     type: "",
+//     initiative: "",
+//     ac: ,
+//     pd: ,
+//     md: ,
+//     hp: ,
+//     health: ,
+//     attacks: [""],
+//     abilities: [""],
+//     isStaggered: false,
+//     id: 
+// },
 
+// {
+//     name: "",
+//     level: ,
+//     type: "",
+//     initiative: "",
+//     ac: ,
+//     pd: ,
+//     md: ,
+//     hp: ,
+//     health: ,
+//     attacks: [""],
+//     abilities: [""],
+//     isStaggered: false,
+//     id: 
+// },
+
+// {
+//     name: "",
+//     level: ,
+//     type: "",
+//     initiative: "",
+//     ac: ,
+//     pd: ,
+//     md: ,
+//     hp: ,
+//     health: ,
+//     attacks: [""],
+//     abilities: [""],
+//     isStaggered: false,
+//     id: 
+// },
+
+// {
+//     name: "",
+//     level: ,
+//     type: "",
+//     initiative: "",
+//     ac: ,
+//     pd: ,
+//     md: ,
+//     hp: ,
+//     health: ,
+//     attacks: [""],
+//     abilities: [""],
+//     isStaggered: false,
+//     id: 
+// },
 
 // TARRASQUE
 
-
+// {
+//     name: "",
+//     level: ,
+//     type: "",
+//     initiative: "",
+//     ac: ,
+//     pd: ,
+//     md: ,
+//     hp: ,
+//     health: ,
+//     attacks: [""],
+//     abilities: [""],
+//     isStaggered: false,
+//     id: 
+// },
 
 // THE SAVED
 
+// {
+//     name: "",
+//     level: ,
+//     type: "",
+//     initiative: "",
+//     ac: ,
+//     pd: ,
+//     md: ,
+//     hp: ,
+//     health: ,
+//     attacks: [""],
+//     abilities: [""],
+//     isStaggered: false,
+//     id: 
+// },
 
+// {
+//     name: "",
+//     level: ,
+//     type: "",
+//     initiative: "",
+//     ac: ,
+//     pd: ,
+//     md: ,
+//     hp: ,
+//     health: ,
+//     attacks: [""],
+//     abilities: [""],
+//     isStaggered: false,
+//     id: 
+// },
+
+// {
+//     name: "",
+//     level: ,
+//     type: "",
+//     initiative: "",
+//     ac: ,
+//     pd: ,
+//     md: ,
+//     hp: ,
+//     health: ,
+//     attacks: [""],
+//     abilities: [""],
+//     isStaggered: false,
+//     id: 
+// },
 
 // WARBANNERS
 
+// {
+//     name: "",
+//     level: ,
+//     type: "",
+//     initiative: "",
+//     ac: ,
+//     pd: ,
+//     md: ,
+//     hp: ,
+//     health: ,
+//     attacks: [""],
+//     abilities: [""],
+//     isStaggered: false,
+//     id: 
+// },
 
+// {
+//     name: "",
+//     level: ,
+//     type: "",
+//     initiative: "",
+//     ac: ,
+//     pd: ,
+//     md: ,
+//     hp: ,
+//     health: ,
+//     attacks: [""],
+//     abilities: [""],
+//     isStaggered: false,
+//     id: 
+// },
+
+// {
+//     name: "",
+//     level: ,
+//     type: "",
+//     initiative: "",
+//     ac: ,
+//     pd: ,
+//     md: ,
+//     hp: ,
+//     health: ,
+//     attacks: [""],
+//     abilities: [""],
+//     isStaggered: false,
+//     id: 
+// },
+
+// {
+//     name: "",
+//     level: ,
+//     type: "",
+//     initiative: "",
+//     ac: ,
+//     pd: ,
+//     md: ,
+//     hp: ,
+//     health: ,
+//     attacks: [""],
+//     abilities: [""],
+//     isStaggered: false,
+//     id: 
+// },
+
+// {
+//     name: "",
+//     level: ,
+//     type: "",
+//     initiative: "",
+//     ac: ,
+//     pd: ,
+//     md: ,
+//     hp: ,
+//     health: ,
+//     attacks: [""],
+//     abilities: [""],
+//     isStaggered: false,
+//     id: 
+// },
 
 // WENDIGO
 
+// {
+//     name: "",
+//     level: ,
+//     type: "",
+//     initiative: "",
+//     ac: ,
+//     pd: ,
+//     md: ,
+//     hp: ,
+//     health: ,
+//     attacks: [""],
+//     abilities: [""],
+//     isStaggered: false,
+//     id: 
+// },
 
+// {
+//     name: "",
+//     level: ,
+//     type: "",
+//     initiative: "",
+//     ac: ,
+//     pd: ,
+//     md: ,
+//     hp: ,
+//     health: ,
+//     attacks: [""],
+//     abilities: [""],
+//     isStaggered: false,
+//     id: 
+// },
+
+// {
+//     name: "",
+//     level: ,
+//     type: "",
+//     initiative: "",
+//     ac: ,
+//     pd: ,
+//     md: ,
+//     hp: ,
+//     health: ,
+//     attacks: [""],
+//     abilities: [""],
+//     isStaggered: false,
+//     id: 
+// },
 
 // WHISPERING PROPHET
 
-
+// {
+//     name: "",
+//     level: ,
+//     type: "",
+//     initiative: "",
+//     ac: ,
+//     pd: ,
+//     md: ,
+//     hp: ,
+//     health: ,
+//     attacks: [""],
+//     abilities: [""],
+//     isStaggered: false,
+//     id: 
+// },
 
 // WHITE DRAGONS
 
+// {
+//     name: "",
+//     level: ,
+//     type: "",
+//     initiative: "",
+//     ac: ,
+//     pd: ,
+//     md: ,
+//     hp: ,
+//     health: ,
+//     attacks: [""],
+//     abilities: [""],
+//     isStaggered: false,
+//     id: 
+// },
 
+// {
+//     name: "",
+//     level: ,
+//     type: "",
+//     initiative: "",
+//     ac: ,
+//     pd: ,
+//     md: ,
+//     hp: ,
+//     health: ,
+//     attacks: [""],
+//     abilities: [""],
+//     isStaggered: false,
+//     id: 
+// },
+
+// {
+//     name: "",
+//     level: ,
+//     type: "",
+//     initiative: "",
+//     ac: ,
+//     pd: ,
+//     md: ,
+//     hp: ,
+//     health: ,
+//     attacks: [""],
+//     abilities: [""],
+//     isStaggered: false,
+//     id: 
+// },
+
+// {
+//     name: "",
+//     level: ,
+//     type: "",
+//     initiative: "",
+//     ac: ,
+//     pd: ,
+//     md: ,
+//     hp: ,
+//     health: ,
+//     attacks: [""],
+//     abilities: [""],
+//     isStaggered: false,
+//     id: 
+// },
+
+// {
+//     name: "",
+//     level: ,
+//     type: "",
+//     initiative: "",
+//     ac: ,
+//     pd: ,
+//     md: ,
+//     hp: ,
+//     health: ,
+//     attacks: [""],
+//     abilities: [""],
+//     isStaggered: false,
+//     id: 
+// },
 
 // WIBBLE
 
-
+// {
+//     name: "",
+//     level: ,
+//     type: "",
+//     initiative: "",
+//     ac: ,
+//     pd: ,
+//     md: ,
+//     hp: ,
+//     health: ,
+//     attacks: [""],
+//     abilities: [""],
+//     isStaggered: false,
+//     id: 
+// },
 
 // ZORIGAMI
 
