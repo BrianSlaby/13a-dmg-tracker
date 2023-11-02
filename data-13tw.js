@@ -5,7 +5,7 @@
 const thirteenTrueWaysMonsterData = [
 
 // ANIMALS
-
+// id for Wibble (Bestiary) was 322; next id is 323
 
 
 // AZERS
