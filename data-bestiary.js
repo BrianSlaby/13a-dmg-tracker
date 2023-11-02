@@ -3138,71 +3138,72 @@ const bestiaryMonsterData = [
 
 // WENDIGO
 
-// {
-//     name: "",
-//     level: ,
-//     type: "",
-//     initiative: "",
-//     ac: ,
-//     pd: ,
-//     md: ,
-//     hp: ,
-//     health: ,
-//     attacks: [""],
-//     abilities: [""],
-//     isStaggered: false,
-//     id: 
-// },
+{
+    name: "Wendigo Spirit",
+    level: 5,
+    type: "wrecker (large)",
+    initiative: "+12",
+    ac: 20,
+    pd: 15,
+    md: 19,
+    hp: 100,
+    health: 100,
+    attacks: ["Soul Bite +10 vs MD - 36 psychic damage, and the target is affected by Wendigo's Hunger (save ends). Wendigo's Hunger: Until the target saves, roll 1D6 at the start of each of its turns. It takes the corresponding action for its full turn instead of its normal turn. 1-2: The target takes 10 damage as it bites itself. 3-4: The target makes a basic attack against its nearest or most vulnerable ally (moving to that target if necessary). 5-6: The target attacks the wendigo if it can; otherwise, it does nothing.", "Wind Claw +10 vs PD (2 attacks) - 15 damage. Natural Even Hit: After the attack the wendigo can teleport somewhere nearby as a free action."],
+    abilities: ["Flight: The wendigo can walk on the wind. It is not a graceful flyer, but it moves as fast as teh wind that carries it. Nearby creatures can see its feet blazing with fire as it runs.", "Spirit Form: The wendigo has Resist Damage 16+ to all damage except thunder damage. A wendigo spirit can move through solid objects but it can't end its movement inside them.", "Unseen Horror: The wendigo is invisible to far away creatures. When the wendigo attacks, if its target couldn't see it at the start of its turn, the wendigo gains a +2 attack bonus that turn.", "[Nastier Special] Curse of the Wendigo: If a creature subject to Wendigo's Hunger drops itself (through biting) or an ally (with a basic attack) to 0 HP or lower, that creature also begins making last gasp saves. Failing the fourth last gasp save turns the creature into a raving cannibal; it loses all its normal abilities and becomes an NPC until the PCs find a way to restore their ally (at GM's discretion)."],
+    isStaggered: false,
+    id: 313
+},
 
-// {
-//     name: "",
-//     level: ,
-//     type: "",
-//     initiative: "",
-//     ac: ,
-//     pd: ,
-//     md: ,
-//     hp: ,
-//     health: ,
-//     attacks: [""],
-//     abilities: [""],
-//     isStaggered: false,
-//     id: 
-// },
+{
+    name: "Ravenous Cannibal",
+    level: 4,
+    type: "mook",
+    mookNumber: 1,
+    initiative: "+9",
+    ac: 18,
+    pd: 15,
+    md: 11,
+    hp: 13,
+    health: 13,
+    attacks: ["Bloody Melee Weapon +9 vs AC - 4 damage, and 4 ongoing damage.", "Latching Bite +9 vs AC (one Staggered enemy, or one enemy making saving throw rolls) - 6 damage. Natural Even Hit: Add another ravenous cannibal mook to the mob (it must have been hiding somewhere nearby, or wasn't really dead when it dropped earlier in the battle)."],
+    abilities: ["N/A"],
+    isStaggered: false,
+    id: 314
+},
 
-// {
-//     name: "",
-//     level: ,
-//     type: "",
-//     initiative: "",
-//     ac: ,
-//     pd: ,
-//     md: ,
-//     hp: ,
-//     health: ,
-//     attacks: [""],
-//     abilities: [""],
-//     isStaggered: false,
-//     id: 
-// },
+{
+    name: "Elder Wendigo",
+    level: 9,
+    type: "spoiler (huge)",
+    initiative: "+18",
+    ac: 26,
+    pd: 22,
+    md: 22,
+    hp: 600,
+    health: 600,
+    attacks: ["Icy Claws +14 vs PD (3 attacks, each against a different nearby enemy) - 50 cold damage. Frostburn: If all three attacks hit, each nearby enemy takes 4D10 fire damage.", "C: Flame Blizzard +14 vs PD (1D6 nearby or far away enemies, but not more than the escalation die) - 90 fire or cold damage (GM's choice). Natural Even Hit: The target is Hampered until the end of its next turn.", "C: Horrific Gaze +14 vs MD (one nearby or far away enemy) - 120 psychic damage, and the target is Confused (save ends). Fourth Failed Confusion Save: The target slips into madness and becomes a cannibal cultist or wendigo or some other terrible demon-thing of the GM's or player's choice in 2D10 hours. Miss: 60 psychic damage."],
+    abilities: ["Flight: The elder wendigo can walk on the wind. It is not a graceful flyer, but it moves as fast as the wind that carries it.", "Swirling Snow and Fog and Flame: The elder wendigo gains a +5 bonus to all defenses against attacks by far away enemies.", "[Nastier Special] Force of Disruption: When the elder wendigo scores a critical hit against a target or drops a target to 0 HP or lower, that creature must permanently change one of its icon relationship points to a relationship with the Diabolist, High Druid, or Lich King. Alternatively, a point the character already has with one of those icons changes to involve another icon (of the PC's choice).", "[Nastier Special] The Demon Stares Back: Once per round when a nearby or far away enemy attacks the elder wendigo and rolls a natural odd miss, the wendigo can make a Horrific Gaze attack against that attacker as a free action."],
+    isStaggered: false,
+    id: 315
+},
 
 // WHISPERING PROPHET
 
-// {
-//     name: "",
-//     level: ,
-//     type: "",
-//     initiative: "",
-//     ac: ,
-//     pd: ,
-//     md: ,
-//     hp: ,
-//     health: ,
-//     attacks: [""],
-//     abilities: [""],
-//     isStaggered: false,
-//     id: 
-// },
+{
+    name: "Whispering Prophet",
+    level: 5,
+    type: "leader",
+    initiative: "+15",
+    ac: 22,
+    pd: 14,
+    md: 20,
+    hp: 62,
+    health: 62,
+    attacks: ["Tentacle Caress +9 vs PD - 12 damage, and the target is Vulnerable to psychic damage (save ends).", "C: Whispered Secrets +10 vs MD (1D3 nearby enemies) - 5 psychic damage, and the target's mind is filled with a delusional scene from its past that depends on the roll. Natural Even Hit: The target is Confused until the end of its next turn as it sees a foe from its past. Natural Odd Hit: The target is Weakened until the end of its next turn as it remembers a past failure. Rewards of the Patron: So long as the attack hits one or more targets, one ally of the prophet's choice gains a cumulative +1 attack bonus until the end of the battle that increases that ally's natural attack roll (so a roll of natural 15 becomes a roll of natural 16 with a +1 bonus, or a natural 17 with a +2 bonus, etc.). The ally can choose not to use the bonus."],
+    abilities: ["Saw It Coming: Twice per battle as a free action, the prophet can try to avoid a non-critical attack that hits it. The attacker must reroll the attack roll with a -4 penalty.", "Knows the Angles: Twice per battle as a move action, the prophet can teleport to anywhere it can see, or to a location it can't see but that has the correct geometry and that it has previously prepared (a lair).", "[Nastier Special] Haruspicy Master: When an enemy has dropped to 0 HP or lower since the prophet's last turn, as a quick action it can get a glimpse of the near-future. It grants 1D3 nearby allies a +4 bonus to attacks and to all defenses until the start of its next turn.", "[Nastier Special] A Special Secret: When the prophet makes a Whispered Secrets attack, it can choose to target only one nearby enemy. If it does, it gains a +4 attack bonus against that enemy and the hit effects are save ends."],
+    isStaggered: false,
+    id: 316
+},
 
 // WHITE DRAGONS
 
