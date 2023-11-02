@@ -1,5 +1,5 @@
 
-// Data entry for Bestiary monsters is currently a work in progress
+// Complete data for Bestiary monsters
 // Data based on 13th Age Bestiary, 1st Edition
 
 const bestiaryMonsterData = [
