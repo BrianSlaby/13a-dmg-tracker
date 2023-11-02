@@ -6,4 +6,4 @@ Monster stat blocks can be found in the 13th Age System Reference Document, avai
 https://www.13thagesrd.com/
 
 
-This project is currently a work in progress.  Baseline functionality is complete, though more features are likely to be added in the future.  All monsters from the core rulebook are included.  Addition of monsters from the Bestiary is in progress.
+This project is currently a work in progress.  Baseline functionality is complete, though more features are likely to be added in the future.  All monsters from the core rulebook and bestiary are included.  Addition of monsters from 13 true ways is in progress.
