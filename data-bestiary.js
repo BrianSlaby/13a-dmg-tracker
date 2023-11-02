@@ -3005,53 +3005,53 @@ const bestiaryMonsterData = [
 
 // THE SAVED
 
-// {
-//     name: "",
-//     level: ,
-//     type: "",
-//     initiative: "",
-//     ac: ,
-//     pd: ,
-//     md: ,
-//     hp: ,
-//     health: ,
-//     attacks: [""],
-//     abilities: [""],
-//     isStaggered: false,
-//     id: 
-// },
+{
+    name: "Avenging Orb",
+    level: 2,
+    type: "caster",
+    initiative: "+3",
+    ac: 17,
+    pd: 13,
+    md: 13,
+    hp: 46,
+    health: 46,
+    attacks: ["Gauntlet Slap +5 vs AC - 3 damage. Natural 5, 10, 15, 20: The target also takes 3 ongoing psychic damage.", "R: Orb of Pain +7 vs MD (one or more nearby or far away enemies; see History of Abuse) - 5 psychic damage. Natural 5, 10, 15, 20: The target also takes 3 ongoing psychic damage."],
+    abilities: ["Beyond Saving: The avenging orb takes a -5 penalty to saving throws.", "History of Abuse: Keep track of the number of enemy attacks that hit the avenging orb during the battle. Until the end of the battle, the avenging orb can target an additional enemy beyond the first with its Orb of Pain attack for each of those hits. (Note that avenging orbs engaged in melee usually choose to use Orb of Pain and suffer any resulting opportunity attacks; if they're lucky they'll survive the attack and be able to choose more targets for Orb of Pain)."],
+    isStaggered: false,
+    id: 305
+},
 
-// {
-//     name: "",
-//     level: ,
-//     type: "",
-//     initiative: "",
-//     ac: ,
-//     pd: ,
-//     md: ,
-//     hp: ,
-//     health: ,
-//     attacks: [""],
-//     abilities: [""],
-//     isStaggered: false,
-//     id: 
-// },
+{
+    name: "Destroying Sword",
+    level: 2,
+    type: "wrecker",
+    initiative: "+4",
+    ac: 16,
+    pd: 14,
+    md: 13,
+    hp: 38,
+    health: 38,
+    attacks: ["Cheap Greatsword +8 vs AC - 3 damage. Natural Odd Hit: The target takes extra damage equal to half the amount the destroying sword took from the last attack that hit this battle.", "R: Shortbow +6 vs AC (one nearby or far away enemy) - 6 damage."],
+    abilities: ["Beyond Saving: The destroying sword takes a -5 penalty to saving throws."],
+    isStaggered: false,
+    id: 306
+},
 
-// {
-//     name: "",
-//     level: ,
-//     type: "",
-//     initiative: "",
-//     ac: ,
-//     pd: ,
-//     md: ,
-//     hp: ,
-//     health: ,
-//     attacks: [""],
-//     abilities: [""],
-//     isStaggered: false,
-//     id: 
-// },
+{
+    name: "Enduring Shield",
+    level: 2,
+    type: "blocker",
+    initiative: "+3",
+    ac: 18,
+    pd: 15,
+    md: 13,
+    hp: 40,
+    health: 40,
+    attacks: ["Steel Hammer + 7 vs AC - 6 damage. Miss: 1D4 damage."],
+    abilities: ["Anguished Interceptor: When an enduring shield is engaged and an enemy attempts to move past it, the enduring shield can roll a disengage check to intercept it as an interrupt action (once per round). If the attempt fails, the enduring shield takes 1D6 psychic damage.", "Beyond Saving: The enduring shield takes a -5 penalty to saving throws.", "Supernatural Endurance: When an attack hits the enduring shield, it gains a +5 bonus to the defense that the attack targeted until the end of the battle or until another attack hits it, in which case the bonus switches to the defense most recently hit."],
+    isStaggered: false,
+    id: 307
+},
 
 // WARBANNERS
 
